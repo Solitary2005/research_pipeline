@@ -2,7 +2,7 @@ name: Process Summary Request
 
 on:
   issues:
-    types: [labeled]
+    types: [opened]
 
 jobs:
   process:
@@ -67,6 +67,7 @@ jobs:
           # OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           LLM_BACKEND: "deepseek"
+          TTS_BACKEND: "edge"
 
       - name: Commit generated files
         if: steps.check.outputs.already_processed == 'false'
