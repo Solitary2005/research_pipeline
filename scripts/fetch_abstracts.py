@@ -8,8 +8,8 @@ from pathlib import Path
 
 import requests
 
-from scripts.utils.arxiv_api import fetch_abstract, ArxivFetchError
-from scripts.utils.config import config
+from utils.arxiv_api import fetch_abstract, ArxivFetchError
+from utils.config import config
 
 
 def load_repo_a_papers():
