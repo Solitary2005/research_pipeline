@@ -1,0 +1,12 @@
+<div class="paper-card">
+  <p class="paper-card-date">{{ include.paper.published_date }}</p>
+  <h2><a href="{{ site.baseurl }}/papers/{{ include.paper.arxiv_id }}/">{{ include.paper.title }}</a></h2>
+  <p class="paper-card-authors">{{ include.paper.first_author | default: include.paper.authors }} et al.</p>
+  <p class="paper-card-abstract">{{ include.paper.abstract | truncate: 300 }}</p>
+  <div class="paper-card-actions">
+    <a href="{{ site.baseurl }}/papers/{{ include.paper.arxiv_id }}/" class="btn-read">Read Abstract</a>
+    {% if include.paper.has_podcast %}
+    <a href="{{ site.baseurl }}/podcasts/{{ include.paper.arxiv_id }}/" class="btn-listen">&#127911; Listen</a>
+    {% endif %}
+  </div>
+</div>

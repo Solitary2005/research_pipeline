@@ -1,0 +1,94 @@
+---
+---
+
+$primary: #2563eb;
+$text: #1f2937;
+$muted: #6b7280;
+$bg: #f9fafb;
+$card-bg: #ffffff;
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: $text;
+  background: $bg;
+  line-height: 1.6;
+}
+
+.wrapper { max-width: 800px; margin: 0 auto; padding: 0 1.5rem; }
+
+.site-header {
+  background: $card-bg;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1rem 0;
+  .wrapper { display: flex; justify-content: space-between; align-items: center; }
+  .site-title { font-size: 1.25rem; font-weight: 700; color: $text; text-decoration: none; }
+  .site-nav a { color: $muted; text-decoration: none; margin-left: 1.5rem; &:hover { color: $text; } }
+}
+
+.page-content { padding: 2rem 0; }
+
+h1 { font-size: 1.75rem; margin-bottom: 1rem; }
+h2 { font-size: 1.25rem; margin: 1.5rem 0 0.5rem; }
+
+.paper-card {
+  background: $card-bg;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  .paper-card-date { font-size: 0.85rem; color: $muted; margin-bottom: 0.25rem; }
+  h2 { margin: 0 0 0.25rem; a { color: $text; text-decoration: none; &:hover { color: $primary; } } }
+  .paper-card-authors { color: $muted; font-size: 0.9rem; margin-bottom: 0.5rem; }
+  .paper-card-abstract { font-size: 0.95rem; margin-bottom: 0.75rem; }
+}
+
+.paper-detail, .podcast-detail {
+  background: $card-bg;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 2rem;
+  header { margin-bottom: 1.5rem; }
+  .paper-meta, .podcast-meta { color: $muted; font-size: 0.9rem; margin-bottom: 0.5rem; }
+}
+
+.request-box {
+  margin-top: 2rem;
+  padding: 1.25rem;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 8px;
+  text-align: center;
+  p { margin-bottom: 0.75rem; }
+}
+
+.btn-request, .btn-read, .btn-listen {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.btn-request { background: $primary; color: #fff; &:hover { background: darken($primary, 8%); } }
+.btn-read { background: $bg; color: $primary; border: 1px solid #d1d5db; &:hover { border-color: $primary; } }
+.btn-listen { background: #ecfdf5; color: #059669; border: 1px solid #a7f3d0; &:hover { background: #d1fae5; } }
+
+.badge {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.badge-podcast { background: #ecfdf5; color: #059669; }
+.badge-archived { background: #fef3c7; color: #d97706; }
+
+.paper-badges { margin-bottom: 0.5rem; }
+
+audio {
+  border-radius: 8px;
+}
+
+a { color: $primary; }

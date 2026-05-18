@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<article class="paper-detail">
+  <header>
+    <p class="paper-meta">
+      <strong>{{ page.published_date }}</strong> · {{ page.authors }}
+      {% if page.primary_category %}
+      · <span class="category">{{ page.primary_category }}</span>
+      {% endif %}
+    </p>
+    <h1>{{ page.title }}</h1>
+    <div class="paper-badges">
+      {% if page.has_podcast %}
+      <span class="badge badge-podcast">&#127911; Podcast Available</span>
+      {% endif %}
+      {% if page.interesting %}
+      <span class="badge badge-archived">&#128218; Archived</span>
+      {% endif %}
+    </div>
+  </header>
+
+  <section class="paper-content">
+    {{ content }}
+  </section>
+
+  {% unless page.has_podcast %}
+  <div class="request-box">
+    <p>Interested in this paper? Get an AI-generated summary card and Chinese podcast.</p>
+    <a class="btn-request" href="https://github.com/{{ site.github.repository_nwo | default: "Solitary2005/research_pipeline" }}/issues/new?labels=summary-request&template=summary-request.yml&title=%5BSummary%5D%20{{ page.arxiv_id }}&arxiv_id={{ page.arxiv_id }}&paper_title={{ page.title | url_encode }}" target="_blank">
+      Request Summary + Podcast
+    </a>
+  </div>
+  {% endunless %}
+</article>

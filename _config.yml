@@ -1,0 +1,26 @@
+title: "Dexterous Grasp Daily Research"
+description: "Daily paper summaries and Chinese podcasts for dexterous grasping research"
+url: "https://solitary2005.github.io"
+baseurl: "/research_pipeline"
+
+markdown: kramdown
+
+collections:
+  papers:
+    output: true
+    permalink: /papers/:name/
+  podcasts:
+    output: true
+    permalink: /podcasts/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "papers"
+    values:
+      layout: "paper"
+  - scope:
+      path: ""
+      type: "podcasts"
+    values:
+      layout: "podcast"

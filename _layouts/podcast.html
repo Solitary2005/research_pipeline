@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<article class="podcast-detail">
+  <header>
+    <p class="podcast-meta">
+      <strong>{{ page.published_date }}</strong> · {{ page.authors }}
+    </p>
+    <h1>{{ page.title }}</h1>
+  </header>
+
+  <section class="podcast-player">
+    {{ content }}
+  </section>
+</article>
