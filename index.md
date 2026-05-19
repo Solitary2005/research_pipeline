@@ -9,7 +9,7 @@ Papers updated daily from arXiv. Click a paper to read the abstract, or request 
 
 ## [Hand-in-the-Loop: Improving Dexterous VLA via Seamless Interventional Correction]({{ site.baseurl }}/papers/2605.15157/)
 
-**2026-05-14** · Zhuohang Li et al. 
+**2026-05-14** · Zhuohang Li et al. <span class="badge">🎧 Podcast</span> <span class="badge">📌 Archived</span>
 
 Vision-Language-Action (VLA) models are prone to compounding errors in dexterous manipulation, where high-dimensional action spaces and contact-rich dynamics amplify small policy deviations over long horizons. While Interactive Imitation Learning (IIL) can refine policies through human takeover data...
 
