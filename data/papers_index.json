@@ -19,9 +19,9 @@
     "pdf_url": "https://arxiv.org/pdf/2605.15157.pdf",
     "abs_url": "https://arxiv.org/abs/2605.15157",
     "topic": "grasp",
-    "interesting": true,
-    "has_summary": true,
-    "has_podcast": true
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
   },
   "2605.13117": {
     "arxiv_id": "2605.13117",
