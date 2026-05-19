@@ -14,6 +14,8 @@ from utils.config import config
 from utils.pdf_extractor import extract_text
 from utils.llm_client import LLMClient
 from utils.tts_client import TTSClient
+# import methods to recreate the paper page
+from generate_pages import paper_frontmatter, paper_body
 
 
 def load_index():
@@ -184,6 +186,13 @@ def main():
     paper_info["has_podcast"] = True
     paper_info["interesting"] = True
     save_index(index)
+
+    # Step 8: Update paper page markdown so it links to the podcast
+    md_path = config.papers_dir / f"{arxiv_id}.md"
+    content = f"{paper_frontmatter(paper_info)}\n\n{paper_body(paper_info)}"
+    with open(md_path, "w") as f:
+        f.write(content)
+    print(f"[process] Updated paper page: {md_path}")
 
     print(f"[process] Done processing {arxiv_id}.")
 
