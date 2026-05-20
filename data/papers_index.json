@@ -47,5 +47,46 @@
     "interesting": false,
     "has_summary": false,
     "has_podcast": false
+  },
+  "2605.12182": {
+    "arxiv_id": "2605.12182",
+    "title": "DexTwist: Dexterous Hand Retargeting for Twist Motion via Mixed Reality-based Teleoperation",
+    "abstract": "Dexterous teleoperation via Mixed Reality (MR)-based interfaces offers a scalable paradigm for transferring human manipulation skills to dexterous robot hands. However, conventional retargeting approaches that minimize kinematic dissimilarity (e.g., joint angle or fingertip position error) often fail in contact-rich rotational manipulation, such as cap opening, key turning, and bolt screwing. This failure stems from the embodiment gap: mismatched link lengths, joint axes/limits, and fingertip geometry can cause direct pose imitation to induce tangential fingertip sliding rather than stable object rotation, resulting in screw axis drift, contact slip, and grasp instability. To address this, we propose DexTwist, a functional twist-retargeting framework for MR-based dexterous teleoperation. DexTwist detects a tripod pinch, estimates the operator's intended screw axis and twist magnitude, and applies a real-time residual joint-space refinement that tracks turning progress while regularizing the robot tripod geometry. The refinement minimizes a virtual-object objective defined by turning angle, screw axis consistency, fingertip closure, and tripod stability. Simulation and real-world experiments show that DexTwist improves turning angle tracking and screw axis stability compared with a vector-based retargeting baseline.",
+    "published_date": "2026-05-12",
+    "authors": [
+      "Dongmyoung Lee",
+      "Chengxi Li",
+      "Dongheui Lee"
+    ],
+    "first_author": "Dongmyoung Lee",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2605.12182.pdf",
+    "abs_url": "https://arxiv.org/abs/2605.12182",
+    "topic": "grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2605.03363": {
+    "arxiv_id": "2605.03363",
+    "title": "Learning Reactive Dexterous Grasping via Hierarchical Task-Space RL Planning and Joint-Space QP Control",
+    "abstract": "In this work, we propose a hybrid hierarchical control framework for reactive dexterous grasping that explicitly decouples high-level spatial intent from low-level joint execution. We introduce a multi-agent reinforcement learning architecture, specialized into distinct arm and hand agents, that acts as a high-level planner by generating desired task-space velocity commands. These commands are then processed by a GPU-parallelized quadratic programming controller, which translates them into feasible joint velocities while strictly enforcing kinematic limits and collision avoidance. This structural isolation not only accelerates training convergence but also strictly enforces hardware safety. Furthermore, the architecture unlocks zero-shot steerability, allowing system operators to dynamically adjust safety margins and avoid dynamic obstacles without retraining the policy. We extensively validate the proposed framework through a rigorous simulation-to-reality pipeline. Real-world hardware experiments on a 7-DoF arm equipped with a 20-DoF anthropomorphic hand demonstrate highly robust zero-shot transferability for dexterous grasping to a diverse set of unseen objects, highlighting the system's ability to reactively recover from unexpected physical disturbances in unstructured environments.",
+    "published_date": "2026-05-05",
+    "authors": [
+      "Ho Jae Lee",
+      "Yonghyeon Lee",
+      "Alexander Alexiev",
+      "Tzu-Yuan Lin",
+      "Se Hwan Jeon",
+      "Sangbae Kim"
+    ],
+    "first_author": "Ho Jae Lee",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2605.03363.pdf",
+    "abs_url": "https://arxiv.org/abs/2605.03363",
+    "topic": "grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
   }
 }
