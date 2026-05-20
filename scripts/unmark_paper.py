@@ -6,7 +6,7 @@ import json
 import sys
 
 from utils.config import config
-from generate_pages import paper_frontmatter, paper_body
+from generate_pages import paper_frontmatter, paper_body, generate_index_md
 
 
 def load_index():
@@ -67,6 +67,8 @@ def main():
         print(f"[unmark] Updated paper page: {md_path}")
     else:
         print(f"[unmark] Paper page not found: {md_path}")
+
+    generate_index_md(index)
 
     print(f"[unmark] Done. Paper {arxiv_id} fully removed from favorites.")
 

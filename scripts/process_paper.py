@@ -15,7 +15,7 @@ from utils.pdf_extractor import extract_text
 from utils.llm_client import LLMClient
 from utils.tts_client import TTSClient
 # import methods to recreate the paper page
-from generate_pages import paper_frontmatter, paper_body
+from generate_pages import paper_frontmatter, paper_body, generate_index_md
 
 
 def load_index():
@@ -193,6 +193,9 @@ def main():
     with open(md_path, "w") as f:
         f.write(content)
     print(f"[process] Updated paper page: {md_path}")
+
+    # Step 9: Re-generate the index page so badges are updated
+    generate_index_md(index)
 
     print(f"[process] Done processing {arxiv_id}.")
 
