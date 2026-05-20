@@ -74,7 +74,7 @@ jobs:
         run: |
           git config user.name "research-pipeline-bot"
           git config user.email "bot@research-pipeline.local"
-          git add _podcasts/ assets/audio/ _data/summaries/ data/papers_index.json _papers/
+          git add _podcasts/ assets/audio/ _data/summaries/ data/papers_index.json _papers/ index.md
           git commit -m "summary+podcast for ${{ steps.parse.outputs.arxiv_id }} [skip ci]" || true
           git push || true
 

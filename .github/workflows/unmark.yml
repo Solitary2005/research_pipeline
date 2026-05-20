@@ -47,7 +47,7 @@ jobs:
         run: |
           git config user.name "research-pipeline-bot"
           git config user.email "bot@research-pipeline.local"
-          git add data/papers_index.json _papers/ _podcasts/ _data/summaries/ assets/audio/
+          git add data/papers_index.json _papers/ _podcasts/ _data/summaries/ assets/audio/ index.md
           if ! git diff --quiet --cached; then
             git commit -m "unmark ${{ steps.parse.outputs.arxiv_id }} from favorites [skip ci]"
             git push
