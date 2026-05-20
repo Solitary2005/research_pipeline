@@ -1,0 +1,24 @@
+name: Unmark Paper
+description: Remove a paper from your favorites/archive
+title: "[Unmark] "
+labels: ["unmark-request"]
+body:
+  - type: input
+    id: arxiv_id
+    attributes:
+      label: arXiv ID
+      description: The arXiv paper ID to remove from favorites (e.g., 2605.15157)
+      placeholder: "2605.15157"
+    validations:
+      required: true
+  - type: input
+    id: paper_title
+    attributes:
+      label: Paper Title
+      description: Full title of the paper (for verification)
+      placeholder: "Paper title..."
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reason (optional)
+      description: Why are you removing this paper from favorites?
