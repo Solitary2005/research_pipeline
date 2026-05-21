@@ -5,8 +5,18 @@ title: "Dexterous Grasp Daily"
 
 # Dexterous Grasp — Daily Paper Digest
 
-All 4 papers in the collection. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
+All 5 papers in the collection. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
 
+
+## [KaRMA: A Kinematic Metric for Fine Manipulation Ability in Robotic Hands]({{ site.baseurl }}/papers/2605.15548/)
+
+**2026-05-15** · Martin Peticco et.al. et al. 
+
+[Abstract not available]
+
+[Read more →]({{ site.baseurl }}/papers/2605.15548/)
+
+---
 
 ## [Hand-in-the-Loop: Improving Dexterous VLA via Seamless Interventional Correction]({{ site.baseurl }}/papers/2605.15157/)
 
@@ -20,9 +30,9 @@ Vision-Language-Action (VLA) models are prone to compounding errors in dexterous
 
 ## [SECOND-Grasp: Semantic Contact-guided Dexterous Grasping]({{ site.baseurl }}/papers/2605.13117/)
 
-**2026-05-13** · Han Yi Shin et al. 
+**2026-05-13** · Han Yi Shin et.al. et al. 
 
-Achieving reliable robotic manipulation, such as dexterous grasping, requires a synergy between physically stable interactions and semantic task guidance, yet these objectives are often treated as separate, disjoint goals. In this paper, we investigate how to integrate dexterous grasping techniques,...
+[Abstract not available]
 
 [Read more →]({{ site.baseurl }}/papers/2605.13117/)
 
@@ -30,9 +40,9 @@ Achieving reliable robotic manipulation, such as dexterous grasping, requires a 
 
 ## [DexTwist: Dexterous Hand Retargeting for Twist Motion via Mixed Reality-based Teleoperation]({{ site.baseurl }}/papers/2605.12182/)
 
-**2026-05-12** · Dongmyoung Lee et al. 
+**2026-05-12** · Dongmyoung Lee et.al. et al. 
 
-Dexterous teleoperation via Mixed Reality (MR)-based interfaces offers a scalable paradigm for transferring human manipulation skills to dexterous robot hands. However, conventional retargeting approaches that minimize kinematic dissimilarity (e.g., joint angle or fingertip position error) often fai...
+[Abstract not available]
 
 [Read more →]({{ site.baseurl }}/papers/2605.12182/)
 
