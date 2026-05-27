@@ -35,5 +35,73 @@
     "interesting": false,
     "has_summary": false,
     "has_podcast": false
+  },
+  "2605.15157": {
+    "arxiv_id": "2605.15157",
+    "title": "Hand-in-the-Loop: Improving VLA Policies for Dexterous Manipulation via Seamless Hand-Arm Intervention",
+    "abstract": "[Abstract not available]",
+    "published_date": "2026-05-14",
+    "authors": [
+      "Zhuohang Li et.al."
+    ],
+    "first_author": "Zhuohang Li et.al.",
+    "primary_category": "",
+    "pdf_url": "https://arxiv.org/pdf/2605.15157.pdf",
+    "abs_url": "https://arxiv.org/abs/2605.15157",
+    "topic": "grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2605.13117": {
+    "arxiv_id": "2605.13117",
+    "title": "SECOND-Grasp: Semantic Contact-guided Dexterous Grasping",
+    "abstract": "[Abstract not available]",
+    "published_date": "2026-05-13",
+    "authors": [
+      "Han Yi Shin et.al."
+    ],
+    "first_author": "Han Yi Shin et.al.",
+    "primary_category": "",
+    "pdf_url": "https://arxiv.org/pdf/2605.13117.pdf",
+    "abs_url": "https://arxiv.org/abs/2605.13117",
+    "topic": "grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2605.12182": {
+    "arxiv_id": "2605.12182",
+    "title": "DexTwist: Dexterous Hand Retargeting for Twist Motion via Mixed Reality-based Teleoperation",
+    "abstract": "[Abstract not available]",
+    "published_date": "2026-05-12",
+    "authors": [
+      "Dongmyoung Lee et.al."
+    ],
+    "first_author": "Dongmyoung Lee et.al.",
+    "primary_category": "",
+    "pdf_url": "https://arxiv.org/pdf/2605.12182.pdf",
+    "abs_url": "https://arxiv.org/abs/2605.12182",
+    "topic": "grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2605.03363": {
+    "arxiv_id": "2605.03363",
+    "title": "Learning Reactive Dexterous Grasping via Hierarchical Task-Space RL Planning and Joint-Space QP Control",
+    "abstract": "[Abstract not available]",
+    "published_date": "2026-05-05",
+    "authors": [
+      "Ho Jae Lee et.al."
+    ],
+    "first_author": "Ho Jae Lee et.al.",
+    "primary_category": "",
+    "pdf_url": "https://arxiv.org/pdf/2605.03363.pdf",
+    "abs_url": "https://arxiv.org/abs/2605.03363",
+    "topic": "grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
   }
 }
