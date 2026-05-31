@@ -60,9 +60,9 @@ Dexterous teleoperation via Mixed Reality (MR)-based interfaces offers a scalabl
 
 ## [Learning Reactive Dexterous Grasping via Hierarchical Task-Space RL Planning and Joint-Space QP Control]({{ site.baseurl }}/papers/2605.03363/)
 
-**2026-05-05** · Ho Jae Lee et al. 
+**2026-05-05** · Ho Jae Lee et.al. et al. 
 
-In this work, we propose a hybrid hierarchical control framework for reactive dexterous grasping that explicitly decouples high-level spatial intent from low-level joint execution. We introduce a multi-agent reinforcement learning architecture, specialized into distinct arm and hand agents, that act...
+[Abstract not available]
 
 [Read more →]({{ site.baseurl }}/papers/2605.03363/)
 
