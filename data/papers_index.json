@@ -12,8 +12,8 @@
     "pdf_url": "https://arxiv.org/pdf/2605.15548.pdf",
     "abs_url": "https://arxiv.org/abs/2605.15548",
     "topic": "grasp",
-    "interesting": true,
-    "has_summary": true,
-    "has_podcast": true
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
   }
 }
