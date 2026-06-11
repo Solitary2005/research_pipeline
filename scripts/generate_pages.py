@@ -44,14 +44,24 @@ def paper_body(paper):
     pid = paper["arxiv_id"]
     title_enc = quote(paper.get("title", ""), safe="")
 
+    # Build links section
+    links = []
+    abs_url = paper.get('abs_url', '')
+    pdf_url = paper.get('pdf_url', '')
+    if abs_url:
+        links.append(f"- [arXiv]({abs_url})")
+    if pdf_url:
+        links.append(f"- [PDF]({pdf_url})")
+    if not links:
+        links.append("- *Manually uploaded paper*")
+
     body = f"""## Abstract
 
 {abstract}
 
 ## Links
 
-- [arXiv]({paper.get('abs_url', f'https://arxiv.org/abs/{pid}')})
-- [PDF]({paper.get('pdf_url', f'https://arxiv.org/pdf/{pid}.pdf')})
+{chr(10).join(links)}
 
 ## Actions
 

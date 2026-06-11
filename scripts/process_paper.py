@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
-"""Orchestrator: Download PDF → extract text → LLM summary → TTS podcast → create pages."""
+"""Orchestrator: Download PDF → extract text → LLM summary → TTS podcast → create pages.
+
+Supports both arXiv papers (auto-download PDF) and manual uploads (local PDF + metadata)."""
 
 import argparse
 import json
 import os
 import sys
 import time
+from datetime import date
 from pathlib import Path
 
 import requests
@@ -87,6 +90,13 @@ def create_podcast_page(paper_info, summary):
     key_results = summary.get("key_results", "")
     takeaways = summary.get("takeaways", "")
 
+    # Link to source: use abs_url if available (arXiv), otherwise link to paper page
+    abs_url = paper_info.get('abs_url', '')
+    if abs_url:
+        paper_link = f"[{title}]({abs_url})"
+    else:
+        paper_link = title
+
     content = f"""---
 layout: podcast
 arxiv_id: "{pid}"
@@ -103,7 +113,7 @@ permalink: /podcasts/{pid}/
 
 ## Paper
 
-**[{title}]({paper_info.get('abs_url', f'https://arxiv.org/abs/{pid}')})** — {authors}
+**{paper_link}** — {authors}
 
 ## Summary Card
 
@@ -134,23 +144,62 @@ def main():
     parser.add_argument("--arxiv_id", required=True)
     parser.add_argument("--llm_backend", default=None)
     parser.add_argument("--tts_backend", default=None)
+    # Manual upload / local PDF support
+    parser.add_argument("--pdf_path", default=None)
+    parser.add_argument("--no_download", action="store_true")
+    parser.add_argument("--title", default=None)
+    parser.add_argument("--authors", default=None)
+    parser.add_argument("--abstract", default=None)
+    parser.add_argument("--topic", default="manual")
+    parser.add_argument("--published_date", default=None)
     args = parser.parse_args()
 
     arxiv_id = args.arxiv_id.strip()
     llm_backend = args.llm_backend or config.llm_backend
     tts_backend = args.tts_backend or config.tts_backend
+    is_manual = bool(args.pdf_path)
 
-    print(f"[process] Processing {arxiv_id} (LLM: {llm_backend}, TTS: {tts_backend})")
+    print(f"[process] Processing {arxiv_id} (LLM: {llm_backend}, TTS: {tts_backend}, manual: {is_manual})")
 
     index = load_index()
+
     if arxiv_id not in index:
-        print(f"[process] Paper {arxiv_id} not in index.", file=sys.stderr)
-        sys.exit(1)
+        if is_manual and args.title:
+            # Manual upload: create paper entry on the fly from CLI metadata
+            author_list = [a.strip() for a in args.authors.split(",")] if args.authors else ["Unknown"]
+            paper_info = {
+                "arxiv_id": arxiv_id,
+                "title": args.title,
+                "authors": author_list,
+                "first_author": author_list[0] if author_list else "Unknown",
+                "abstract": args.abstract or "",
+                "published_date": args.published_date or date.today().isoformat(),
+                "primary_category": "",
+                "pdf_url": "",
+                "abs_url": "",
+                "topic": args.topic,
+                "interesting": True,   # manual uploads go directly to favorites
+                "has_summary": False,
+                "has_podcast": False,
+            }
+            index[arxiv_id] = paper_info
+            print(f"[process] Created manual paper entry for {arxiv_id}")
+        else:
+            print(f"[process] Paper {arxiv_id} not in index.", file=sys.stderr)
+            sys.exit(1)
 
     paper_info = index[arxiv_id]
 
-    # Step 1: Download PDF and extract text
-    pdf_path = download_pdf(arxiv_id)
+    # Step 1: Obtain PDF (download from arXiv or use local file)
+    if args.pdf_path:
+        pdf_path = args.pdf_path
+        if not os.path.exists(pdf_path):
+            print(f"[process] PDF not found: {pdf_path}", file=sys.stderr)
+            sys.exit(1)
+        print(f"[process] Using local PDF: {pdf_path}")
+    else:
+        pdf_path = download_pdf(arxiv_id)
+
     print("[process] Extracting text from PDF...")
     paper_text, was_truncated = extract_text(pdf_path)
     print(f"[process] Extracted {len(paper_text)} chars (truncated: {was_truncated})")
