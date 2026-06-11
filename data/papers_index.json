@@ -135,5 +135,278 @@
     "interesting": true,
     "has_summary": true,
     "has_podcast": true
+  },
+  "2605.15157": {
+    "arxiv_id": "2605.15157",
+    "title": "Hand-in-the-Loop: Improving VLA Policies for Dexterous Manipulation via Seamless Hand-Arm Intervention",
+    "abstract": "Vision-Language-Action (VLA) models are prone to compounding errors in dexterous manipulation, where high-dimensional action spaces and contact-rich dynamics amplify small policy deviations over long horizons. While Interactive Imitation Learning (IIL) can refine policies through human correction data, applying it to high-degree-of-freedom (DoF) robotic hands remains challenging due to a command mismatch between human teleoperation and policy execution at the intervention moment, which causes abrupt robot-hand configuration changes, or \"gesture jumps\". We present Hand-in-the-Loop (HandITL), a seamless human-in-the-loop intervention method that blends human corrective intent with autonomous policy execution to avoid gesture jumps during bimanual dexterous manipulation. Compared with taking over control using direct teleoperation, HandITL reduces intervention jitter by 99.8% and preserves robust post-intervention manipulation, reducing grasp failures by 87.5% and mean completion time by 19.1%. We validate HandITL on tasks requiring bimanual coordination, tool use, and fine-grained long-horizon manipulation. When used to collect correction data for policy refinement, HandITL yields policies that outperform those trained with standard teleoperation data by 19% on average across three long-horizon dexterous tasks.",
+    "published_date": "2026-05-14",
+    "authors": [
+      "Zhuohang Li",
+      "Liqun Huang",
+      "Wei Xu",
+      "Zhengming Zhu",
+      "Nie Lin",
+      "Xiao Ma",
+      "Xinjun Sheng",
+      "Ruoshi Wen"
+    ],
+    "first_author": "Zhuohang Li",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2605.15157.pdf",
+    "abs_url": "https://arxiv.org/abs/2605.15157",
+    "topic": "grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2605.13117": {
+    "arxiv_id": "2605.13117",
+    "title": "SECOND-Grasp: Semantic Contact-guided Dexterous Grasping",
+    "abstract": "Achieving reliable robotic manipulation, such as dexterous grasping, requires a synergy between physically stable interactions and semantic task guidance, yet these objectives are often treated as separate, disjoint goals. In this paper, we investigate how to integrate dexterous grasping techniques, i.e., physically stable grasps for object lifting and language-guided grasp generation, to achieve both physical stability and semantic understanding. To this end, we propose SECOND-Grasp (SEmantic CONtact-guided Dexterous Grasping), a unified framework that enables robotic hands to dynamically adjust grasping strategies based on semantic reasoning while ensuring physical feasibility. We begin by obtaining coarse contact proposals through vision-language reasoning to infer where contacts should occur based on object properties, followed by segmentation to localize these regions across views. To further ensure consistency across multiple viewpoints, we introduce Semantic-Geometric Consistency Refinement (SGCR), which refines initial contact predictions by enforcing semantic consistency across views and removing geometrically invalid regions, yielding reliable 3D contact maps. Then, we derive a feasible hand pose for each contact map via inverse kinematics, generating a supervision signal for policy learning. Our approach, trained on DexGraspNet, consistently outperforms baselines in lifting success rate on both seen and unseen categories, achieving 98.2% and 97.7%, respectively, while also improving intent-aware grasping by 12.8% and 26.2%. We further show promising results on additional datasets and robotic hands, including Shadow Hand and Allegro Hand.",
+    "published_date": "2026-05-13",
+    "authors": [
+      "Han Yi Shin",
+      "Heeju Ko",
+      "Jaewon Mun",
+      "Qixing Huang",
+      "Jaehyeok Lee",
+      "Sung June Kim",
+      "Honglak Lee",
+      "Sujin Jang",
+      "Sangpil Kim"
+    ],
+    "first_author": "Han Yi Shin",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2605.13117.pdf",
+    "abs_url": "https://arxiv.org/abs/2605.13117",
+    "topic": "grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2605.12182": {
+    "arxiv_id": "2605.12182",
+    "title": "DexTwist: Dexterous Hand Retargeting for Twist Motion via Mixed Reality-based Teleoperation",
+    "abstract": "Dexterous teleoperation via Mixed Reality (MR)-based interfaces offers a scalable paradigm for transferring human manipulation skills to dexterous robot hands. However, conventional retargeting approaches that minimize kinematic dissimilarity (e.g., joint angle or fingertip position error) often fail in contact-rich rotational manipulation, such as cap opening, key turning, and bolt screwing. This failure stems from the embodiment gap: mismatched link lengths, joint axes/limits, and fingertip geometry can cause direct pose imitation to induce tangential fingertip sliding rather than stable object rotation, resulting in screw axis drift, contact slip, and grasp instability. To address this, we propose DexTwist, a functional twist-retargeting framework for MR-based dexterous teleoperation. DexTwist detects a tripod pinch, estimates the operator's intended screw axis and twist magnitude, and applies a real-time residual joint-space refinement that tracks turning progress while regularizing the robot tripod geometry. The refinement minimizes a virtual-object objective defined by turning angle, screw axis consistency, fingertip closure, and tripod stability. Simulation and real-world experiments show that DexTwist improves turning angle tracking and screw axis stability compared with a vector-based retargeting baseline.",
+    "published_date": "2026-05-12",
+    "authors": [
+      "Dongmyoung Lee",
+      "Chengxi Li",
+      "Dongheui Lee"
+    ],
+    "first_author": "Dongmyoung Lee",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2605.12182.pdf",
+    "abs_url": "https://arxiv.org/abs/2605.12182",
+    "topic": "grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2605.03363": {
+    "arxiv_id": "2605.03363",
+    "title": "Learning Reactive Dexterous Grasping via Hierarchical Task-Space RL Planning and Joint-Space QP Control",
+    "abstract": "In this work, we propose a hybrid hierarchical control framework for reactive dexterous grasping that explicitly decouples high-level spatial intent from low-level joint execution. We introduce a multi-agent reinforcement learning architecture, specialized into distinct arm and hand agents, that acts as a high-level planner by generating desired task-space velocity commands. These commands are then processed by a GPU-parallelized quadratic programming controller, which translates them into feasible joint velocities while strictly enforcing kinematic limits and collision avoidance. This structural isolation not only accelerates training convergence but also strictly enforces hardware safety. Furthermore, the architecture unlocks zero-shot steerability, allowing system operators to dynamically adjust safety margins and avoid dynamic obstacles without retraining the policy. We extensively validate the proposed framework through a rigorous simulation-to-reality pipeline. Real-world hardware experiments on a 7-DoF arm equipped with a 20-DoF anthropomorphic hand demonstrate highly robust zero-shot transferability for dexterous grasping to a diverse set of unseen objects, highlighting the system's ability to reactively recover from unexpected physical disturbances in unstructured environments.",
+    "published_date": "2026-05-05",
+    "authors": [
+      "Ho Jae Lee",
+      "Yonghyeon Lee",
+      "Alexander Alexiev",
+      "Tzu-Yuan Lin",
+      "Se Hwan Jeon",
+      "Sangbae Kim"
+    ],
+    "first_author": "Ho Jae Lee",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2605.03363.pdf",
+    "abs_url": "https://arxiv.org/abs/2605.03363",
+    "topic": "grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2605.15548": {
+    "arxiv_id": "2605.15548",
+    "title": "KaRMA: A Kinematic Metric for Fine Manipulation Ability in Robotic Hands",
+    "abstract": "Traditional robotic hand metrics focus on static properties such as workspace, manipulability, and grasp stability. However, these metrics do not directly measure dexterity under the standard definition in robotic manipulation: the ability to continuously change an object's pose within the hand while maintaining contact from an initial grasp. We introduce Kinematic Rolling Manipulation Ability (KaRMA), a kinematic-only metric for fine manipulation that quantifies reachable in-hand translation and reorientation of a spherical test object within a two-finger precision pinch through feasible rolling motions. KaRMA enforces joint limits, collision constraints, rolling contact, and antipodal force feasibility, then investigates reachable in-hand object poses via breadth-first search over translation and rotation primitives. KaRMA reports three scores: translational coverage (KaRMA-T), rotational coverage (KaRMA-R), and sensitivity to the initial grasp (KaRMA-S). We evaluate KaRMA on 16 widely used robotic hands and compare against static baselines, showing that KaRMA separates hands that rank identically under static proxies, reveals translation-rotation tradeoffs invisible to existing baselines, and is qualitatively consistent with selected published task benchmarks where Jacobian-based metrics can be misleading.",
+    "published_date": "2026-05-15",
+    "authors": [
+      "Martin Peticco",
+      "Pulkit Agrawal"
+    ],
+    "first_author": "Martin Peticco",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2605.15548.pdf",
+    "abs_url": "https://arxiv.org/abs/2605.15548",
+    "topic": "grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2605.21811": {
+    "arxiv_id": "2605.21811",
+    "title": "Safe and Steerable Geometric Motion Policies for Robotic Dexterous Manipulation",
+    "abstract": "Robotic dexterous manipulation requires continuously reconciling objectives and constraints defined on heterogeneous geometric spaces: a robot controlled on a $\\mathbb{R}^7$ configuration manifold may need to track end effector poses on $\\mathrm{SE}(3)$ while satisfying obstacle avoidance margins in $\\mathbb{R}$. We present Safe Pullback Bundle Dynamical Systems (SafePBDS), a geometrically consistent framework that computes optimal, certifiably safe configuration manifold accelerations from objectives and safety requirements on arbitrary task manifolds. SafePBDS builds on prior work that combines predefined task manifold dynamical systems to produce autonomous motion. Its first innovation is a pullback control barrier function construction, which converts task manifold safety conditions into linear constraints on configuration manifold accelerations. The second innovation is a task manifold action interface that allows a high-level policy to inject low dimensional residual motions; zero input recovers the autonomous behavior, while safety is preserved under arbitrary inputs. This lets high-level policies efficiently steer exploration while leaving precise motion to the autonomous behavior. We validate SafePBDS in simulation and on a 23-DOF Franka Panda-Allegro Hand platform. On dexterous grasping, SafePBDS achieves a $92.5\\%$ success rate across 20 household objects and 120 trials. Using the action interface, the method can exclude any one of the four fingers during grasping via a one-dimensional action, achieving $94.4\\%$ 3-finger grasp success across 3 objects and 36 trials. The efficient planning and safety guarantee of SafePBDS also enables the first model-based, fully actuated palm-down in-hand reorientation, exceeding $360^\\circ$ of yaw rotation in both directions under varying object weight and wrist motion. Demo video and details: https://tml.stanford.edu/safe-pbds",
+    "published_date": "2026-05-20",
+    "authors": [
+      "Albert Wu",
+      "Riccardo Bonalli",
+      "Thomas Lew",
+      "C. Karen Liu"
+    ],
+    "first_author": "Albert Wu",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2605.21811.pdf",
+    "abs_url": "https://arxiv.org/abs/2605.21811",
+    "topic": "grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2606.05407": {
+    "arxiv_id": "2606.05407",
+    "title": "MoDex: A Diffusion Policy for Sequential Multi-Object Dexterous Grasping",
+    "abstract": "This work addresses sequentially grasping multiple objects with a single dexterous hand without releasing those already held. Most dexterous grasping methods commit all of the hand's degrees of freedom to a single object, underutilizing its dexterity and leaving no redundancy for subsequent grasps. The proposed solution, MoDex, is a diffusion policy that predicts the next gripper pose directly from observations, conditioned on an opposition space and point cloud. The opposition space condition specifies which fingers participate in the current grasp, enabling the gripper to use only a subset of its available degrees of freedom while reserving the remaining degrees of freedom for subsequent grasps. To facilitate sim-to-real transfer, MoDex is trained in two stages: first through imitation learning on expert demonstrations, and subsequently through reinforcement learning fine-tuning, which consistently improves success rates over the pre-trained policy. We evaluate MoDex in simulation on a MuJoCo-based Franka Emika Panda robot equipped with an Allegro Hand and on the corresponding real-world hardware platform. Across both simulation and real-world experiments, MoDex achieves higher success rates than the evaluated learning-based baselines, improving performance by 2.92-17.92% and 6.67-17.78%, respectively. Project page: https://modex2026.github.io/.",
+    "published_date": "2026-06-03",
+    "authors": [
+      "Haofei Lu",
+      "Hongjia Liu",
+      "Yifei Dong",
+      "Florian T. Pokorny",
+      "Jens Lundell",
+      "Danica Kragic"
+    ],
+    "first_author": "Haofei Lu",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2606.05407.pdf",
+    "abs_url": "https://arxiv.org/abs/2606.05407",
+    "topic": "grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2606.04776": {
+    "arxiv_id": "2606.04776",
+    "title": "SoftPINCH: EMG-Driven Soft Exoskeleton Assistance for Finger Flexion and Grasping",
+    "abstract": "Surface electromyography (sEMG) provides a non-invasive interface for detecting hand-movement intention and controlling wearable assistive devices. However, reliable EMG-driven hand assistance remains challenging because EMG signals are affected by noise, motion artifacts, electrode placement, muscle fatigue, and inter-subject variability. At the same time, many hand exoskeletons remain mechanically restrictive or bulky, limiting comfort and natural hand motion. This work presents SoftPINCH, an EMG-driven soft wearable exoskeleton for thumb-index finger flexion and pinch grasp assistance. The system combines a tendon-driven soft exoskeleton, fingertip magnetic contact sensing, and neural EMG decoding for intention-based assistance. Surface EMG was recorded from forearm muscles during index and thumb movements, and three subject-independent decoding architectures were evaluated: LSTM, CNN+LSTM, and CNN+LSTM with attention. The CNN+LSTM and CNN+LSTM-attention models both achieved 99.4% LOSO test accuracy, outperforming the standalone LSTM, which reached 97.8%. However, the attention mechanism did not provide a significant improvement over CNN+LSTM, indicating that CNN-based feature extraction was sufficient for robust EMG representation. The CNN+LSTM model was therefore selected for real-time deployment due to its high accuracy and lower architectural complexity. Functional evaluation showed that active exoskeleton assistance reduced muscular effort during isolated finger flexion and object grasping. During weighted grasping, assistance reduced muscular effort across all tested loads, with a 92.6% reduction at the highest load. These results demonstrate the potential of SoftPINCH for intuitive, low-effort pinch assistance using real-time EMG-driven soft robotic control.",
+    "published_date": "2026-06-03",
+    "authors": [
+      "Nicklas Nikolaj Grønvall",
+      "Magnus Malthe Sigsgaard Nielsen",
+      "Xiaofeng Xiong",
+      "Saravana Prashanth Murali Babu"
+    ],
+    "first_author": "Nicklas Nikolaj Grønvall",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2606.04776.pdf",
+    "abs_url": "https://arxiv.org/abs/2606.04776",
+    "topic": "grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2606.02432": {
+    "arxiv_id": "2606.02432",
+    "title": "NDPP-Grasp: Non-Differentiable Physical Plausibility Constraint-Guided Task-Oriented Dexterous Grasp Generation",
+    "abstract": "Task-oriented dexterous grasp generation aims to produce dexterous grasp poses that are both physically plausible and functionally suitable for specified manipulation tasks. Existing diffusion-based methods often address these two requirements in a decoupled manner: they first train a grasp diffusion model for task alignment and then rely on post-generation refinement to improve physical plausibility. However, this after-the-fact correction strategy applies physical plausibility guidance only once the grasp has already been generated, leaving the generation trajectory itself unguided by physical constraints and potentially leading to suboptimal grasps. To address this problem, we propose a novel framework that directly injects physical plausibility guidance into the denoising process of a task-aligned grasp diffusion model in a practical and effective manner, even when physical plausibility constraints are non-differentiable. This allows physical plausibility to shape grasp generation throughout denoising while preserving task alignment. Extensive experiments demonstrate the efficacy of our framework.",
+    "published_date": "2026-06-01",
+    "authors": [
+      "Qiuchi Xiang",
+      "Haoxuan Qu",
+      "Hossein Rahmani",
+      "Jun Liu"
+    ],
+    "first_author": "Qiuchi Xiang",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2606.02432.pdf",
+    "abs_url": "https://arxiv.org/abs/2606.02432",
+    "topic": "grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2606.00397": {
+    "arxiv_id": "2606.00397",
+    "title": "SoFiE: Soft Finger Exoskeleton for Intelligent Grasping",
+    "abstract": "Soft wearable robotic systems have emerged as a promising solution for assisting individuals with reduced hand function. This paper presents SoFiE, a modular soft finger exoskeleton designed to assist index-finger flexion during grasping tasks. The proposed system is primarily fabricated using 3D-printed flexible materials, enabling a lightweight, low-profile, and modular design. Actuation is achieved through a tendon-driven mechanism powered by a compact DC motor, while passive extension is provided by a compliant conductive spring. This element, termed StretchSense, also functions as a proprioceptive sensor by exhibiting resistance changes under deformation. Furthermore, a novel tactile sensing approach, MagSense, is introduced, using a magnet and magnetometer pair embedded in a soft fingertip structure to estimate contact force and object compliance. The system is fully untethered and controlled by an embedded microcontroller. In addition, actuator-level sensing through motor encoder feedback enables estimation of the system state, providing a foundation for safe and adaptive control strategies. Experimental validation demonstrates the capability of the system to provide reliable pose estimation, distinguish between materials with different stiffness, and generate distinct sensor signatures across different grasping tasks. This paper details the design, fabrication, and sensing concepts of the proposed exoskeleton as a proof of concept toward modular, soft, and assistive wearable robotics.",
+    "published_date": "2026-05-29",
+    "authors": [
+      "Magnus Malthe Sigsgaard Nielsen",
+      "Nicklas Nikolaj Grønvall",
+      "Xiaofeng Xiong",
+      "Saravana Prashanth Murali Babu"
+    ],
+    "first_author": "Magnus Malthe Sigsgaard Nielsen",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2606.00397.pdf",
+    "abs_url": "https://arxiv.org/abs/2606.00397",
+    "topic": "grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2606.12109": {
+    "arxiv_id": "2606.12109",
+    "title": "Bridging the Morphology Gap: Adapting VLA Models to Dexterous Manipulation via Intent-Conditioned Fine-Tuning",
+    "abstract": "Vision-Language-Action (VLA) models have demonstrated remarkable zero-shot generalization in robotic manipulation, yet the vast majority of pre-trained pipelines remain strictly confined to low-DoF parallel grippers. Adapting these rich semantic priors to high-DoF dexterous hands introduces a severe morphology gap, direct end-to-end joint fine-tuning inherently causes catastrophic forgetting of spatial reasoning and acute action manifold collapse due to data scarcity. In this paper, we present InDex, a novel, data-efficient adaptation framework rooted in cross-morphology semantic inheritance. Rather than discarding the pre-trained 1-DoF parallel grasp output, we repurpose it as a continuous, macroscopic virtual grasp intent proxy to sequentialize the control topology. We implement a two-stage decoupled learning architecture: the first stage parameter-efficiently aligns the VLA backbone to predict continuous arm trajectories and the scalar grasp intent; the second stage freezes this spatial backbone and leverages an intent-conditioned denoising diffusion head to decode fine-grained joint articulations for multi-fingered end-effectors. Extensive simulation benchmarks across a suite of multi-stage, contact-rich dexterous manipulation tasks demonstrate that InDex effectively masters intricate skills with minimal demonstration data, substantially outperforming monolithic baselines while preserving the robust spatial generalizability of the original VLA prior.",
+    "published_date": "2026-06-10",
+    "authors": [
+      "Chuanke Pang",
+      "Junyi Huang",
+      "Zhijun Zhao",
+      "Yaobing Wang",
+      "Kun Xu",
+      "Xilun Ding"
+    ],
+    "first_author": "Chuanke Pang",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2606.12109.pdf",
+    "abs_url": "https://arxiv.org/abs/2606.12109",
+    "topic": "grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2606.11826": {
+    "arxiv_id": "2606.11826",
+    "title": "Modular Anthropomorphic Hand Design via Multi-Parameter Finger Benchmarking and Selection",
+    "abstract": "Designing anthropomorphic dexterous robotic hands remains challenging as the design space straddles morphology, actuation, and sensing properties, and performance metrics span both task-dependent and task-agnostic. Existing optimization methods are often unstructured or consider only a single performance metric, limiting systematic comparison and targeted refinement. While the design considerations of the entire hand are significant, the individual finger properties play a key role in dexterity. By developing a robotic hand platform where fingers can be modularly integrated into a full teleoperated hand, we propose that optimizing the fingers can significantly improve overall hand performance. This approach enables rapid screening of different finger-level prototypes through a number of quantitative benchmarks before their integration into the hand for task-level validation. Candidate finger designs (incorporating variations in joint, bone, skin, and sensor placement) are assessed using both mechanism-oriented and task-relevant metrics, which establish a quantitative link between component design and full hand embodiment. The framework is validated through the development of an anthropomorphic robotic hand with optimized fingers, demonstrating how these fingers enable performance improvements across tasks, including multi-object grasping and light bulb screwing.",
+    "published_date": "2026-06-10",
+    "authors": [
+      "Yu Zhang",
+      "Huijiang Wang",
+      "Josie Hughes"
+    ],
+    "first_author": "Yu Zhang",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2606.11826.pdf",
+    "abs_url": "https://arxiv.org/abs/2606.11826",
+    "topic": "grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2606.11767": {
+    "arxiv_id": "2606.11767",
+    "title": "Blind Dexterous Grasping via Real2Sim2Real Tactile Policy Learning",
+    "abstract": "Blind grasping with a dexterous hand is a crucial manipulation capability. Nevertheless, learning such tactile-only policies for real robots remains challenging due to the tactile sim-to-real gap and the limited expressiveness of sparse tactile signals. To bridge this gap, we propose a framework for tactile-only blind grasping that is deployable on a physical multi-fingered robotic hand. Our approach combines three key components. First, we introduce a Real2Sim tactile calibration pipeline that constructs a contact-calibrated digital-twin simulator capable of reproducing real tactile signals. Second, we improve the expressiveness of sparse tactile observations using a layout-aware tactile encoder, which incorporates sensor-geometry priors through self-supervised pretraining. Third, to improve generalization to unseen objects, we train object-specific reinforcement-learning experts in the calibrated simulator and aggregate their successful grasp trajectories into a tactile-conditioned Diffusion Policy. We evaluate our method on a physical LEAP Hand equipped with distributed tactile sensing across 10 seen and 10 unseen objects. The deployed policy achieves a 27\\% real-world grasp success rate across all 20 objects, without real-world grasping demonstrations or visual input. Simulation ablations show that layout-aware tactile pretraining improves grasping performance, while sensing-level evaluations confirm that Real2Sim calibration increases the consistency of tactile contact events between simulation and hardware. Together, these results suggest that contact-event calibration, geometry-aware tactile representation learning, and diffusion-based policy aggregation provide an effective path toward tactile-only blind grasping on real dexterous robotic hands. Project page:Dex-Blind-Grasp.github.io.",
+    "published_date": "2026-06-10",
+    "authors": [
+      "Shengcheng Luo",
+      "Xiyan Huang",
+      "Zhe Xu",
+      "Wanlin Li",
+      "Ziyuan Jiao",
+      "Chenxi Xiao"
+    ],
+    "first_author": "Shengcheng Luo",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2606.11767.pdf",
+    "abs_url": "https://arxiv.org/abs/2606.11767",
+    "topic": "grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
   }
 }
