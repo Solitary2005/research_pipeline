@@ -1,0 +1,17 @@
+# =============================================================================
+# Research Pipeline — Backend Settings
+# =============================================================================
+# Customize which LLM and TTS backends the pipeline uses.
+#
+# API keys must ALWAYS be set via environment variables or GitHub Secrets:
+#   DEEPSEEK_API_KEY, ANTHROPIC_API_KEY, OPENAI_API_KEY
+#
+# All settings can be overridden by environment variables:
+#   LLM_BACKEND, TTS_BACKEND
+# =============================================================================
+
+llm:
+  backend: "deepseek"     # claude | openai | deepseek
+
+tts:
+  backend: "edge"         # edge | openai

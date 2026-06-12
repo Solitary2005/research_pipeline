@@ -104,10 +104,21 @@ Paper discovery is controlled by `config/topics.yaml`. See [Section 0](#0-custom
 
 ### Backend Configuration
 
-Set environment variables in workflow files:
-- `LLM_BACKEND=claude|openai|deepseek` (default: `deepseek`)
-- `TTS_BACKEND=edge|openai` (default: `edge`)
-- `TOPICS_CONFIG_PATH` (optional) — override path to topic YAML config
+LLM and TTS backends are configured in `config/settings.yaml`:
+
+```yaml
+llm:
+  backend: "deepseek"     # claude | openai | deepseek
+
+tts:
+  backend: "edge"         # edge | openai
+```
+
+Edit this file to switch backends — no need to touch workflow files. Environment variables (`LLM_BACKEND`, `TTS_BACKEND`) can still override these settings if needed.
+
+You can override the config file path via environment variables:
+- `SETTINGS_CONFIG_PATH` — path to `settings.yaml`
+- `TOPICS_CONFIG_PATH` — path to `topics.yaml`
 
 </details>
 

@@ -64,8 +64,7 @@ jobs:
           # ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           # OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-          LLM_BACKEND: "deepseek"
-          TTS_BACKEND: "edge"
+          # LLM_BACKEND and TTS_BACKEND are configured in config/settings.yaml
 
       - name: Commit generated files
         if: steps.check.outputs.already_processed == 'false'
