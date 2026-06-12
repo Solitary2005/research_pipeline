@@ -15,21 +15,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Parse arxiv_id from issue
+      - name: Parse paper_id from issue
         id: parse
         run: |
           # Match arXiv IDs (e.g. 2606.09314) or manual upload IDs (e.g. manual-20260611-title-slug)
-          ARXIV_ID=$(echo "${{ github.event.issue.title }}" | grep -oP '\d{4}\.\d{4,5}|manual-\d{8}-[\w-]+' | head -1)
-          if [ -z "$ARXIV_ID" ]; then
-            ARXIV_ID=$(echo "${{ github.event.issue.body }}" | grep -oP '\d{4}\.\d{4,5}|manual-\d{8}-[\w-]+' | head -1)
+          PAPER_ID=$(echo "${{ github.event.issue.title }}" | grep -oP '\d{4}\.\d{4,5}|manual-\d{8}[-a-zA-Z0-9]*' | head -1)
+          if [ -z "$PAPER_ID" ]; then
+            PAPER_ID=$(echo "${{ github.event.issue.body }}" | grep -oP '\d{4}\.\d{4,5}|manual-\d{8}[-a-zA-Z0-9]*' | head -1)
           fi
-          echo "arxiv_id=$ARXIV_ID" >> "$GITHUB_OUTPUT"
-          echo "Parsed arxiv_id: $ARXIV_ID"
+          echo "paper_id=$PAPER_ID" >> "$GITHUB_OUTPUT"
+          echo "Parsed paper_id: $PAPER_ID"
 
-      - name: Validate arxiv_id
-        if: steps.parse.outputs.arxiv_id == ''
+      - name: Validate paper_id
+        if: steps.parse.outputs.paper_id == ''
         run: |
-          echo "Could not parse arxiv_id from issue."
+          echo "Could not parse paper ID from issue."
           exit 1
 
       - name: Setup Python
@@ -42,15 +42,15 @@ jobs:
 
       - name: Unmark paper
         run: |
-          python scripts/unmark_paper.py --arxiv_id "${{ steps.parse.outputs.arxiv_id }}"
+          python scripts/unmark_paper.py --arxiv_id "${{ steps.parse.outputs.paper_id }}"
 
       - name: Commit changes
         run: |
           git config user.name "research-pipeline-bot"
           git config user.email "bot@research-pipeline.local"
-          git add data/papers_index.json _papers/ _podcasts/ _data/summaries/ assets/audio/ index.md
+          git add data/papers_index.json _papers/ _podcasts/ _data/summaries/ assets/audio/ data/pdfs/ _uploads/ index.md
           if ! git diff --quiet --cached; then
-            git commit -m "unmark ${{ steps.parse.outputs.arxiv_id }} from favorites [skip ci]"
+            git commit -m "unmark ${{ steps.parse.outputs.paper_id }} from favorites [skip ci]"
             git push
           else
             echo "No changes to commit."
@@ -60,7 +60,7 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            const id = '${{ steps.parse.outputs.arxiv_id }}';
+            const id = '${{ steps.parse.outputs.paper_id }}';
             await github.rest.issues.createComment({
               ...context.repo,
               issue_number: context.issue.number,

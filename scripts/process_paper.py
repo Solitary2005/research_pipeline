@@ -37,6 +37,12 @@ def save_index(index):
 
 
 def download_pdf(arxiv_id):
+    # Manual upload IDs don't have arXiv PDFs; caller should use --pdf_path instead.
+    if not re.match(r'^\d{4}\.\d{4,5}$', arxiv_id):
+        print(f"[process] ERROR: Cannot download PDF for non-arXiv ID '{arxiv_id}'.", file=sys.stderr)
+        print(f"[process] Use --pdf_path to provide a local PDF for manual uploads.", file=sys.stderr)
+        sys.exit(1)
+
     config.pdf_cache_dir.mkdir(parents=True, exist_ok=True)
     pdf_path = config.pdf_cache_dir / f"{arxiv_id}.pdf"
 
@@ -185,7 +191,7 @@ def main():
             }
             index[arxiv_id] = paper_info
             print(f"[process] Created manual paper entry for {arxiv_id}")
-        elif re.match(r'^\d{4}\.\d{4,5}$', arxiv_id):
+        elif re.match(r'^\d{4}\.\d{4,5}$', arxiv_id) or re.match(r'^manual-\d{8}-[\w-]+$', arxiv_id):
             # arXiv paper not yet in index: fetch metadata from arXiv API
             print(f"[process] Paper {arxiv_id} not in index — fetching from arXiv API...")
             from utils.arxiv_api import fetch_abstract, ArxivFetchError
