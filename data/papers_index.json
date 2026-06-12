@@ -132,9 +132,9 @@
     "pdf_url": "",
     "abs_url": "",
     "topic": "grasp",
-    "interesting": true,
-    "has_summary": true,
-    "has_podcast": true
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
   },
   "2605.15157": {
     "arxiv_id": "2605.15157",

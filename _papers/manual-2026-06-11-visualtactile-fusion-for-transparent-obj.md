@@ -5,9 +5,9 @@ authors: "Shoujie Li, Haixin Yu, Wenbo Ding, Houde Liu, Linqi Ye et al."
 published_date: 2023-06-06
 primary_category: ""
 topic: "grasp"
-has_summary: true
-has_podcast: true
-interesting: true
+has_summary: false
+has_podcast: false
+interesting: false
 permalink: /papers/manual-2026-06-11-visualtactile-fusion-for-transparent-obj/
 ---
 
@@ -22,12 +22,3 @@ The accurate detection and grasping of transparent objects are challenging but o
 ## Actions
 
 <a class="btn-request" href="https://github.com/Solitary2005/research_pipeline/issues/new?template=summary-request.yml&title=[Summary]+manual-2026-06-11-visualtactile-fusion-for-transparent-obj&arxiv_id=manual-2026-06-11-visualtactile-fusion-for-transparent-obj&paper_title=Visual-tactile%20Fusion%20for%20Transparent%20Object%20Grasping%20in%20Complex%20Backgrounds" target="_blank">Request Summary + Podcast</a>
-
----
-
-<audio controls style="width:100%">
-  <source src="/research_pipeline/assets/audio/manual-2026-06-11-visualtactile-fusion-for-transparent-obj.mp3" type="audio/mpeg">
-  Your browser does not support audio.
-</audio>
-
-[View full summary + podcast page](/research_pipeline/podcasts/manual-2026-06-11-visualtactile-fusion-for-transparent-obj/)

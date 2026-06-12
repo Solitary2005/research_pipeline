@@ -190,7 +190,7 @@ Controlling hands in high-dimensional action space has been a longstanding chall
 
 ## [Visual-tactile Fusion for Transparent Object Grasping in Complex Backgrounds]({{ site.baseurl }}/papers/manual-2026-06-11-visualtactile-fusion-for-transparent-obj/)
 
-**2023-06-06** · Shoujie Li et al. <span class="badge">🎧 Podcast</span> <span class="badge">📌 Archived</span>
+**2023-06-06** · Shoujie Li et al. 
 
 The accurate detection and grasping of transparent objects are challenging but of significance to robots. Here, a visual-tactile fusion framework for transparent object grasping under complex backgrounds and variant light conditions is proposed, including the grasping position detection, tactile cal...
 
