@@ -1,17 +1,26 @@
 # =============================================================================
-# Research Pipeline — Backend Settings
+# Research Pipeline — User Configuration
 # =============================================================================
-# Customize which LLM and TTS backends the pipeline uses.
+# Edit this file once after forking the repo. All settings are in ONE place.
 #
 # API keys must ALWAYS be set via environment variables or GitHub Secrets:
 #   DEEPSEEK_API_KEY, ANTHROPIC_API_KEY, OPENAI_API_KEY
 #
-# All settings can be overridden by environment variables:
+# Settings can also be overridden by environment variables:
 #   LLM_BACKEND, TTS_BACKEND
 # =============================================================================
 
+# ---- GitHub Pages site settings ----
+# Change these to YOUR GitHub username and repo name after forking.
+site:
+  title: "Dexterous Grasp Daily Research"
+  url: "https://solitary2005.github.io"
+  baseurl: "/research_pipeline"
+
+# ---- LLM backend ----
 llm:
   backend: "deepseek"     # claude | openai | deepseek
 
+# ---- TTS backend ----
 tts:
   backend: "edge"         # edge | openai

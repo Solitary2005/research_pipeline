@@ -177,6 +177,10 @@ title: "Dexterous Grasp Daily"
 
 
 def main():
+    # Keep _config.yml in sync with config/settings.yaml
+    config.sync_jekyll_config()
+    print("[generate] Synced _config.yml from config/settings.yaml")
+
     index = load_index()
     if not index:
         print("[generate] No papers to generate.")

@@ -1,8 +1,11 @@
+# NOTE: This file is auto-synced from config/settings.yaml.
+# Edit config/settings.yaml → the pipeline will update this file automatically.
+
 title: "Dexterous Grasp Daily Research"
-description: "Daily paper summaries and Chinese podcasts for dexterous grasping research"
+description: >-
+  Daily arXiv paper tracking with AI summaries and podcasts
 url: "https://solitary2005.github.io"
 baseurl: "/research_pipeline"
-
 markdown: kramdown
 
 collections:

@@ -1,7 +1,6 @@
 name: Paper Summary Request
 description: Request an English summary card and Chinese podcast for a paper
 title: "[Summary] "
-labels: ["summary-request"]
 body:
   - type: input
     id: arxiv_id

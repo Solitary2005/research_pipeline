@@ -2,11 +2,11 @@ name: Process Summary Request
 
 on:
   issues:
-    types: [labeled]
+    types: [opened]
 
 jobs:
   process:
-    if: github.event.label.name == 'summary-request'
+    if: startsWith(github.event.issue.title, '[Summary]')
     runs-on: ubuntu-latest
     permissions:
       contents: write

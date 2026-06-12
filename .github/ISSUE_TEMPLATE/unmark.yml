@@ -1,7 +1,6 @@
 name: Unmark Paper
 description: Remove a paper from your favorites/archive
 title: "[Unmark] "
-labels: ["unmark-request"]
 body:
   - type: input
     id: arxiv_id

@@ -1,7 +1,6 @@
 name: Manual Paper Upload
 description: Manually upload a PDF paper, add to favorites, and generate summary card + podcast
 title: "[Manual Upload] "
-labels: ["manual-upload"]
 body:
   - type: input
     id: paper_title

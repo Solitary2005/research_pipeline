@@ -2,11 +2,11 @@ name: Process Manual Paper Upload
 
 on:
   issues:
-    types: [labeled]
+    types: [opened]
 
 jobs:
   process:
-    if: github.event.label.name == 'manual-upload'
+    if: startsWith(github.event.issue.title, '[Manual Upload]')
     runs-on: ubuntu-latest
     permissions:
       contents: write

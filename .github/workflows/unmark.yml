@@ -2,11 +2,11 @@ name: Process Unmark Request
 
 on:
   issues:
-    types: [labeled]
+    types: [opened]
 
 jobs:
   process:
-    if: github.event.label.name == 'unmark-request'
+    if: startsWith(github.event.issue.title, '[Unmark]')
     runs-on: ubuntu-latest
     permissions:
       contents: write

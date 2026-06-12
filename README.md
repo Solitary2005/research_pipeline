@@ -4,9 +4,27 @@ Track arXiv papers by your own keywords, with AI-generated summaries and Chinese
 
 ## User Guide
 
-### 0. Customize Your Research Topics
+### 0. First-Time Setup — Edit ONE File
 
-Edit `config/topics.yaml` to control which papers the pipeline discovers. Add your own topics, keywords, and filters — no Python editing needed:
+After forking the repo, open **`config/settings.yaml`** and set your GitHub Pages URL and preferred backends:
+
+```yaml
+# config/settings.yaml — ALL user settings in one place
+site:
+  title: "My Research Digest"                         # your site title
+  url: "https://YOUR_USERNAME.github.io"              # your GitHub Pages URL
+  baseurl: "/YOUR_REPO_NAME"                          # your repo name
+
+llm:
+  backend: "deepseek"     # claude | openai | deepseek
+
+tts:
+  backend: "edge"         # edge | openai
+```
+
+The pipeline auto-syncs `_config.yml` from this file — you never need to edit `_config.yml` directly.
+
+Then edit **`config/topics.yaml`** to customize which papers are tracked:
 
 ```yaml
 topics:
@@ -31,7 +49,7 @@ topics:
       - "policy"
 ```
 
-**Configuration fields per topic:**
+**Topic configuration fields:**
 | Field | Description |
 |-------|-------------|
 | `name` | Internal identifier (snake_case) |
@@ -98,27 +116,20 @@ Enable Pages in repo Settings → Pages:
 - Source: Deploy from a branch
 - Branch: `main`, folder: `/ (root)`
 
-### Topic Configuration
+### All User Configuration
 
-Paper discovery is controlled by `config/topics.yaml`. See [Section 0](#0-customize-your-research-topics) above for the full format. You can override the config path via the `TOPICS_CONFIG_PATH` environment variable.
+Everything you need to customize is in two files under `config/`:
 
-### Backend Configuration
+| File | What it controls |
+|------|-----------------|
+| `config/settings.yaml` | Site URL, title, LLM backend, TTS backend |
+| `config/topics.yaml` | arXiv search queries, keywords, filters |
 
-LLM and TTS backends are configured in `config/settings.yaml`:
-
-```yaml
-llm:
-  backend: "deepseek"     # claude | openai | deepseek
-
-tts:
-  backend: "edge"         # edge | openai
-```
-
-Edit this file to switch backends — no need to touch workflow files. Environment variables (`LLM_BACKEND`, `TTS_BACKEND`) can still override these settings if needed.
-
-You can override the config file path via environment variables:
+See [Section 0](#0-first-time-setup--edit-one-file) above for the full format. You can override either file's path via environment variables:
 - `SETTINGS_CONFIG_PATH` — path to `settings.yaml`
 - `TOPICS_CONFIG_PATH` — path to `topics.yaml`
+
+Backend settings can also be overridden by environment variables (`LLM_BACKEND`, `TTS_BACKEND`) — useful for CI without editing files.
 
 </details>
 
