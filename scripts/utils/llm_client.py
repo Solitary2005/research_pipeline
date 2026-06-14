@@ -1,9 +1,44 @@
 import json
+import sys
+import time
 from .config import Config, ConfigError
+
+# Default model per backend — used when user has not overridden in settings.yaml
+_DEFAULT_MODELS: dict[str, str] = {
+    "claude": "claude-sonnet-4-6",
+    "openai": "gpt-4o",
+    "deepseek": "deepseek-chat",
+}
+
+
+def _is_retryable(error: Exception) -> bool:
+    """True if this error is likely transient (network / rate-limit / server).
+
+    Authentication errors and invalid-request errors are NOT retryable — retrying
+    would just waste attempts on a problem that will not self-repair.
+    """
+    error_str = str(error).lower()
+    transient_markers = [
+        "timeout", "timed out", "connection", "rate limit", "rate_limit",
+        "server error", "503", "502", "504", "overloaded", "capacity",
+        "too many requests", "429", "internal server error",
+    ]
+    non_retryable = [
+        "401", "403", "invalid api key", "authentication", "not found",
+        "invalid request", "permission",
+    ]
+    for marker in non_retryable:
+        if marker in error_str:
+            return False
+    for marker in transient_markers:
+        if marker in error_str:
+            return True
+    # Default to retryable for unknown errors (safer than silently failing)
+    return True
 
 
 class LLMClient:
-    def __init__(self, backend, config: Config):
+    def __init__(self, backend: str, config: Config) -> None:
         self.backend = backend
         self.config = config
 
@@ -11,19 +46,21 @@ class LLMClient:
             api_key = config.require_key("anthropic_api_key")
             import anthropic
             self.client = anthropic.Anthropic(api_key=api_key)
-            self.model = "claude-sonnet-4-6"
         elif backend == "openai":
             api_key = config.require_key("openai_api_key")
             from openai import OpenAI
             self.client = OpenAI(api_key=api_key)
-            self.model = "gpt-4o"
         elif backend == "deepseek":
             api_key = config.require_key("deepseek_api_key")
             from openai import OpenAI
             self.client = OpenAI(api_key=api_key, base_url="https://api.deepseek.com/v1")
-            self.model = "deepseek-chat"
         else:
             raise ConfigError(f"Unknown LLM backend: {backend}")
+
+        # Model name: user override > per-backend default
+        self.model: str = config.llm_models.get(backend, _DEFAULT_MODELS.get(backend, ""))
+        if not self.model:
+            raise ConfigError(f"No model configured for LLM backend: {backend}")
 
     def generate_summary(self, paper_info, paper_text):
         system_prompt = (
@@ -125,26 +162,59 @@ Write a Chinese podcast script (~{target_words} characters) based on the above."
 
         return self._call_llm(system_prompt, user_prompt, max_tokens=6000)
 
-    def _call_llm(self, system_prompt, user_prompt, max_tokens=1500):
-        if self.backend == "claude":
-            response = self.client.messages.create(
-                model=self.model,
-                max_tokens=max_tokens,
-                system=system_prompt,
-                messages=[{"role": "user", "content": user_prompt}],
-            )
-            return response.content[0].text
-        else:
-            response = self.client.chat.completions.create(
-                model=self.model,
-                max_tokens=max_tokens,
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_prompt},
-                ],
-                temperature=0.7,
-            )
-            return response.choices[0].message.content
+    def _call_llm(
+        self,
+        system_prompt: str,
+        user_prompt: str,
+        max_tokens: int = 1500,
+        max_retries: int = 3,
+        timeout: float = 120.0,
+    ) -> str:
+        """Call the LLM with retry on transient failures.
+
+        Uses exponential backoff (3s, 6s, 12s) between retries. Network errors,
+        rate limits, and server errors trigger a retry; authentication errors
+        and invalid requests do not and will raise immediately.
+        """
+        last_error: Exception | None = None
+        for attempt in range(max_retries):
+            try:
+                if self.backend == "claude":
+                    response = self.client.messages.create(
+                        model=self.model,
+                        max_tokens=max_tokens,
+                        system=system_prompt,
+                        messages=[{"role": "user", "content": user_prompt}],
+                        timeout=timeout,
+                    )
+                    return response.content[0].text
+                else:
+                    response = self.client.chat.completions.create(
+                        model=self.model,
+                        max_tokens=max_tokens,
+                        messages=[
+                            {"role": "system", "content": system_prompt},
+                            {"role": "user", "content": user_prompt},
+                        ],
+                        temperature=0.7,
+                        timeout=timeout,
+                    )
+                    return response.choices[0].message.content
+            except Exception as e:
+                last_error = e
+                if attempt < max_retries - 1 and _is_retryable(e):
+                    wait = 2 ** attempt * 3
+                    print(
+                        f"[llm] API call failed (attempt {attempt + 1}/{max_retries}), "
+                        f"retrying in {wait}s: {e}",
+                        file=sys.stderr,
+                    )
+                    time.sleep(wait)
+                elif not _is_retryable(e):
+                    raise
+        raise ConfigError(
+            f"LLM API call failed after {max_retries} attempts: {last_error}"
+        )
 
     def _parse_json_response(self, text):
         text = text.strip()

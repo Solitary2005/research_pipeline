@@ -2,18 +2,19 @@ import os
 import asyncio
 import tempfile
 import subprocess
+import threading
 from pathlib import Path
 from .config import Config, ConfigError
 
 
 class TTSClient:
-    def __init__(self, backend, config: Config):
+    def __init__(self, backend: str, config: Config) -> None:
         self.backend = backend
         self.config = config
 
-    def generate_audio(self, text, output_path):
+    def generate_audio(self, text: str, output_path: str) -> float:
         if self.backend == "edge":
-            asyncio.run(self._generate_edge(text, output_path))
+            self._run_async(self._generate_edge(text, output_path))
         elif self.backend == "openai":
             self._generate_openai(text, output_path)
         else:
@@ -21,6 +22,36 @@ class TTSClient:
 
         duration = self._get_duration(output_path)
         return duration
+
+    def _run_async(self, coro):
+        """Run an async coroutine safely — even from within a running event loop.
+
+        Uses a background thread with its own event loop when the calling context
+        already has one (e.g. Jupyter notebooks, some CI environments).
+        """
+        try:
+            loop = asyncio.get_running_loop()
+        except RuntimeError:
+            # No running loop — safe to call asyncio.run() directly
+            return asyncio.run(coro)
+
+        # Already inside a running event loop — spawn a dedicated thread
+        result = None
+        error: Exception | None = None
+
+        def _runner() -> None:
+            nonlocal result, error
+            try:
+                result = asyncio.run(coro)
+            except Exception as e:
+                error = e
+
+        thread = threading.Thread(target=_runner, daemon=True)
+        thread.start()
+        thread.join()
+        if error is not None:
+            raise error
+        return result
 
     async def _generate_edge(self, text, output_path):
         import edge_tts
@@ -33,8 +64,8 @@ class TTSClient:
                 chunk_path = os.path.join(tmpdir, f"chunk_{i:04d}.mp3")
                 communicate = edge_tts.Communicate(
                     chunk,
-                    "zh-CN-XiaoxiaoNeural",
-                    rate="-5%",
+                    self.config.tts_edge_voice,
+                    rate=self.config.tts_edge_rate,
                 )
                 await communicate.save(chunk_path)
                 chunk_files.append(chunk_path)
@@ -65,10 +96,10 @@ class TTSClient:
             for i, chunk in enumerate(chunks):
                 chunk_path = os.path.join(tmpdir, f"chunk_{i:04d}.mp3")
                 response = client.audio.speech.create(
-                    model="tts-1-hd",
-                    voice="nova",
+                    model=self.config.tts_openai_model,
+                    voice=self.config.tts_openai_voice,
                     input=chunk,
-                    speed=0.95,
+                    speed=self.config.tts_openai_speed,
                 )
                 response.stream_to_file(chunk_path)
                 chunk_files.append(chunk_path)

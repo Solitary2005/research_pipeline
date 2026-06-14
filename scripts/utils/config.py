@@ -31,10 +31,21 @@ site:
 # ---- LLM backend ----
 llm:
   backend: "deepseek"     # claude | openai | deepseek
+  model:                  # Optional: override default models (leave unset to use defaults below)
+    # claude: "claude-sonnet-4-6"
+    # openai: "gpt-4o"
+    # deepseek: "deepseek-chat"
 
 # ---- TTS backend ----
 tts:
   backend: "edge"         # edge | openai
+  edge:                   # Settings for Microsoft Edge TTS (free, local)
+    voice: "zh-CN-XiaoxiaoNeural"
+    rate: "-5%"
+  openai:                 # Settings for OpenAI TTS (requires OPENAI_API_KEY)
+    model: "tts-1-hd"
+    voice: "nova"
+    speed: 0.95
 """
 
 # Boilerplate Jekyll config that is merged with user's site settings.
@@ -101,6 +112,19 @@ class Config:
             "TTS_BACKEND",
             settings.get("tts", {}).get("backend", "edge"),
         )
+
+        # LLM model overrides — users can override default model per backend
+        self.llm_models: dict = (settings.get("llm") or {}).get("model") or {}
+
+        # TTS backend-specific configuration
+        tts_settings = settings.get("tts") or {}
+        edge_cfg = tts_settings.get("edge") or {}
+        openai_tts_cfg = tts_settings.get("openai") or {}
+        self.tts_edge_voice: str = edge_cfg.get("voice", "zh-CN-XiaoxiaoNeural")
+        self.tts_edge_rate: str = edge_cfg.get("rate", "-5%")
+        self.tts_openai_model: str = openai_tts_cfg.get("model", "tts-1-hd")
+        self.tts_openai_voice: str = openai_tts_cfg.get("voice", "nova")
+        self.tts_openai_speed: float = openai_tts_cfg.get("speed", 0.95)
 
         # ---- API keys (always from env vars for security) ----
         self.anthropic_api_key = os.environ.get("ANTHROPIC_API_KEY", "")
