@@ -1,9 +1,28 @@
-# Template example files (user has their own config/settings.yaml)
-config/settings.example.yaml
-config/topics.example.yaml
+# =============================================================================
+# Base rules inherited from upstream template (keep in sync on merge)
+# Already-tracked files (config/*.yaml, _papers/, _podcasts/, etc.) are
+# NOT affected by these patterns — .gitignore only applies to untracked files.
+# =============================================================================
 
-# PDF cache (downloaded arXiv PDFs, regenerated on demand)
-data/pdfs/
+# User configuration files (template provides .example.yaml copies)
+/config/settings.yaml
+/config/topics.yaml
+
+# Auto-generated Jekyll config (regenerated from config/settings.yaml)
+/_config.yml
+
+# Generated content directories (empty in template; populated in user repos)
+/_papers/*
+!/_papers/.gitkeep
+/_podcasts/*
+!/_podcasts/.gitkeep
+/assets/audio/*
+!/assets/audio/.gitkeep
+/_data/summaries/*
+!/_data/summaries/.gitkeep
+/data/papers_index.json
+/data/pdfs/
+/index.md
 
 # Python
 __pycache__/
@@ -12,3 +31,11 @@ __pycache__/
 # OS
 .DS_Store
 Thumbs.db
+
+# =============================================================================
+# User-specific rules (appended below template base)
+# =============================================================================
+
+# Template example files (already tracked from upstream merge; ignore locally)
+config/settings.example.yaml
+config/topics.example.yaml
