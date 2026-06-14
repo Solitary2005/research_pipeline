@@ -20,8 +20,8 @@
     "abs_url": "https://arxiv.org/abs/2606.09798",
     "topic": "grasp",
     "interesting": true,
-    "has_summary": true,
-    "has_podcast": true
+    "has_summary": false,
+    "has_podcast": false
   },
   "2606.09451": {
     "arxiv_id": "2606.09451",
