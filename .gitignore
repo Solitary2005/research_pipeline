@@ -1,9 +1,3 @@
-# =============================================================================
-# Base rules inherited from upstream template (keep in sync on merge)
-# Already-tracked files (config/*.yaml, _papers/, _podcasts/, etc.) are
-# NOT affected by these patterns — .gitignore only applies to untracked files.
-# =============================================================================
-
 # User configuration files (template provides .example.yaml copies)
 /config/settings.yaml
 /config/topics.yaml
@@ -32,10 +26,6 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-# =============================================================================
-# User-specific rules (appended below template base)
-# =============================================================================
-
-# Template example files (already tracked from upstream merge; ignore locally)
+# Template example files (merged from upstream; users keep their own config/*.yaml)
 config/settings.example.yaml
 config/topics.example.yaml
