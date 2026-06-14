@@ -1,0 +1,14 @@
+# Template example files (user has their own config/settings.yaml)
+config/settings.example.yaml
+config/topics.example.yaml
+
+# PDF cache (downloaded arXiv PDFs, regenerated on demand)
+data/pdfs/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
