@@ -40,7 +40,7 @@ Blind grasping with a dexterous hand is a crucial manipulation capability. Never
 
 ## [SynManDex: Synthesizing Human-like Dexterous Grasps from Synthetic Human Pre-Grasps]({{ site.baseurl }}/papers/2606.09798/)
 
-**2026-06-08** · Yanming Shao et al. 
+**2026-06-08** · Yanming Shao et al. <span class="badge">🎧 Podcast</span> <span class="badge">📌 Archived</span>
 
 Human hand-object interactions encode functional intent, but direct transfer to robotic hands often fails under morphology, contact, and reachability constraints. We present SynManDex, a synthetic pipeline that uses generated human pre-grasps as affordance-aware proposals and resolves the final cont...
 
