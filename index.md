@@ -5,38 +5,8 @@ title: "Dexterous Grasp Daily"
 
 # Dexterous Grasp — Daily Paper Digest
 
-All 6 papers in the collection. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
+All 3 papers in the collection. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
 
-
-## [Bridging the Morphology Gap: Adapting VLA Models to Dexterous Manipulation via Intent-Conditioned Fine-Tuning]({{ site.baseurl }}/papers/2606.12109/)
-
-**2026-06-10** · Chuanke Pang et al. 
-
-Vision-Language-Action (VLA) models have demonstrated remarkable zero-shot generalization in robotic manipulation, yet the vast majority of pre-trained pipelines remain strictly confined to low-DoF parallel grippers. Adapting these rich semantic priors to high-DoF dexterous hands introduces a severe...
-
-[Read more →]({{ site.baseurl }}/papers/2606.12109/)
-
----
-
-## [Modular Anthropomorphic Hand Design via Multi-Parameter Finger Benchmarking and Selection]({{ site.baseurl }}/papers/2606.11826/)
-
-**2026-06-10** · Yu Zhang et al. 
-
-Designing anthropomorphic dexterous robotic hands remains challenging as the design space straddles morphology, actuation, and sensing properties, and performance metrics span both task-dependent and task-agnostic. Existing optimization methods are often unstructured or consider only a single perfor...
-
-[Read more →]({{ site.baseurl }}/papers/2606.11826/)
-
----
-
-## [Blind Dexterous Grasping via Real2Sim2Real Tactile Policy Learning]({{ site.baseurl }}/papers/2606.11767/)
-
-**2026-06-10** · Shengcheng Luo et al. 
-
-Blind grasping with a dexterous hand is a crucial manipulation capability. Nevertheless, learning such tactile-only policies for real robots remains challenging due to the tactile sim-to-real gap and the limited expressiveness of sparse tactile signals. To bridge this gap, we propose a framework for...
-
-[Read more →]({{ site.baseurl }}/papers/2606.11767/)
-
----
 
 ## [SynManDex: Synthesizing Human-like Dexterous Grasps from Synthetic Human Pre-Grasps]({{ site.baseurl }}/papers/2606.09798/)
 
