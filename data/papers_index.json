@@ -67,5 +67,160 @@
     "interesting": true,
     "has_summary": true,
     "has_podcast": true
+  },
+  "2606.19340": {
+    "arxiv_id": "2606.19340",
+    "title": "Zero-Shot Long-Horizon Dexterous Manipulation via Multi-View 3D-Grounded VLM Reasoning",
+    "abstract": "We present a zero-shot framework for long-horizon dexterous manipulation that grounds language instructions into executable 3D task plans from calibrated multi-view RGB images. Rather than training an end-to-end policy, our system uses a vision-language model (VLM) to produce reference-frame task grounding and primitive-level 2D keypoints, then lifts them into 3D via multi-view fusion. This lifting combines triangulation of view-wise VLM groundings with reference-view ray voting, which searches along a semantic camera ray for geometrically consistent candidates across neighboring views. The resulting 3D keypoints support both pick-and-place and tool-use: for tool-use, we retrieve an object-centric atomic action corresponding to the inferred skill category and align its stored 6D tool trajectory to the scene; for dexterous execution, we expand the lifted grasp keypoint into a task-conditioned grasp affordance region and generate feasible grasp-motion pairs with an arm-hand motion generator. Real-world experiments show improved 3D grounding accuracy and execution reliability over single-view RGB-D grounding and fine-tuned VLA baselines. We further demonstrate long-horizon manipulation through closed-loop status verification and replan, enabling zero-shot execution on unseen objects and tool-use tasks in novel scenes.",
+    "published_date": "2026-06-17",
+    "authors": [
+      "Jisoo Kim",
+      "Sangwon Baik",
+      "Taeksoo Kim",
+      "Sungjoo Kim",
+      "Junyoung Lee",
+      "Mingi Choi",
+      "Hanbyul Joo"
+    ],
+    "first_author": "Jisoo Kim",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2606.19340.pdf",
+    "abs_url": "https://arxiv.org/abs/2606.19340",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2606.18092": {
+    "arxiv_id": "2606.18092",
+    "title": "EAGG: Embodiment-Aligned Grasp Generation via Geometry-Aware Graph Conditioning",
+    "abstract": "Cross-end-effector grasp generation seeks a unified model that generalizes across objects and across embodiments ranging from parallel grippers to dexterous end effectors. Existing grasp generators are typically designed for a fixed embodiment or encode embodiment identity with a static descriptor, which weakens transfer when topology, actuation coupling, and contact geometry differ substantially. We present EAGG, an embodiment-aligned grasp generator that represents each embodiment with a topology-aware end-effector graph and an embodiment-specific low-dimensional end-effector control space. A frozen end-effector-cognition backbone converts the current articulated state into geometry-aware tokens that act as a reusable morphology prior, and iterative geometry injection refreshes these tokens throughout sampling so that conditioning remains synchronized with the evolving end-effector geometry. On the MultiGripperGrasp benchmark, EAGG reaches 56.17% average success across six training end effectors, remaining within 1.10 percentage points of specialized training while preserving transfer to finetuning and zero-shot end effectors. Iterative geometry injection further reduces the pooled median contact distance from 0.239 cm to 0.189 cm. These results show that cross-end-effector grasp generation is strengthened by aligning embodiment structure inside a shared generator rather than suppressing embodiment differences. Code is available at https://github.com/wanhaoniu/EAGG.",
+    "published_date": "2026-06-16",
+    "authors": [
+      "Wanhao Niu",
+      "Qiyan Ke",
+      "Yuan Sun",
+      "Hao Sun",
+      "Jie Xu",
+      "Muyuan Ma",
+      "Ruiqi Hu",
+      "Fuchun Sun"
+    ],
+    "first_author": "Wanhao Niu",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2606.18092.pdf",
+    "abs_url": "https://arxiv.org/abs/2606.18092",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2606.17446": {
+    "arxiv_id": "2606.17446",
+    "title": "AnnotateAnything: Automatic Annotation of 3D Assets for Robot Manipulation",
+    "abstract": "Simulation enables scalable robot data collection, but raw 3D assets provide only geometry, lacking the semantic, interactive, and physical knowledge needed to specify where and how robots should act. In this work, we present AnnotateAnything, a general automatic annotation framework that converts passive 3D assets into manipulation-ready assets with structured, diverse, and executable manipulation labels. AnnotateAnything is built around two complementary pipelines. First, a unified visual-language annotation pipeline using vision-language reasoning to infer object semantics, interaction constraints, and 3D-grounded cues, providing human-prior guidance for identifying meaningful interaction regions. Second, a fully automatic and massively parallel physics annotation pipeline grounds these priors in each asset's geometry and physical constraints through candidate generation, geometry optimization and trajectory generation. This pipeline produces diverse and executable action annotations, including grasp poses, dexterous contacts, articulation waypoints, insertion directions, hanging affordances, and navigation targets. Using the generated annotations, we further build an asynchronous parallel simulation data-collection system across diverse objects, tasks, and robot embodiments. Experiments demonstrate that AnnotateAnything achieves superior annotation efficiency, data-collection efficiency, and task success rates over existing annotation and data-generation pipelines, while also supporting downstream tasks such as affordance detection, robotic VQA, and visual instruction finetuning. We provide project materials on the project page and plan to release the full code, annotations, and benchmark to facilitate future research. Videos, code, demo assets, and annotations are provided in supplementary materials Project page: https://tourmaline-caramel-169490.netlify.app.",
+    "published_date": "2026-06-16",
+    "authors": [
+      "Haoran Lu",
+      "Mutian Shen",
+      "Shuyang Yu",
+      "Yu Xiao",
+      "Songling Liu",
+      "Jianshu Zhang",
+      "Shang Wu",
+      "Yue Chen",
+      "Guo Ye",
+      "Jiayi Wang",
+      "Zhaoran Wang",
+      "Han Liu"
+    ],
+    "first_author": "Haoran Lu",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2606.17446.pdf",
+    "abs_url": "https://arxiv.org/abs/2606.17446",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2606.17418": {
+    "arxiv_id": "2606.17418",
+    "title": "DexLink Hand: A Compact, Affordable, 16-DOF Linkage-Driven Hand with Human-Like Dexterity",
+    "abstract": "Dexterous robotic hands face a longstanding trade-off among dexterity, compactness, and affordability. Particularly, high-degree-of-freedom designs typically demand complex actuation and transmission, hindering integration into human-scale forms. To address these challenges, this work presents a compact, low-cost linkage-driven anthropomorphic hand that achieves high dexterity, structural integration, and human-hand-like functionality. The hand integrates 20 joints driven by 16 independent actuators, with all actuation, sensing, and transmission components compactly embedded within a human-hand-sized structure. The resulting prototype weighs only 320g at a total cost below USD 400. To meet these objectives, a hybrid mechanical architecture combining planar and spatial linkage mechanisms is proposed, enabling decoupled multidirectional motion, biomimetic joint synergies, and high passive load-bearing capability. The thumb further incorporates biomimetic features supporting human-like reconfiguration and opposition movements. Through the coordinated integration of these mechanisms and structural layout, the prototype achieves a highly integrated design with anthropomorphic dexterity. Experimental evaluations demonstrate that the hand achieves the maximum Kapandji score, reproduces all 33 Feix grasp types, and performs stable grasping and dexterous manipulation across a wide variety of daily objects and tools. These results validate the proposed hand as an affordable, compact, and mechanically efficient platform for dexterous manipulation, teleoperation, and robot learning in human-centered environments.",
+    "published_date": "2026-06-16",
+    "authors": [
+      "Hao Wu",
+      "Yanzhe Wang",
+      "Yu Feng",
+      "Jian Liu",
+      "Jihao Li",
+      "Jianshu Zhou",
+      "Huixu Dong"
+    ],
+    "first_author": "Hao Wu",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2606.17418.pdf",
+    "abs_url": "https://arxiv.org/abs/2606.17418",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2606.15516": {
+    "arxiv_id": "2606.15516",
+    "title": "Transferring Contact, Not Just Motion: Compliant Grasping Across Dexterous Hands",
+    "abstract": "Dexterous grasping depends on contact regulation, not motion alone. Stable manipulation requires fingers to maintain appropriate object loading as contacts slip, deform, or become visually occluded. Existing cross-embodiment dexterous policies unify motion through retargeted hand poses or latent actions, but force feedback remains tied to each hand's sensing and actuation, limiting transfer. This work introduces a cross-embodiment force-position interface for contact-aware manipulation across heterogeneous dexterous hands. Motion intent is represented in a shared hand-pose latent, while each hand's effort signal is calibrated through system identification into physical joint torque in N.m. These torques are mapped to fingertip forces and compact per-finger load descriptors, giving the policy comparable observations of where the hand should move and how the object is loaded. Using this interface, a flow-matching visuomotor policy is trained on vision, proprioception, and calibrated contact, with structured visual masking that encourages reliance on force under grasp-relevant occlusion. The same calibrated signal drives a hybrid force-position controller for demonstration collection and execution, keeping force targets consistent across training and deployment. Experiments across structurally different hands show that calibrated contact feedback enables transferable compliant grasping, with learned primitives reusable in long-horizon manipulation pipelines.",
+    "published_date": "2026-06-14",
+    "authors": [
+      "Soofiyan Atar",
+      "Yao-Ting Huang",
+      "Michael Yip"
+    ],
+    "first_author": "Soofiyan Atar",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2606.15516.pdf",
+    "abs_url": "https://arxiv.org/abs/2606.15516",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2606.15133": {
+    "arxiv_id": "2606.15133",
+    "title": "DragMesh-2: Physically Plausible Dexterous Hand-Object Interaction with Articulated Objects",
+    "abstract": "Dexterous interaction with articulated objects is important for household, assistive, and humanoid manipulation, where multi-finger hands can provide compliant contact patterns beyond parallel-jaw grasping. However, articulated-object manipulation differs from static-object manipulation: the target part cannot be directly actuated, and its motion must emerge through sustained physical hand--handle contact. This makes the transition from object-centric articulated generation to hand-driven dexterous hand--object interaction non-trivial, since geometric trajectory replay or open-loop execution does not model the contact dynamics required to move the articulated part. Moreover, policies trained only for task completion under fixed dynamics can overfit nominal contact loads, especially without tactile or force feedback, and may degrade when the contact load changes. To address these challenges, we present DragMesh-2, a contact-driven framework for dexterous interaction with articulated objects that extends articulated interaction from object-centric generation to hand-driven dexterous hand--object interaction, where articulated motion must arise through physical contact. We further propose PICA, a physically informed contact-aware training mechanism that injects physical signals into policy learning without tactile or force feedback, improving robustness and task success under changing contact loads. Finally, we conduct systematic evaluation across multiple damping conditions and articulated-object categories to study robustness under contact-load variation, and provide a pure-geometry dexterous interaction resource to support future loco-manipulation and humanoid hand--object interaction research. Across seven GAPartNet objects, DragMesh-2 achieves stronger robustness under contact-load variation than the compared methods while maintaining high task success across damping conditions.",
+    "published_date": "2026-06-13",
+    "authors": [
+      "Tianshan Zhang",
+      "Yijia Duan",
+      "Yanjun Li",
+      "Zeyu Zhang",
+      "Hao Tang"
+    ],
+    "first_author": "Tianshan Zhang",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2606.15133.pdf",
+    "abs_url": "https://arxiv.org/abs/2606.15133",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2606.14606": {
+    "arxiv_id": "2606.14606",
+    "title": "Impedance MPC with Disturbance Estimation for Dexterous Hand Control",
+    "abstract": "Dexterous hands must simultaneously track precise finger trajectories and maintain safe, compliant contact -- objectives in tension for any fixed-gain controller. We present an actuator-agnostic Impedance Model Predictive Control (Impedance MPC) framework for dexterous fingers, instantiating the constant-$A_d$ offset-free architecture established for physical human-robot interaction (pHRI); its stability, recursive-feasibility, and input-to-state-stability guarantees are inherited by preserving the architectural assumptions. An algebraic feedforward reduces the tendon transmission -- hydraulic, cable, pneumatic, twisted-string, or series-elastic -- to a constant-coefficient double integrator, so the QP cost inverse is precomputed offline and a 10-step receding-horizon quadratic program runs at 500\\,Hz while enforcing hard constraints on contact force (ISO/TS 15066), actuation limits, and jerk. An encoder-only augmented-Kalman disturbance state drives steady-state error to zero under any constant contact load. On a hydraulically actuated finger -- the worked example platform, adding pressure and cavitation constraints -- the 500\\,Hz Kalman MPC attains 0.5\\,mrad RMS, 0.1\\,mrad steady-state, and 6.6\\,mrad peak deflection under 1.5\\,Nm contact: 183$\\times$, 1500$\\times$, and 23$\\times$ better than classical impedance. The realized first-move stiffness (18$\\to$323\\,Nm/rad with update rate) is independently verified. The architecture scales to a 16-DOF LEAP Hand MuJoCo simulation, recovering from 2.5\\,N grasp-load disturbances within 0.7\\,s.",
+    "published_date": "2026-06-12",
+    "authors": [
+      "Yongyan Cao"
+    ],
+    "first_author": "Yongyan Cao",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2606.14606.pdf",
+    "abs_url": "https://arxiv.org/abs/2606.14606",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
   }
 }
