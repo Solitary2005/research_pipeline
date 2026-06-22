@@ -165,5 +165,62 @@
     "interesting": false,
     "has_summary": false,
     "has_podcast": false
+  },
+  "2606.15516": {
+    "arxiv_id": "2606.15516",
+    "title": "Transferring Contact, Not Just Motion: Compliant Grasping Across Dexterous Hands",
+    "abstract": "Dexterous grasping depends on contact regulation, not motion alone. Stable manipulation requires fingers to maintain appropriate object loading as contacts slip, deform, or become visually occluded. Existing cross-embodiment dexterous policies unify motion through retargeted hand poses or latent actions, but force feedback remains tied to each hand's sensing and actuation, limiting transfer. This work introduces a cross-embodiment force-position interface for contact-aware manipulation across heterogeneous dexterous hands. Motion intent is represented in a shared hand-pose latent, while each hand's effort signal is calibrated through system identification into physical joint torque in N.m. These torques are mapped to fingertip forces and compact per-finger load descriptors, giving the policy comparable observations of where the hand should move and how the object is loaded. Using this interface, a flow-matching visuomotor policy is trained on vision, proprioception, and calibrated contact, with structured visual masking that encourages reliance on force under grasp-relevant occlusion. The same calibrated signal drives a hybrid force-position controller for demonstration collection and execution, keeping force targets consistent across training and deployment. Experiments across structurally different hands show that calibrated contact feedback enables transferable compliant grasping, with learned primitives reusable in long-horizon manipulation pipelines.",
+    "published_date": "2026-06-14",
+    "authors": [
+      "Soofiyan Atar",
+      "Yao-Ting Huang",
+      "Michael Yip"
+    ],
+    "first_author": "Soofiyan Atar",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2606.15516.pdf",
+    "abs_url": "https://arxiv.org/abs/2606.15516",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2606.15133": {
+    "arxiv_id": "2606.15133",
+    "title": "DragMesh-2: Physically Plausible Dexterous Hand-Object Interaction with Articulated Objects",
+    "abstract": "Dexterous interaction with articulated objects is important for household, assistive, and humanoid manipulation, where multi-finger hands can provide compliant contact patterns beyond parallel-jaw grasping. However, articulated-object manipulation differs from static-object manipulation: the target part cannot be directly actuated, and its motion must emerge through sustained physical hand--handle contact. This makes the transition from object-centric articulated generation to hand-driven dexterous hand--object interaction non-trivial, since geometric trajectory replay or open-loop execution does not model the contact dynamics required to move the articulated part. Moreover, policies trained only for task completion under fixed dynamics can overfit nominal contact loads, especially without tactile or force feedback, and may degrade when the contact load changes. To address these challenges, we present DragMesh-2, a contact-driven framework for dexterous interaction with articulated objects that extends articulated interaction from object-centric generation to hand-driven dexterous hand--object interaction, where articulated motion must arise through physical contact. We further propose PICA, a physically informed contact-aware training mechanism that injects physical signals into policy learning without tactile or force feedback, improving robustness and task success under changing contact loads. Finally, we conduct systematic evaluation across multiple damping conditions and articulated-object categories to study robustness under contact-load variation, and provide a pure-geometry dexterous interaction resource to support future loco-manipulation and humanoid hand--object interaction research. Across seven GAPartNet objects, DragMesh-2 achieves stronger robustness under contact-load variation than the compared methods while maintaining high task success across damping conditions.",
+    "published_date": "2026-06-13",
+    "authors": [
+      "Tianshan Zhang",
+      "Yijia Duan",
+      "Yanjun Li",
+      "Zeyu Zhang",
+      "Hao Tang"
+    ],
+    "first_author": "Tianshan Zhang",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2606.15133.pdf",
+    "abs_url": "https://arxiv.org/abs/2606.15133",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2606.14606": {
+    "arxiv_id": "2606.14606",
+    "title": "Impedance MPC with Disturbance Estimation for Dexterous Hand Control",
+    "abstract": "Dexterous hands must simultaneously track precise finger trajectories and maintain safe, compliant contact -- objectives in tension for any fixed-gain controller. We present an actuator-agnostic Impedance Model Predictive Control (Impedance MPC) framework for dexterous fingers, instantiating the constant-$A_d$ offset-free architecture established for physical human-robot interaction (pHRI); its stability, recursive-feasibility, and input-to-state-stability guarantees are inherited by preserving the architectural assumptions. An algebraic feedforward reduces the tendon transmission -- hydraulic, cable, pneumatic, twisted-string, or series-elastic -- to a constant-coefficient double integrator, so the QP cost inverse is precomputed offline and a 10-step receding-horizon quadratic program runs at 500\\,Hz while enforcing hard constraints on contact force (ISO/TS 15066), actuation limits, and jerk. An encoder-only augmented-Kalman disturbance state drives steady-state error to zero under any constant contact load. On a hydraulically actuated finger -- the worked example platform, adding pressure and cavitation constraints -- the 500\\,Hz Kalman MPC attains 0.5\\,mrad RMS, 0.1\\,mrad steady-state, and 6.6\\,mrad peak deflection under 1.5\\,Nm contact: 183$\\times$, 1500$\\times$, and 23$\\times$ better than classical impedance. The realized first-move stiffness (18$\\to$323\\,Nm/rad with update rate) is independently verified. The architecture scales to a 16-DOF LEAP Hand MuJoCo simulation, recovering from 2.5\\,N grasp-load disturbances within 0.7\\,s.",
+    "published_date": "2026-06-12",
+    "authors": [
+      "Yongyan Cao"
+    ],
+    "first_author": "Yongyan Cao",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2606.14606.pdf",
+    "abs_url": "https://arxiv.org/abs/2606.14606",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
   }
 }

@@ -5,8 +5,18 @@ title: "Dexterous Grasp Daily"
 
 # Dexterous Grasp — Daily Paper Digest
 
-**2026-06-21** — 2 new papers from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
+**2026-06-22** — 3 new papers from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
 
+
+## [Transferring Contact, Not Just Motion: Compliant Grasping Across Dexterous Hands]({{ site.baseurl }}/papers/2606.15516/)
+
+**2026-06-14** · Soofiyan Atar et al. 
+
+Dexterous grasping depends on contact regulation, not motion alone. Stable manipulation requires fingers to maintain appropriate object loading as contacts slip, deform, or become visually occluded. Existing cross-embodiment dexterous policies unify motion through retargeted hand poses or latent act...
+
+[Read more →]({{ site.baseurl }}/papers/2606.15516/)
+
+---
 
 ## [DragMesh-2: Physically Plausible Dexterous Hand-Object Interaction with Articulated Objects]({{ site.baseurl }}/papers/2606.15133/)
 
