@@ -165,5 +165,94 @@
     "interesting": false,
     "has_summary": false,
     "has_podcast": false
+  },
+  "2606.23689": {
+    "arxiv_id": "2606.23689",
+    "title": "AutoDex: An Automated Real-World System for Dexterous Grasping Data Collection",
+    "abstract": "Learning robust dexterous grasping requires real-world data that records the physical outcomes of grasp attempts. Such data is hard to obtain at scale: teleoperation yields valid physical outcomes but is slow and operator-biased, while simulation-based generation is cheap and scalable but cannot certify contact validity. A natural solution is to generate candidate grasps and verify them on real hardware, but this scales only if the entire collection loop (perception, execution, labeling, and reset) runs without human intervention. We present AutoDex, an automated real-world data-collection system that closes this loop: for each candidate from a replaceable generator, it localizes the object under severe hand-object occlusion with dense 20-camera perception, executes collision-monitored robot motions, labels lift-and-hold success or failure, and actively resets the object between trials to expose additional candidates across stable poses. The result is a reusable database of physically labeled grasp trials that downstream systems can query by retrieval and feasibility filtering. Using AutoDex, we collect 3,593 grasp trials across Allegro and Inspire hands on 100 diverse objects, with synchronized multi-view observations and robot-state logs. For a matched 500-trajectory collection, AutoDex requires 10.3 h versus 49.4 h for teleoperation, yielding a 4.8x throughput improvement, and grasps retrieved from the AutoDex-validated database succeed 76% versus 34% for simulation-only validation. Code and data will be publicly released.",
+    "published_date": "2026-06-22",
+    "authors": [
+      "Mingi Choi",
+      "Gunhee Kim",
+      "Jisoo Kim",
+      "Taeksoo Kim",
+      "Taeyun Ha",
+      "Jongbin Lim",
+      "Hanbyul Joo"
+    ],
+    "first_author": "Mingi Choi",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2606.23689.pdf",
+    "abs_url": "https://arxiv.org/abs/2606.23689",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2606.23680": {
+    "arxiv_id": "2606.23680",
+    "title": "CoorDex: Coordinating Body and Hand Priors for Continuous Dexterous Humanoid Loco-Manipulation",
+    "abstract": "Humanoid loco-manipulation is often simplified into a stop-and-go process: walking to an object, stopping to manipulate it, and then resuming locomotion. It also commonly relies on low degree-of-freedom (DoF) end effectors that behave like an open-close grasp primitive. We introduce CoorDex, a learning pipeline that converts high-dimensional body and dexterous hand control into coordinated latent residual control, enabling high-DoF dexterous loco-manipulation on the move. Starting from simulated whole-body and hand demonstrations, CoorDex trains privileged motion tracking teachers for the humanoid body and dexterous hand, distills them into proprioception-conditioned latent priors, and uses the frozen priors as the action space for downstream residual reinforcement learning. A coordinated latent residual policy composes these priors through shared task context and separate body-hand residual heads, preserving natural whole-body motion while improving finger-level contact reliability. CoorDex enables a Unitree G1 humanoid with a 20-DoF WUJI hand to execute dexterous manipulation while in motion, including non-stop bottle grasping and carrying, fridge door opening on the move, and cube pick-and-turn. Ablations on the walk-grasp-carry task show that joint-space PPO, joint-space hand control, and monolithic latent prediction all fail under the same reward budget, while the latent-prior interface and coordinated residual structure make high-dimensional contact-rich loco-manipulation trainable. Project Page: https://skevinci.github.io/coordex/",
+    "published_date": "2026-06-22",
+    "authors": [
+      "Sikai Li",
+      "Shuning Li",
+      "Zhenyu Wei",
+      "Yunchao Yao",
+      "Chenran Li",
+      "Mingyu Ding"
+    ],
+    "first_author": "Sikai Li",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2606.23680.pdf",
+    "abs_url": "https://arxiv.org/abs/2606.23680",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2606.23431": {
+    "arxiv_id": "2606.23431",
+    "title": "DexTeleop-0: Force-Aware Bimanual Dexterous Teleoperation with Ego-Centric Perception towards Shared Autonomy",
+    "abstract": "Fine-grained, bimanual dexterous manipulation remains a foundational challenge in robotics. Traditional teleoperation systems often fail in contact-rich tasks because embodiment gaps hinder accurate kinematic mapping, while tactile and force feedback remain absent. Consequently, data collection efficiency for high-precision tasks remains prohibitively low. To address these limitations, we propose a tactile-driven adaptation strategy designed to enable fine-grained manipulation on top of teleoperation pipelines. Instantiated within our bimanual dexterous framework, DexTeleop-0, this strategy introduces a real-time optimization loop that bridges the embodiment gap by translating coarse human tracking intents into precise, force-compliant robotic commands with tactile sensing. By estimating accurate contact points and leveraging a tactile-enabled fingertip force-sensing profile, the system dynamically computes localized corrections using the operational space Jacobian with respect to joint angle updates. We rigorously evaluate this tactile-driven adaptation strategy across both simulated environments and real-world hardware. Compared with representative baselines, the proposed method consistently achieves higher task success rates and improved execution efficiency in robust grasping, disturbance-resilient manipulation, and complex dexterous tasks.",
+    "published_date": "2026-06-22",
+    "authors": [
+      "Haichao Liu",
+      "Yuyao Jiang",
+      "Hyunsun Park",
+      "Yuanjiang Xue",
+      "Ziwei Wang"
+    ],
+    "first_author": "Haichao Liu",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2606.23431.pdf",
+    "abs_url": "https://arxiv.org/abs/2606.23431",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2606.21245": {
+    "arxiv_id": "2606.21245",
+    "title": "A Human-Inspired Thumb-Index Robotic Hand with Strain Gauges Embedded in Soft Joints",
+    "abstract": "Human hand grasp adaptation depends mainly on the synergy between physical structure and biological feedback. Inspired by this biomechanical principle, the Safe Thumb-Index Robotic (STIR) Hand was developed as a minimal, lightweight, and low-cost two-digit prototype featuring an asymmetric thumb-index configuration. By pairing an underactuated, tendon-driven mechanical design with flexible strain gauges embedded into silicone-encapsulated soft joints, the system achieves passive grasp adaptation while establishing both internal proprioception and external perception. Unsupervised analysis was carried out on a dataset of the STIR hand grasping 20 different objects, along with an object classification task and an ablation study to highlight the contribution of the soft joint sensors. The object classification task discriminated object size, shape, and material stiffness with a high classification accuracy. In contrast to traditional industrial grippers and robotic hands, the STIR Hand demonstrates that sensorized compliant joints significantly improve overall sensitivity and ensure safe grasping, while remaining independent of additional fingertip tactile elements or external vision systems. Finally, a comparison to similar devices grasping identical objects validates the utility of the STIR Hand.",
+    "published_date": "2026-06-19",
+    "authors": [
+      "Jonas Papenbrock",
+      "Shubhan Patni",
+      "Tomaso Lisini Baldi",
+      "Michele Guerri",
+      "Elia Landi",
+      "Ada Fort",
+      "Matej Hoffmann"
+    ],
+    "first_author": "Jonas Papenbrock",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2606.21245.pdf",
+    "abs_url": "https://arxiv.org/abs/2606.21245",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
   }
 }

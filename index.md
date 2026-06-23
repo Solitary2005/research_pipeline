@@ -5,36 +5,46 @@ title: "Dexterous Grasp Daily"
 
 # Dexterous Grasp — Daily Paper Digest
 
-**2026-06-22** — 3 new papers from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
+**2026-06-23** — 4 new papers from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
 
 
-## [Transferring Contact, Not Just Motion: Compliant Grasping Across Dexterous Hands]({{ site.baseurl }}/papers/2606.15516/)
+## [AutoDex: An Automated Real-World System for Dexterous Grasping Data Collection]({{ site.baseurl }}/papers/2606.23689/)
 
-**2026-06-14** · Soofiyan Atar et al. 
+**2026-06-22** · Mingi Choi et al. 
 
-Dexterous grasping depends on contact regulation, not motion alone. Stable manipulation requires fingers to maintain appropriate object loading as contacts slip, deform, or become visually occluded. Existing cross-embodiment dexterous policies unify motion through retargeted hand poses or latent act...
+Learning robust dexterous grasping requires real-world data that records the physical outcomes of grasp attempts. Such data is hard to obtain at scale: teleoperation yields valid physical outcomes but is slow and operator-biased, while simulation-based generation is cheap and scalable but cannot cer...
 
-[Read more →]({{ site.baseurl }}/papers/2606.15516/)
-
----
-
-## [DragMesh-2: Physically Plausible Dexterous Hand-Object Interaction with Articulated Objects]({{ site.baseurl }}/papers/2606.15133/)
-
-**2026-06-13** · Tianshan Zhang et al. 
-
-Dexterous interaction with articulated objects is important for household, assistive, and humanoid manipulation, where multi-finger hands can provide compliant contact patterns beyond parallel-jaw grasping. However, articulated-object manipulation differs from static-object manipulation: the target ...
-
-[Read more →]({{ site.baseurl }}/papers/2606.15133/)
+[Read more →]({{ site.baseurl }}/papers/2606.23689/)
 
 ---
 
-## [Impedance MPC with Disturbance Estimation for Dexterous Hand Control]({{ site.baseurl }}/papers/2606.14606/)
+## [DexTeleop-0: Force-Aware Bimanual Dexterous Teleoperation with Ego-Centric Perception towards Shared Autonomy]({{ site.baseurl }}/papers/2606.23431/)
 
-**2026-06-12** · Yongyan Cao et al. 
+**2026-06-22** · Haichao Liu et al. 
 
-Dexterous hands must simultaneously track precise finger trajectories and maintain safe, compliant contact -- objectives in tension for any fixed-gain controller. We present an actuator-agnostic Impedance Model Predictive Control (Impedance MPC) framework for dexterous fingers, instantiating the con...
+Fine-grained, bimanual dexterous manipulation remains a foundational challenge in robotics. Traditional teleoperation systems often fail in contact-rich tasks because embodiment gaps hinder accurate kinematic mapping, while tactile and force feedback remain absent. Consequently, data collection effi...
 
-[Read more →]({{ site.baseurl }}/papers/2606.14606/)
+[Read more →]({{ site.baseurl }}/papers/2606.23431/)
+
+---
+
+## [CoorDex: Coordinating Body and Hand Priors for Continuous Dexterous Humanoid Loco-Manipulation]({{ site.baseurl }}/papers/2606.23680/)
+
+**2026-06-22** · Sikai Li et al. 
+
+Humanoid loco-manipulation is often simplified into a stop-and-go process: walking to an object, stopping to manipulate it, and then resuming locomotion. It also commonly relies on low degree-of-freedom (DoF) end effectors that behave like an open-close grasp primitive. We introduce CoorDex, a learn...
+
+[Read more →]({{ site.baseurl }}/papers/2606.23680/)
+
+---
+
+## [A Human-Inspired Thumb-Index Robotic Hand with Strain Gauges Embedded in Soft Joints]({{ site.baseurl }}/papers/2606.21245/)
+
+**2026-06-19** · Jonas Papenbrock et al. 
+
+Human hand grasp adaptation depends mainly on the synergy between physical structure and biological feedback. Inspired by this biomechanical principle, the Safe Thumb-Index Robotic (STIR) Hand was developed as a minimal, lightweight, and low-cost two-digit prototype featuring an asymmetric thumb-ind...
+
+[Read more →]({{ site.baseurl }}/papers/2606.21245/)
 
 ---
 
