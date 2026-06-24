@@ -179,5 +179,50 @@
     "interesting": false,
     "has_summary": false,
     "has_podcast": false
+  },
+  "2606.24377": {
+    "arxiv_id": "2606.24377",
+    "title": "PDS Joint: A Parametric Double-Spiral Joint Tailored for Dexterous Hands",
+    "abstract": "Compliant joints can embed safety and adaptability into dexterous hands, but achieving large-stroke anthropomorphic motion while maintaining joint-specific, directiondependent stiffness and reliable proprioception remains challenging. This paper presents the PDS joint, a parametric doublespiral (PDS) compliant joint that enables systematic shaping of directional stiffness across multiple deformation modes, including flexion/extension, abduction/adduction, and pronation/supination. We instantiate the joint using Archimedean and logarithmic spiral templates for different hand joints and introduce an asymmetry ratio to tailor stiffness distributions for both grasp stability and hyperextension resistance. To make the joint practically usable under large deformation, we co-design embedded inductive proprioception and propose a learningbased calibration pipeline that maps raw inductive signals to joint states using ArUco-marker tracking. Experiments characterize the stiffness landscapes across geometric parameters and demonstrate a non-monotonic dependence of lateral support on asymmetry, indicating the importance of principled parameter tuning. For joint-state estimation in the most challenging abduction/adduction motion, a learned multilayer-perceptron (MLP) mapping reduces the error compared with conventional curve fitting by 41.6%. Finally, we integrate the proposed joints into an open-source dexterous hand as a demonstration platform, on which the hand grasps a set of nine everyday objects and performs safe, contact-rich human-involved interactions.",
+    "published_date": "2026-06-23",
+    "authors": [
+      "Haoyang Li",
+      "Yibo Wen",
+      "Yixiang Fan",
+      "Yiheng Xu",
+      "Yufeng Yue"
+    ],
+    "first_author": "Haoyang Li",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2606.24377.pdf",
+    "abs_url": "https://arxiv.org/abs/2606.24377",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2606.24208": {
+    "arxiv_id": "2606.24208",
+    "title": "Grounding Generative Policies in Physics: Optimization-Guided Diffusion for Robot Control",
+    "abstract": "Diffusion models sample effectively from high-dimensional, multimodal distributions, but their outputs may violate deployment constraints. For task-space robot policies, generated grasps, waypoints, or trajectories can be distributionally valid yet infeasible, violating reachability, collision-avoidance, or closed-loop executability requirements. This embodiment gap limits zero-shot deployment across robots, even when the task-space behavior itself is transferable.   We propose an inference-time optimization framework that couples the behavior generation to physical feasibility by formulating diffusion guidance as a constrained optimization problem. Our key insight is to replace the sampling perturbation in the backward process with an optimized correction, allowing hard constraints or soft penalties to be imposed during sampling without the need to retrain the diffusion model, while keeping samples close to the learned prior.   We evaluate the method on dexterous grasp synthesis with reachability and collision-avoidance constraints, and dynamic manipulation with controller-level trackability constraints. Across settings and robot embodiments, optimization-guided denoising matches the feasibility of projection- and gradient-guidance baselines while better preserving grasp quality, and improving controller-level executability and task success, with task success improving by up to 20pp. on dexterous grasping and 23pp. on visuomotor manipulation over the best baseline.",
+    "published_date": "2026-06-23",
+    "authors": [
+      "Sabrina Bodmer",
+      "René Zurbrügg",
+      "Tifanny Portela",
+      "Hao Ma",
+      "Alexandre Didier",
+      "Marco Hutter",
+      "Colin Jones",
+      "Melanie Zeilinger"
+    ],
+    "first_author": "Sabrina Bodmer",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2606.24208.pdf",
+    "abs_url": "https://arxiv.org/abs/2606.24208",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
   }
 }
