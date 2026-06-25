@@ -5,26 +5,16 @@ title: "Dexterous Grasp Daily"
 
 # Dexterous Grasp — Daily Paper Digest
 
-**2026-06-24** — 2 new papers from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
+**2026-06-25** — 1 new paper from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
 
 
-## [PDS Joint: A Parametric Double-Spiral Joint Tailored for Dexterous Hands]({{ site.baseurl }}/papers/2606.24377/)
+## [ZeroDex: Zero-Shot Long-Horizon Dexterous Manipulation via Multi-View 3D-Grounded VLM Reasoning]({{ site.baseurl }}/papers/2606.19340/)
 
-**2026-06-23** · Haoyang Li et al. 
+**2026-06-17** · Jisoo Kim et al. 
 
-Compliant joints can embed safety and adaptability into dexterous hands, but achieving large-stroke anthropomorphic motion while maintaining joint-specific, directiondependent stiffness and reliable proprioception remains challenging. This paper presents the PDS joint, a parametric doublespiral (PDS...
+We present ZeroDex, a zero-shot framework for long-horizon dexterous manipulation that grounds language instructions into executable 3D task plans from calibrated multi-view RGB images. Rather than training an end-to-end policy, our system uses a vision-language model (VLM) to produce reference-fram...
 
-[Read more →]({{ site.baseurl }}/papers/2606.24377/)
-
----
-
-## [Grounding Generative Policies in Physics: Optimization-Guided Diffusion for Robot Control]({{ site.baseurl }}/papers/2606.24208/)
-
-**2026-06-23** · Sabrina Bodmer et al. 
-
-Diffusion models sample effectively from high-dimensional, multimodal distributions, but their outputs may violate deployment constraints. For task-space robot policies, generated grasps, waypoints, or trajectories can be distributionally valid yet infeasible, violating reachability, collision-avoid...
-
-[Read more →]({{ site.baseurl }}/papers/2606.24208/)
+[Read more →]({{ site.baseurl }}/papers/2606.19340/)
 
 ---
 
