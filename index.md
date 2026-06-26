@@ -5,16 +5,16 @@ title: "Dexterous Grasp Daily"
 
 # Dexterous Grasp — Daily Paper Digest
 
-**2026-06-25** — 1 new paper from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
+**2026-06-26** — 1 new paper from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
 
 
-## [ZeroDex: Zero-Shot Long-Horizon Dexterous Manipulation via Multi-View 3D-Grounded VLM Reasoning]({{ site.baseurl }}/papers/2606.19340/)
+## [Play2Perfect: What Matters in Dexterous Play Pretraining for Precise Assembly?]({{ site.baseurl }}/papers/2606.26428/)
 
-**2026-06-17** · Jisoo Kim et al. 
+**2026-06-24** · Tyler Ga Wei Lum et al. 
 
-We present ZeroDex, a zero-shot framework for long-horizon dexterous manipulation that grounds language instructions into executable 3D task plans from calibrated multi-view RGB images. Rather than training an end-to-end policy, our system uses a vision-language model (VLM) to produce reference-fram...
+Multi-fingered robots promise the speed and dexterity of human hands, yet challenging problems such as precise assembly have remained out of reach. These tasks are contact-rich, making data collection for imitation learning difficult, and sparse-reward, making direct exploration with reinforcement l...
 
-[Read more →]({{ site.baseurl }}/papers/2606.19340/)
+[Read more →]({{ site.baseurl }}/papers/2606.26428/)
 
 ---
 
