@@ -134,29 +134,6 @@
     "has_summary": false,
     "has_podcast": false
   },
-  "2606.21245": {
-    "arxiv_id": "2606.21245",
-    "title": "A Human-Inspired Thumb-Index Robotic Hand with Strain Gauges Embedded in Soft Joints",
-    "abstract": "Human hand grasp adaptation depends mainly on the synergy between physical structure and biological feedback. Inspired by this biomechanical principle, the Safe Thumb-Index Robotic (STIR) Hand was developed as a minimal, lightweight, and low-cost two-digit prototype featuring an asymmetric thumb-index configuration. By pairing an underactuated, tendon-driven mechanical design with flexible strain gauges embedded into silicone-encapsulated soft joints, the system achieves passive grasp adaptation while establishing both internal proprioception and external perception. Unsupervised analysis was carried out on a dataset of the STIR hand grasping 20 different objects, along with an object classification task and an ablation study to highlight the contribution of the soft joint sensors. The object classification task discriminated object size, shape, and material stiffness with a high classification accuracy. In contrast to traditional industrial grippers and robotic hands, the STIR Hand demonstrates that sensorized compliant joints significantly improve overall sensitivity and ensure safe grasping, while remaining independent of additional fingertip tactile elements or external vision systems. Finally, a comparison to similar devices grasping identical objects validates the utility of the STIR Hand.",
-    "published_date": "2026-06-19",
-    "authors": [
-      "Jonas Papenbrock",
-      "Shubhan Patni",
-      "Tomaso Lisini Baldi",
-      "Michele Guerri",
-      "Elia Landi",
-      "Ada Fort",
-      "Matej Hoffmann"
-    ],
-    "first_author": "Jonas Papenbrock",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2606.21245.pdf",
-    "abs_url": "https://arxiv.org/abs/2606.21245",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
   "2606.24377": {
     "arxiv_id": "2606.24377",
     "title": "PDS Joint: A Parametric Double-Spiral Joint Tailored for Dexterous Hands",
