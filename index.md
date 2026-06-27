@@ -5,16 +5,16 @@ title: "Dexterous Grasp Daily"
 
 # Dexterous Grasp — Daily Paper Digest
 
-**2026-06-26** — 1 new paper from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
+**2026-06-27** — 1 new paper from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
 
 
-## [Play2Perfect: What Matters in Dexterous Play Pretraining for Precise Assembly?]({{ site.baseurl }}/papers/2606.26428/)
+## [A Human-Inspired Thumb-Index Robotic Hand with Strain Gauges Embedded in Soft Joints]({{ site.baseurl }}/papers/2606.21245/)
 
-**2026-06-24** · Tyler Ga Wei Lum et al. 
+**2026-06-19** · Jonas Papenbrock et al. 
 
-Multi-fingered robots promise the speed and dexterity of human hands, yet challenging problems such as precise assembly have remained out of reach. These tasks are contact-rich, making data collection for imitation learning difficult, and sparse-reward, making direct exploration with reinforcement l...
+Human hand grasp adaptation depends mainly on the synergy between physical structure and biological feedback. Inspired by this biomechanical principle, the Safe Thumb-Index Robotic (STIR) Hand was developed as a minimal, lightweight, and low-cost two-digit prototype featuring an asymmetric thumb-ind...
 
-[Read more →]({{ site.baseurl }}/papers/2606.26428/)
+[Read more →]({{ site.baseurl }}/papers/2606.21245/)
 
 ---
 
