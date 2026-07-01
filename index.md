@@ -5,26 +5,26 @@ title: "Dexterous Grasp Daily"
 
 # Dexterous Grasp — Daily Paper Digest
 
-**2026-06-30** — 2 new papers from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
+**2026-07-01** — 2 new papers from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
 
 
-## [AutoDex: An Automated Real-World System for Dexterous Grasping Data Collection]({{ site.baseurl }}/papers/2606.23689/)
+## [CoDex: Learning Compositional Dexterous Functional Manipulation without Demonstrations]({{ site.baseurl }}/papers/2606.31909/)
 
-**2026-06-22** · Mingi Choi et al. 
+**2026-06-30** · Bowen Jiang et al. 
 
-Learning robust dexterous grasping requires real-world data that records the physical outcomes of grasp attempts. Such data is hard to obtain at scale: teleoperation yields valid physical outcomes but is slow and operator-biased, while simulation-based generation is cheap and scalable but cannot cer...
+In this work, we study Compositional Dexterous Functional Object Manipulation (CD-FOM): tasks such as aiming and actuating a spray bottle on a plant or a glue gun on wood, which require both actuating an object's internal mechanism and controlling its pose to apply the object's function to the envir...
 
-[Read more →]({{ site.baseurl }}/papers/2606.23689/)
+[Read more →]({{ site.baseurl }}/papers/2606.31909/)
 
 ---
 
-## [CoorDex: Coordinating Body and Hand Priors for Continuous Dexterous Humanoid Loco-Manipulation]({{ site.baseurl }}/papers/2606.23680/)
+## [From Grasps to Dexterity: Large-Scale Grasp Pretraining for Dexterous Manipulation]({{ site.baseurl }}/papers/2606.30749/)
 
-**2026-06-22** · Sikai Li et al. 
+**2026-06-29** · Ying Yuan et al. 
 
-Humanoid loco-manipulation is often simplified into a stop-and-go process: walking to an object, stopping to manipulate it, and then resuming locomotion. It also commonly relies on low degree-of-freedom (DoF) end effectors that behave like an open-close grasp primitive. We introduce CoorDex, a learn...
+Large-scale dexterous grasp datasets encode rich priors over hand-object interaction, but their use has largely been confined to grasp generation and pick-and-place manipulation. We study whether such data can instead support functional dexterity in articulated tool use, where a robot must acquire a...
 
-[Read more →]({{ site.baseurl }}/papers/2606.23680/)
+[Read more →]({{ site.baseurl }}/papers/2606.30749/)
 
 ---
 
