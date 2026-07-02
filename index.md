@@ -5,26 +5,16 @@ title: "Dexterous Grasp Daily"
 
 # Dexterous Grasp — Daily Paper Digest
 
-**2026-07-01** — 2 new papers from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
+**2026-07-02** — 1 new paper from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
 
 
-## [CoDex: Learning Compositional Dexterous Functional Manipulation without Demonstrations]({{ site.baseurl }}/papers/2606.31909/)
+## [Play2Perfect: What Matters in Dexterous Play Pretraining for Precise Assembly?]({{ site.baseurl }}/papers/2606.26428/)
 
-**2026-06-30** · Bowen Jiang et al. 
+**2026-06-24** · Tyler Ga Wei Lum et al. 
 
-In this work, we study Compositional Dexterous Functional Object Manipulation (CD-FOM): tasks such as aiming and actuating a spray bottle on a plant or a glue gun on wood, which require both actuating an object's internal mechanism and controlling its pose to apply the object's function to the envir...
+Multi-fingered robots promise the speed and dexterity of human hands, yet challenging problems such as precise assembly have remained out of reach. These tasks are contact-rich, making data collection for imitation learning difficult, and sparse-reward, making direct exploration with reinforcement l...
 
-[Read more →]({{ site.baseurl }}/papers/2606.31909/)
-
----
-
-## [From Grasps to Dexterity: Large-Scale Grasp Pretraining for Dexterous Manipulation]({{ site.baseurl }}/papers/2606.30749/)
-
-**2026-06-29** · Ying Yuan et al. 
-
-Large-scale dexterous grasp datasets encode rich priors over hand-object interaction, but their use has largely been confined to grasp generation and pick-and-place manipulation. We study whether such data can instead support functional dexterity in articulated tool use, where a robot must acquire a...
-
-[Read more →]({{ site.baseurl }}/papers/2606.30749/)
+[Read more →]({{ site.baseurl }}/papers/2606.26428/)
 
 ---
 
