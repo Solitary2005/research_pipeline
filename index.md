@@ -5,7 +5,7 @@ title: "Dexterous Grasp Daily"
 
 # Dexterous Grasp — Daily Paper Digest
 
-**2026-07-02** — 1 new paper from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
+**2026-07-03** — 1 new paper from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
 
 
 ## [Play2Perfect: What Matters in Dexterous Play Pretraining for Precise Assembly?]({{ site.baseurl }}/papers/2606.26428/)
