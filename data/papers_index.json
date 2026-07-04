@@ -68,26 +68,6 @@
     "has_summary": true,
     "has_podcast": true
   },
-  "2606.28196": {
-    "arxiv_id": "2606.28196",
-    "title": "Learning Stable In-Grasp Manipulation in a Non-Dropping Action Space",
-    "abstract": "Traditionally, dexterous manipulation controllers are designed using analytic models constrained by strong assumptions about the hand and the objects being manipulated. Reinforcement learning (RL) has become another common approach in which skills are explored openly in an end-to-end manner but is inefficient because of unnoticeable instability and conflicts in learning objectives. This paper attempts to efficiently explore stable and accurate manipulation skills by decomposing dexterous skills into multiple simpler/analyzable components. Each skill component is subsequently learned with constraints and guidance from classical physics and control theory. Our work shows that for stable grasp, in-grasp reposition/reorientation with different objects, sensor/motor noise, latency, and frictional conditions, skill learning becomes efficient and stable with prior knowledge from theory.",
-    "published_date": "2026-06-26",
-    "authors": [
-      "Ha Thang Long Doan",
-      "Hikaru Arita",
-      "Kazuto Nakashima",
-      "Kenji Tahara"
-    ],
-    "first_author": "Ha Thang Long Doan",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2606.28196.pdf",
-    "abs_url": "https://arxiv.org/abs/2606.28196",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
   "2606.31909": {
     "arxiv_id": "2606.31909",
     "title": "CoDex: Learning Compositional Dexterous Functional Manipulation without Demonstrations",
@@ -122,26 +102,6 @@
     "primary_category": "cs.RO",
     "pdf_url": "https://arxiv.org/pdf/2606.30749.pdf",
     "abs_url": "https://arxiv.org/abs/2606.30749",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
-  "2606.26428": {
-    "arxiv_id": "2606.26428",
-    "title": "Play2Perfect: What Matters in Dexterous Play Pretraining for Precise Assembly?",
-    "abstract": "Multi-fingered robots promise the speed and dexterity of human hands, yet challenging problems such as precise assembly have remained out of reach. These tasks are contact-rich, making data collection for imitation learning difficult, and sparse-reward, making direct exploration with reinforcement learning (RL) intractable. Consequently, prior work has made progress by structuring the problem with specialized grippers, tool attachments, and environment fixtures. In this work, we argue that before a robot can perfect precise assembly, it must first learn to play. We further ask the question: what factors in the process of learning to play matter for precise assembly? We propose Play2Perfect, an RL framework for task-agnostic pretraining through play on diverse objects and goals, which is then perfected on precise assembly. The goal of play is to acquire reusable manipulation priors, such as grasping, in-hand reorientation and pose reaching. Finetuning then adapts this general prior to assembly, focusing exploration on the final contact-rich, high-precision interactions needed for success. We systematically study key design choices in play pretraining, including object diversity, training objective, trajectory diversity, and goal precision. We show that our prior is 33x more sample-efficient than RL training from scratch, even when provided with dense, multi-stage rewards. We demonstrate zero-shot sim-to-real transfer, achieving 60% success on tight insertions with only 0.5 mm contact clearance, and over 50% success on long-horizon multi-part assembly and screwing.",
-    "published_date": "2026-06-24",
-    "authors": [
-      "Tyler Ga Wei Lum",
-      "Kushal Kedia",
-      "C. Karen Liu",
-      "Jeannette Bohg"
-    ],
-    "first_author": "Tyler Ga Wei Lum",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2606.26428.pdf",
-    "abs_url": "https://arxiv.org/abs/2606.26428",
     "topic": "dexterous_grasp",
     "interesting": false,
     "has_summary": false,
