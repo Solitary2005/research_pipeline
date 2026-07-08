@@ -68,25 +68,6 @@
     "has_summary": true,
     "has_podcast": true
   },
-  "2606.31909": {
-    "arxiv_id": "2606.31909",
-    "title": "CoDex: Learning Compositional Dexterous Functional Manipulation without Demonstrations",
-    "abstract": "In this work, we study Compositional Dexterous Functional Object Manipulation (CD-FOM): tasks such as aiming and actuating a spray bottle on a plant or a glue gun on wood, which require both actuating an object's internal mechanism and controlling its pose to apply the object's function to the environment. These tasks pose significant challenges for robots due to the demanding integration of semantic understanding of the object's function, actuation mode, and application area with intricate physical dexterity to manage grasp stability, movement trajectory, and actuation. We introduce CoDex, a zero-demonstration framework that autonomously discovers CD-FOM manipulation strategies. CoDex uses vision-language models (VLMs) to infer semantic constraints from the task and scene. These constraints guide analytic constrained optimization to generate a short list of functional grasp candidates that can be efficiently refined with reinforcement learning to generate full grasp-move-actuate policies transferable from simulation to the real world. We evaluate CoDex on a 7-DoF robot arm with a 16-DoF multi-fingered hand across six CD-FOM tasks involving previously unseen objects with internal mechanisms, including spray bottles, hot glue guns, air dusters, flashlights, and pepper grinders, and their application to unseen target objects, showcasing its ability to autonomously discover and execute complex, physically viable dexterous behaviors without human demonstrations. More information at https://robin-lab.cs.utexas.edu/CoDex/.",
-    "published_date": "2026-06-30",
-    "authors": [
-      "Bowen Jiang",
-      "William Painter Reger",
-      "Roberto Martin-Martin"
-    ],
-    "first_author": "Bowen Jiang",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2606.31909.pdf",
-    "abs_url": "https://arxiv.org/abs/2606.31909",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
   "2607.04940": {
     "arxiv_id": "2607.04940",
     "title": "Closing the Reality Gap: Zero-Shot Sim-to-Real Deployment for Dexterous Force-Based Grasping and Manipulation",
@@ -168,26 +149,6 @@
     "primary_category": "cs.RO",
     "pdf_url": "https://arxiv.org/pdf/2607.03529.pdf",
     "abs_url": "https://arxiv.org/abs/2607.03529",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
-  "2606.30749": {
-    "arxiv_id": "2606.30749",
-    "title": "From Grasps to Dexterity: Large-Scale Grasp Pretraining for Dexterous Manipulation",
-    "abstract": "Large-scale dexterous grasp datasets encode rich priors over hand-object interaction, but their use has largely been confined to grasp generation and pick-and-place manipulation. We study whether such data can instead support functional dexterity in articulated tool use, where a robot must acquire a tool, maintain contact, and operate its functional moving parts. We adapt a hierarchical imitation learning framework that combines high-level hand sub-goal prediction with a low-level goal-conditioned controller. We construct a 355k-trajectory grasp-pretraining dataset from large-scale dexterous grasp annotations and use it to pretrain the low-level controller. The controller is then fine-tuned on downstream task demonstrations. To evaluate this setting, we introduce DexCraft, a simulation benchmark with six articulated tool-use tasks requiring coordinated finger motion. Across simulation and real-world experiments, our approach outperforms end-to-end diffusion policy baselines and hierarchical policies trained from scratch. In the real world, it improves full-task success by 33.3 percentage points over DP3. These results show that grasp datasets can serve not only as resources for grasp synthesis, but also as scalable pretraining data for contact-rich dexterous manipulation. Videos are shown on https://yingyuan0414.github.io/grasp2dexterity/ .",
-    "published_date": "2026-06-29",
-    "authors": [
-      "Ying Yuan",
-      "Xinyu Liu",
-      "Sriram Krishna",
-      "David Held"
-    ],
-    "first_author": "Ying Yuan",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2606.30749.pdf",
-    "abs_url": "https://arxiv.org/abs/2606.30749",
     "topic": "dexterous_grasp",
     "interesting": false,
     "has_summary": false,
