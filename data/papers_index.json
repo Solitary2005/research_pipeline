@@ -228,5 +228,36 @@
     "interesting": false,
     "has_summary": false,
     "has_podcast": false
+  },
+  "2607.08751": {
+    "arxiv_id": "2607.08751",
+    "title": "DexVerse: A Modular Benchmark for Multi-Task, Multi-Embodiment Dexterous Manipulation",
+    "abstract": "Building general-purpose dexterous manipulation policies requires benchmarks that go beyond isolated tasks to systematically evaluate policies across diverse interaction modes, sensory conditions, and robot embodiments. However, existing benchmarks remain limited in task and data diversity, embodiment coverage, or controllable visual variation, hindering studies of cross-task and cross-embodiment generalization. We present DexVerse, a large-scale and modular benchmark for dexterous manipulation. DexVerse includes 100 tasks spanning a broad range of manipulation skills, including object grasping and relocation, articulated-object interaction, functional tool use, bimanual coordination, non-prehensile control, contact-rich behaviors, multi-goal execution, and long-horizon multi-stage task completion. It supports 3 robot arms and 6 dexterous hands, and is extensible to new tasks, assets, and embodiments. To evaluate visuomotor generalization, DexVerse provides configurable visual variations in textures, background, lighting, and camera viewpoints. We further provide a VR-based teleoperation interface and 3,180 demonstrations with synchronized proprioceptive, RGB, depth, point-cloud, and state observations. We benchmark representative methods, including Diffusion Policy, DP3, OpenVLA, and $π_{0.5}$, across 19 tasks. Results reveal substantial challenges in task generalization and visuomotor robustness, establishing DexVerse as a promising testbed for general-purpose dexterous manipulation. Project page: https://ycyao216.github.io/DexVerse.site",
+    "published_date": "2026-07-09",
+    "authors": [
+      "Yunchao Yao",
+      "Zhuxiu Xu",
+      "Tianqi Zhang",
+      "Zixian Liu",
+      "Sikai Li",
+      "Zhenyu Wei",
+      "Feng Chen",
+      "Dihong Huang",
+      "Kechang Wan",
+      "Chenyang Ma",
+      "Shuqi Zhao",
+      "Shenghua Gao",
+      "Masayoshi Tomizuka",
+      "Yi Ma",
+      "Mingyu Ding"
+    ],
+    "first_author": "Yunchao Yao",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2607.08751.pdf",
+    "abs_url": "https://arxiv.org/abs/2607.08751",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
   }
 }
