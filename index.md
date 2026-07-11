@@ -5,16 +5,26 @@ title: "Dexterous Grasp Daily"
 
 # Dexterous Grasp — Daily Paper Digest
 
-**2026-07-10** — 1 new paper from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
+**2026-07-11** — 2 new papers from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
 
 
-## [DexVerse: A Modular Benchmark for Multi-Task, Multi-Embodiment Dexterous Manipulation]({{ site.baseurl }}/papers/2607.08751/)
+## [CoorGrasp: Coordinated Contact Control for Adaptive Dexterous Grasping Under Uncertainty]({{ site.baseurl }}/papers/2607.03557/)
 
-**2026-07-09** · Yunchao Yao et al. 
+**2026-07-03** · Mingrui Yu et al. 
 
-Building general-purpose dexterous manipulation policies requires benchmarks that go beyond isolated tasks to systematically evaluate policies across diverse interaction modes, sensory conditions, and robot embodiments. However, existing benchmarks remain limited in task and data diversity, embodime...
+While recent research has focused heavily on dexterous grasp pose generation, less attention has been devoted to the execution of planned grasps. Under shape and position uncertainty, open-loop execution often yields uncoordinated contacts, causing undesired in-hand object motion and even grasp fail...
 
-[Read more →]({{ site.baseurl }}/papers/2607.08751/)
+[Read more →]({{ site.baseurl }}/papers/2607.03557/)
+
+---
+
+## [Current as Touch: Proprioceptive Contact Feedback for Compliant Dexterous Manipulation]({{ site.baseurl }}/papers/2607.03529/)
+
+**2026-07-03** · Chenyang Ma et al. 
+
+Compliance is essential for dexterous manipulation, yet existing solutions often rely on external tactile or force sensors that are costly, fragile, and difficult to deploy on low-cost robot hands. We propose a proprioception-driven framework that learns contact-aware compliance cues from motor curr...
+
+[Read more →]({{ site.baseurl }}/papers/2607.03529/)
 
 ---
 
