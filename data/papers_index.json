@@ -216,5 +216,48 @@
     "interesting": false,
     "has_summary": false,
     "has_podcast": false
+  },
+  "2607.03557": {
+    "arxiv_id": "2607.03557",
+    "title": "CoorGrasp: Coordinated Contact Control for Adaptive Dexterous Grasping Under Uncertainty",
+    "abstract": "While recent research has focused heavily on dexterous grasp pose generation, less attention has been devoted to the execution of planned grasps. Under shape and position uncertainty, open-loop execution often yields uncoordinated contacts, causing undesired in-hand object motion and even grasp failures. To address this, this paper proposes a tactile-driven model predictive controller for adaptive and delicate execution of diverse dexterous grasps. Our approach emphasizes multi-contact coordination across both approaching and grasping phases, with three key novelties: (i) coordination-aware phase separation, (ii) arm-hand coordination to compensate for position errors, and (iii) adaptive force coordination to increase contact forces in a balanced manner. An analytical model is employed to relate contact forces to robot joint motions for predictive control. Our formulation imposes no restrictions on grasp types or contact configurations and integrates seamlessly with state-of-the-art grasp pose generation methods. We validate the approach through large-scale simulations involving 15k grasps across 478 objects on three robotic hands, and real-world experiments on 8 objects. Results demonstrate that our method achieves higher grasp success rates and reduced undesired object movements.",
+    "published_date": "2026-07-03",
+    "authors": [
+      "Mingrui Yu",
+      "Yongpeng Jiang",
+      "Yongyi Jia",
+      "Ren Yi",
+      "Xiang Li"
+    ],
+    "first_author": "Mingrui Yu",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2607.03557.pdf",
+    "abs_url": "https://arxiv.org/abs/2607.03557",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2607.03529": {
+    "arxiv_id": "2607.03529",
+    "title": "Current as Touch: Proprioceptive Contact Feedback for Compliant Dexterous Manipulation",
+    "abstract": "Compliance is essential for dexterous manipulation, yet existing solutions often rely on external tactile or force sensors that are costly, fragile, and difficult to deploy on low-cost robot hands. We propose a proprioception-driven framework that learns contact-aware compliance cues from motor current and joint states. Since motor current is closely related to actuator torque, it provides an intrinsic signal for perceiving contact force, object resistance, and grasp stability without additional sensing hardware. Rather than estimating external wrenches or commanding torque, our method predicts a compliance reference position: an ideal joint-position target for a standard PD controller whose induced position error generates appropriate grasping force. This position-based formulation is compatible with mainstream teleoperation and policy-learning pipelines, while enabling the robot to adapt interaction forces from real-time proprioceptive feedback. Thus, motor current serves not only as a force proxy but also as a learnable proprioceptive contact signal for compliance reference prediction. Experiments on multiple dexterous hands and contact-rich tasks, including fragile object handling, sustained surface contact, thin-object retrieval, and dynamic load adaptation, show stable compliant grasping, safer and more efficient teleoperation, and improved downstream policy learning without external tactile or force sensors.",
+    "published_date": "2026-07-03",
+    "authors": [
+      "Chenyang Ma",
+      "Yunchao Yao",
+      "Zhenyu Wei",
+      "Ruogu Li",
+      "Daniel Szafir",
+      "Mingyu Ding"
+    ],
+    "first_author": "Chenyang Ma",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2607.03529.pdf",
+    "abs_url": "https://arxiv.org/abs/2607.03529",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
   }
 }
