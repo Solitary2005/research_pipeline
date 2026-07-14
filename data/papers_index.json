@@ -68,49 +68,6 @@
     "has_summary": true,
     "has_podcast": true
   },
-  "2607.04940": {
-    "arxiv_id": "2607.04940",
-    "title": "Closing the Reality Gap: Zero-Shot Sim-to-Real Deployment for Dexterous Force-Based Grasping and Manipulation",
-    "abstract": "Human-like dexterous hands with multiple fingers offer human-level manipulation capabilities but remain difficult to train the control policies that can deploy on real hardware due to contact-rich physics and imperfect actuation. We present a sim-to-real reinforcement learning method that leverages dense tactile feedback combined with joint torque sensing to explicitly regulate physical interactions. To enable effective sim-to-real transfer, we introduce (i) a computationally fast tactile simulation that computes distances between dense virtual tactile units and the object via parallel forward kinematics, providing high-rate, high-resolution touch signals needed by RL; (ii) a current-to-torque calibration that eliminates the need for torque sensors on dexterous hands by mapping motor current to joint torque; and (iii) actuator dynamics modeling with randomization to account for non-ideal torque-speed effects and bridge the actuation gaps. Using an asymmetric actor-critic PPO pipeline, we train policies entirely in simulation and deploy them directly to a five-finger hand. The resulting policies demonstrate two essential human-hand skills: (1) command-based controllable grasp force tracking and (2) reorientation of objects in the hand, both of which are robustly executed without fine-tuning on the robot. By combining tactile and torque in the observation space with scalable sensing and actuation modeling, our system provides a practical solution to achieve reliable dexterous manipulation. To our knowledge, this is the first demonstration of controllable grasping on a multi-finger dexterous hand trained entirely in simulation and transferred zero-shot on real hardware.",
-    "published_date": "2026-07-06",
-    "authors": [
-      "Zhe Zhao",
-      "Zhibin Li",
-      "Yilin Ou",
-      "Mengshi Qi"
-    ],
-    "first_author": "Zhe Zhao",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2607.04940.pdf",
-    "abs_url": "https://arxiv.org/abs/2607.04940",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
-  "2607.04554": {
-    "arxiv_id": "2607.04554",
-    "title": "HUGS: Guiding Unified Dexterous Grasp Synthesis Across Modes and Scales via Learned Human Priors",
-    "abstract": "Dexterous grasping across diverse object scales requires contact modes ranging from two-finger pinches to bimanual grasps. Existing dexterous grasp synthesis methods reduce the high-dimensional optimization space with manually designed expected contacts and initialization heuristics, which struggle to balance synthesis success rate and diversity. We present HUGS (Human-prior-guided Unified Dexterous Grasp Synthesis), a human-prior-guided framework for unified dexterous grasp synthesis across modes and scales. Instead of directly retargeting human demonstrations, HUGS learns an object-conditioned human prior that captures human grasp preferences and guides downstream force-closure-aware optimization. The prior is trained on a compact self-collected human grasp dataset with 1.8K grasps over 304 objects, providing broad coverage of object scales and contact modes. During synthesis, HUGS adaptively proposes contact modes and wrist initializations, substantially improving the balance between contact-mode coverage and synthesis success rate over heuristic-based methods. With HUGS, we synthesize 3.2M robotic grasps over 157K scenes, spanning object half-diagonal lengths from 2 cm to 30 cm and modes from two-finger to bimanual grasps. Models trained on the synthesized dataset autonomously select appropriate contact modes in the real world, enabling grasping from screws to large boxes.",
-    "published_date": "2026-07-06",
-    "authors": [
-      "Mingrui Yu",
-      "Yongpeng Jiang",
-      "Yongyi Jia",
-      "Kangchen Lv",
-      "Li Huang",
-      "Yi Ren",
-      "Xiang Li"
-    ],
-    "first_author": "Mingrui Yu",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2607.04554.pdf",
-    "abs_url": "https://arxiv.org/abs/2607.04554",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
   "2607.05883": {
     "arxiv_id": "2607.05883",
     "title": "DexTele: A Dual-Arm Dexterous Teleoperation System Based on Motion Retargeting and Adaptive Force Control",
