@@ -68,28 +68,6 @@
     "has_summary": true,
     "has_podcast": true
   },
-  "2607.05883": {
-    "arxiv_id": "2607.05883",
-    "title": "DexTele: A Dual-Arm Dexterous Teleoperation System Based on Motion Retargeting and Adaptive Force Control",
-    "abstract": "In dual-arm dexterous teleoperation, cross-platform generalization of motion retargeting and interactivity of grasping are crucial. However, the heterogeneity of robotic architectures and the wide variety of grasping objects pose significant challenges to achieving precise motion retargeting and compliant grasping in dual-arm dexterous teleoperation. To address these challenges, a dual-arm dexterous teleoperation system (DexTele) is proposed based on motion retargeting and adaptive force control. First, a vision-based motion retargeting module is designed to generate preliminary robot motions from human images. In this module, a motion-graph encoder and latent optimization are proposed for precise and convenient cross-platform motion retargeting. Second, an adaptive grasping module is designed to achieve compliant grasping. This module combines a vision-language model (VLM) with model predictive control (MPC), allowing the system to predict the required grasping force for a target object and perform gradient-based online optimization. Finally, extensive experiments demonstrate that the DexTele achieves precise motion retargeting and compliant grasping with generalization across multiple robot platforms.",
-    "published_date": "2026-07-07",
-    "authors": [
-      "Yuanchuan Lai",
-      "Qing Gao",
-      "Ziyan Liang",
-      "Xianfeng Cheng",
-      "Junjie Hu",
-      "Zhaojie Ju"
-    ],
-    "first_author": "Yuanchuan Lai",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2607.05883.pdf",
-    "abs_url": "https://arxiv.org/abs/2607.05883",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
   "2607.07622": {
     "arxiv_id": "2607.07622",
     "title": "Continuous and large-scale: ELEANOR, the soft architected arm inspired by the elephant trunk",
