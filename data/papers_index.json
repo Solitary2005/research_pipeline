@@ -165,5 +165,53 @@
     "interesting": false,
     "has_summary": false,
     "has_podcast": false
+  },
+  "2607.16187": {
+    "arxiv_id": "2607.16187",
+    "title": "Handroid: Bridging Dexterous Hand and Humanoid",
+    "abstract": "Dexterous hands and humanoid robots are typically developed as distinct embodiments: the former enable contact-rich manipulation at the object scale, whereas the latter provide mobility and whole-body interaction in human-centered environments. We introduce \\textbf{Handroid}, a desktop-scale dual-embodiment robot that integrates both capabilities within a single reconfigurable platform. Handroid reuses one 27-DoF electromechanical body as either a dexterous hand or a desktop humanoid, measuring 0.33 m in height and 2.05 kg in weight. In the dexterous hand embodiment, 20 DoFs form an anthropomorphic hand closely matching the kinematic structure of the human hand. In the humanoid embodiment, the same articulated modules are reconfigured into a humanoid with a head, arms, and legs, including a 12-DoF lower-limb structure for locomotion and whole-body motion. Handroid further provides a unified control and learning framework supporting hand teleoperation, dexterous grasping, in-hand manipulation, humanoid locomotion, gait generation, and interactive motion authoring. We validate the platform through real-world dexterous manipulation, reinforcement-learning-based locomotion, keyframe motion deployment, and a long-horizon task involving embodiment reconfiguration, locomotion, docking, and dexterous pick-and-place. These results position Handroid as a compact and reproducible platform for advancing morphology-reconfigurable robotics and cross-embodiment robot learning.",
+    "published_date": "2026-07-17",
+    "authors": [
+      "Ruogu Li",
+      "Chenyang Ma",
+      "Sikai Li",
+      "Zhenyu Wei",
+      "Yunchao Yao",
+      "Haochen Shi",
+      "C. Karen Liu",
+      "Shuran Song",
+      "Mingyu Ding"
+    ],
+    "first_author": "Ruogu Li",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2607.16187.pdf",
+    "abs_url": "https://arxiv.org/abs/2607.16187",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2607.15448": {
+    "arxiv_id": "2607.15448",
+    "title": "VTAP Gripper: Synergizing Fingertip Sensing and a Visuo-Tactile Active Palm for Dexterous In-Hand Manipulation",
+    "abstract": "This paper presents a tactile-reactive gripper that integrates a Visuo-Tactile Active Palm (VTAP) and compliant, reconfigurable fingers equipped with tactile array sensors. The design exploits structured finger-palm synergy and multi-modal perception to achieve both robust grasping and fine manipulation. The actuated bi-modal palm seamlessly combines long-range visual localization with contact-rich tactile feedback, substantially extending the system's manipulation capability. To bridge the embodiment gap between human hand motion and the heterogeneous three-finger structure, we further propose a staged, gesture-conditioned retargeting framework for dexterous teleoperation. Extensive experiments validate the system across a range of challenging tasks: reactive grasping of YCB and fragile objects, in-hand syringe reorientation and plunger actuation, singulation of clustered objects down to 3 mm in diameter, and vision-tactile peg-in-hole insertion. Results demonstrate that high manipulation performance can be achieved through coordinated finger-palm interaction and multi-modal sensing, without resorting to high degrees of freedom anthropomorphic designs. The VTAP gripper and its retargeting framework offer a practical reference architecture for dexterous gripper design, manipulation, and contact-rich data collection in support of learning-based approaches. Project webpage: https://yuhochau.github.io/vtap/.",
+    "published_date": "2026-07-16",
+    "authors": [
+      "Yuhao Zhou",
+      "Sheeraz Athar",
+      "Zhixian Hu",
+      "Binghao Huang",
+      "Yunzhu Li",
+      "Juan Wachs",
+      "Yu She"
+    ],
+    "first_author": "Yuhao Zhou",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2607.15448.pdf",
+    "abs_url": "https://arxiv.org/abs/2607.15448",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
   }
 }
