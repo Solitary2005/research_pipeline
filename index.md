@@ -5,7 +5,7 @@ title: "Dexterous Grasp Daily"
 
 # Dexterous Grasp — Daily Paper Digest
 
-All 7 papers in the collection. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
+All 6 papers in the collection. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
 
 
 ## [Handroid: Bridging Dexterous Hand and Humanoid]({{ site.baseurl }}/papers/2607.16187/)
@@ -35,16 +35,6 @@ Dexterous manipulation is limited not only by algorithms but by a shortage of ac
 This paper presents a tactile-reactive gripper that integrates a Visuo-Tactile Active Palm (VTAP) and compliant, reconfigurable fingers equipped with tactile array sensors. The design exploits structured finger-palm synergy and multi-modal perception to achieve both robust grasping and fine manipula...
 
 [Read more →]({{ site.baseurl }}/papers/2607.15448/)
-
----
-
-## [Industrial Dexterity Benchmark: A Hardware-Software Benchmarking Platform for Industrial Dexterous Manipulation]({{ site.baseurl }}/papers/2607.14021/)
-
-**2026-07-15** · Honglu He et al. 
-
-Dexterous manipulation remains a critical bottleneck in industrial automation; tasks such as cable routing, connector insertion, and precision assembly still rely heavily on manual labor despite decades of robotics research. This work presents a progression from classical, modular robotics pipelines...
-
-[Read more →]({{ site.baseurl }}/papers/2607.14021/)
 
 ---
 
