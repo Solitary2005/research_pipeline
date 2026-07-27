@@ -5,7 +5,7 @@ title: "Dexterous Grasp Daily"
 
 # Dexterous Grasp — Daily Paper Digest
 
-**2026-07-26** — 3 new papers from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
+**2026-07-27** — 2 new papers from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
 
 
 ## [Handroid: Bridging Dexterous Hand and Humanoid]({{ site.baseurl }}/papers/2607.16187/)
@@ -15,16 +15,6 @@ title: "Dexterous Grasp Daily"
 Dexterous hands and humanoid robots are typically developed as distinct embodiments: the former enable contact-rich manipulation at the object scale, whereas the latter provide mobility and whole-body interaction in human-centered environments. We introduce \textbf{Handroid}, a desktop-scale dual-em...
 
 [Read more →]({{ site.baseurl }}/papers/2607.16187/)
-
----
-
-## [MIDAS Hand: Modular low-Impedance Direct-drive Anthropomorphic Sensing Hand]({{ site.baseurl }}/papers/2607.14487/)
-
-**2026-07-16** · Alvin Zhu et al. 
-
-Dexterous manipulation is limited not only by algorithms but by a shortage of accessible hand hardware that combines human-scale morphology, ease of manufacturing or maintenance, tactile sensing, and practical cost. Existing dexterous hands tend to optimize some of these properties at the expense of...
-
-[Read more →]({{ site.baseurl }}/papers/2607.14487/)
 
 ---
 
