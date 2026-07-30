@@ -68,26 +68,6 @@
     "has_summary": true,
     "has_podcast": true
   },
-  "2607.18950": {
-    "arxiv_id": "2607.18950",
-    "title": "Design and stability analysis of an underactuated hand with passively rotating fingers",
-    "abstract": "This paper presents an innovative design and stability analysis of an underactuated robotic finger with spatial mobility, designed to enhance gripping dexterity in robotic hands. The finger architecture incorporates a revolute joint at its base, enabling passive spatial rotation that facilitates both cylindrical and spherical grasping. With only two phalanges per finger, the design simplifies kinematic complexity while supporting precision and enveloping grasps. Stability criteria, based on the moment at the finger base joint induced by contact forces, are introduced to ensure reliable object gripping and prevent ejection during manipulation. The study also examines a differential mechanism that distributes a single actuation torque across multiple fingers, allowing adaptive and coordinated motion. This mechanism enhances the hand's ability to grasp diverse object shapes with minimal pre-grasp adjustments, leveraging passivity for autonomous adaptation. Theoretical findings are experimentally validated using a fully mechanical prototype, demonstrating versatility in performing cylindrical, spherical, parallel, and enveloping grasps. The integration of underactuation-both within individual fingers and among multiple fingers-reduces mechanical complexity, cost, and control demands while preserving functional adaptability. This work advances the development of compliant robotic hands suitable for applications requiring dexterity and robustness, such as agricultural robotics, logistics, assistive technologies, and waste sorting. Future research will focus on automating actuation and refining control strategies to further improve grasp stability and precision, paving the way for autonomous manipulation in unstructured environments.",
-    "published_date": "2026-07-21",
-    "authors": [
-      "Léonie Plancoulaine",
-      "Sylvain Guégan",
-      "Franck Plestan",
-      "Damien Chablat"
-    ],
-    "first_author": "Léonie Plancoulaine",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2607.18950.pdf",
-    "abs_url": "https://arxiv.org/abs/2607.18950",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
   "manual-20260730-transformer-transformer-a-unified-model": {
     "arxiv_id": "manual-20260730-transformer-transformer-a-unified-model",
     "title": "Transformer Transformer: A Unified Model for Motion-Conditioned Robot Co-design",
