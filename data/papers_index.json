@@ -87,5 +87,24 @@
     "interesting": false,
     "has_summary": false,
     "has_podcast": false
+  },
+  "manual-20260730-transformer-transformer-a-unified-model": {
+    "arxiv_id": "manual-20260730-transformer-transformer-a-unified-model",
+    "title": "Transformer Transformer: A Unified Model for Motion-Conditioned Robot Co-design",
+    "authors": [
+      "Huy Ha",
+      "Karen Liu",
+      "Shuran Song"
+    ],
+    "first_author": "Huy Ha",
+    "abstract": "An often overlooked factor of robot manipulation performance is the embodiment of the robot itself. Motivated by this problem, we study motion\u0002conditioned robot co-design, where the goal is to generate complete robot designs that track target end-effector trajectories (from human demonstrations) while opti\u0002mizing user-defined rewards. We introduce Transformer Transformer, a diffusion\ntransformer trained on RoboTokens, a unified tokenization of robot embodiments,\nstates, and actions. The same architecture can be used across embodiment spaces\n(e.g., wheeled bimanual, quadrupeds, humanoids) and use cases (embodiment\ngeneration, cross embodiment controller). Rather than overfitting to one reward\nfunction, Transformer Transformer is a dynamics model, whose reward-agnostic\nstate and action predictions can be converted into reward-specific value predic\u0002tions. These value predictions are used to steer embodiment diffusion towards\nhigh value robot designs, through a procedure we call Dynamics Self-Guidance.\nExperiments across multiple design spaces show zero-shot optimization of un\u0002seen rewards and trajectories, improving performance and runtime over the evo\u0002lutionary baseline. Finally, we fabricated an optimized ALOHA design, which\nreduced tracking error by over 70% compared to the original design. Check out\ntransformer-transformer.github.io for summary/result videos.",
+    "published_date": "2027-07-28",
+    "primary_category": "",
+    "pdf_url": "",
+    "abs_url": "",
+    "topic": "control",
+    "interesting": true,
+    "has_summary": true,
+    "has_podcast": true
   }
 }
