@@ -86,5 +86,47 @@
     "interesting": true,
     "has_summary": true,
     "has_podcast": true
+  },
+  "2607.28416": {
+    "arxiv_id": "2607.28416",
+    "title": "FasTac: A Curved Multispectral Vision-Based Tactile Sensor for High-Speed High-Precision 3D Shape and Force Perception",
+    "abstract": "Curved tactile fingertips for dexterous manipulation must resolve fine contact geometry, distinguish normal and tangential loads, and capture transient signals. Existing curved vision-based tactile sensors struggle to combine accurate 3D reconstruction, three-axis force estimation, and high-speed processing in a compact form. This article presents FasTac, a curved vision-based tactile sensor integrating multispectral photometric stereo, dynamic-convolution force estimation, and hardware acceleration on a field-programmable gate array (FPGA). Single-image-sensor simultaneous multispectral imaging provides spatially aligned observations for robust surface normal estimation, followed by boundary-prior fast Poisson depth reconstruction. HyperForce uses position-aware dynamic convolution to model the spatially nonuniform mechanical response of curved elastomers and estimate three-axis forces. The complete image-to-normal-force pipeline is deployed on an FPGA. Experiments show that near-infrared (NIR) illumination and the boundary prior decrease depth mean absolute error (MAE) from 0.2730 mm to 0.0415 mm; HyperForce achieves normalized mean absolute error (NMAE) values of 2.74% and 2.39% for normal and shear forces, respectively; and FPGA deployment shortens processing latency from 3.26 ms on the GPU to 1.09 ms. Multi-object reconstruction, feedback grasping, and vibration measurement validate fine geometric perception, stable force feedback, and dynamic contact sensing.",
+    "published_date": "2026-07-30",
+    "authors": [
+      "Xiaofan Lu",
+      "Kaiji Huang",
+      "Jiahui Chen",
+      "Yuankai Lin",
+      "Hua Yang",
+      "Zhouping Yin"
+    ],
+    "first_author": "Xiaofan Lu",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2607.28416.pdf",
+    "abs_url": "https://arxiv.org/abs/2607.28416",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2607.28198": {
+    "arxiv_id": "2607.28198",
+    "title": "UniCross: Unified Cross-Skill Dexterous Manipulation Synthesis",
+    "abstract": "Many dexterous manipulation tasks require the object to remain securely held throughout the interaction. From the perspective of hand-object relational motion, such manipulation comprises four canonical skills: grasping, relocation, in-hand rotation, and in-hand translation. Human hands flexibly compose these skills to accomplish complex tasks. Existing approaches, however, model these skills separately with skill-specific action constraints, objectives, or even dedicated hand morphologies, which breaks the compatibility and continuity required for long-horizon composition. In this work, we present a unified framework that models all four skills in a single formulation that shares the same state and action spaces and a common objective structure. This formulation enables straightforward distillation of a single cross-skill policy that performs strongly on every skill, generalizes to unseen objects, stays robust to disturbances, and chains skills seamlessly into long-horizon manipulation. The framework also transfers effectively across different hand morphologies. Overall, our results suggest that different dexterous manipulation skills can be viewed as instantiations of a shared task formulation, revealing the intrinsic consistency across different behaviors.",
+    "published_date": "2026-07-30",
+    "authors": [
+      "Hui Zhang",
+      "Julian Ferchow",
+      "Jie Song",
+      "Mirko Meboldt"
+    ],
+    "first_author": "Hui Zhang",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2607.28198.pdf",
+    "abs_url": "https://arxiv.org/abs/2607.28198",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
   }
 }
