@@ -5,7 +5,7 @@ title: "Dexterous Grasp Daily"
 
 # Dexterous Grasp — Daily Paper Digest
 
-**2026-08-08** — 1 new paper from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
+**2026-08-09** — 1 new paper from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
 
 
 ## [FasTac: A Curved Multispectral Vision-Based Tactile Sensor for High-Speed High-Precision 3D Shape and Force Perception]({{ site.baseurl }}/papers/2607.28416/)
