@@ -86,5 +86,62 @@
     "interesting": true,
     "has_summary": true,
     "has_podcast": true
+  },
+  "2608.09778": {
+    "arxiv_id": "2608.09778",
+    "title": "RoboSeg: Online Part-Level Semantic Reconstruction for Robotic Manipulation via a Single Eye-in-Hand Camera",
+    "abstract": "Robotic manipulation requires perception systemsthat identify actionable parts such as handles, rims, triggers,and tool tips, not merely object categories or point clouds. This paper presents RoboSeg, a part-level semantic reconstructionsystem that links vision-language model (VLM) functional-partdiscovery, asynchronous online RGB-D semantic reconstruc-tion, and task-oriented grasp generation without requiring CAD models or pre-scanned meshes. RoboSeg queries a VLM onthe initial RGB observation to obtain compact functional part prompts, then scans with two asynchronous streams: a high-frequency geometry thread for RGB-D odometry and truncated signed distance function (TSDF) fusion, and a keyframe-triggered semantic thread for SAM3 part masks. Projectedmasks are fused by voxel-level temporal voting into a persistentpart-labeled point cloud; RoboSeg uses this map to assign AnyGrasp 6-DoF candidates to semantic parts and select grasps consistent with the task-relevant part label. RoboSeg reaches 83.4% mean part intersection-over-union (mIoU) over manually labeled objects; in a 24-trial physical pilot across fourobjects and eight tasks, the selected grasp contacts the requestedpart in all trials and achieves 21/24 combined task successes.These results characterize RoboSeg as a semantic indexing layerfor task-conditioned manipulation, with AnyGrasp retained asthe proposal generator.",
+    "published_date": "2026-08-10",
+    "authors": [
+      "Zhaochen Lan",
+      "Mengxiang Lin"
+    ],
+    "first_author": "Zhaochen Lan",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2608.09778.pdf",
+    "abs_url": "https://arxiv.org/abs/2608.09778",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2608.09198": {
+    "arxiv_id": "2608.09198",
+    "title": "Ultra-Low-Impedance Robotic Gripper for High-Bandwidth and Transparent Physical Interaction",
+    "abstract": "Conventional robotic grippers often use high-ratio transmissions to generate grasping torque and external force sensors to measure physical interaction. High-ratio transmissions increase friction, reflected inertia, and mechanical impedance, while external sensors add hardware complexity. To address these trade-offs, this study proposes a novel 9-DOF, three-fingered Differential Direct-Drive (DDD) gripper that combines DD motors with a low-ratio (1:2) differential transmission. The mechanism centralizes actuator mass at the base to minimize moving-link inertia, while the differential architecture couples two motors in parallel to amplify torque during flexion. Experiments show that the prototype delivers a nominal grasping force of approximately 18 N and a fingertip force of 4.7 N, while maintaining a low motor contribution to system inertia (0.236%) and low passive mechanical impedance, with a maximum measured value of 50.1 N/m when the motors are unpowered. The proposed hardware addresses the trade-offs among torque, physical transparency, and kinematic dexterity, providing a foundation for high-bandwidth interaction and sensorless proprioceptive force estimation.",
+    "published_date": "2026-08-10",
+    "authors": [
+      "Joon Lee",
+      "Ari Choi",
+      "Seokhwan Jeong"
+    ],
+    "first_author": "Joon Lee",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2608.09198.pdf",
+    "abs_url": "https://arxiv.org/abs/2608.09198",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2608.07887": {
+    "arxiv_id": "2608.07887",
+    "title": "A Mixed-Stiffness Anthropomimetic Fingertip Broadens the Operating Range for Coin Grasping",
+    "abstract": "Robotic grasping of thin, flat objects such as coins on hard surfaces remains challenging because conventional methods require reorienting the object, accessing its underside, or adding a dedicated nail mechanism. We previously showed that a rigid nail arrests soft-pad deformation and thereby forms a geometric constraint that improves precision grasping. Here we asked whether an additional constraint-forming boundary, created within the pad by material choice rather than by anatomy, could extend the conditions under which that constraint holds. We fabricated anthropomimetic fingertips with Shore E10 silicone at the center and Shore A60 at the sides, and compared them with uniformly soft E10 fingertips. An automated apparatus performed an oblique rotational tip pinch in which the pad engaged the coin's lateral surface, lifting it from flush contact with no gap beneath it. Over variations in horizontal approach distances, vertical finger displacements, and index-finger rotation, the mixed-stiffness pair maintained high success rates across more tested settings than the uniform pair during both geometric-constraint formation and the transition to a stable grasp. The nail-free pair failed in all 36 conditions of Experiment 1-1. However, the uniform pair performed better when coin position along the finger axis was varied, a condition-dependent trade-off. After tuning for coin size, both fingertip types grasped all six Japanese denominations. These results suggest that the operating range for thin-object grasping depends not only on pad softness but also on where stiffness is placed within a nail-supported pad, making boundary placement a candidate fingertip design variable.",
+    "published_date": "2026-08-08",
+    "authors": [
+      "Kaigen Go",
+      "Yinlai Jiang",
+      "Hiroshi Yokoi",
+      "Shunta Togo"
+    ],
+    "first_author": "Kaigen Go",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2608.07887.pdf",
+    "abs_url": "https://arxiv.org/abs/2608.07887",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
   }
 }
