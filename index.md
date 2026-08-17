@@ -5,7 +5,7 @@ title: "Dexterous Grasp Daily"
 
 # Dexterous Grasp — Daily Paper Digest
 
-**2026-08-16** — 1 new paper from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
+**2026-08-17** — 1 new paper from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
 
 
 ## [A Mixed-Stiffness Anthropomimetic Fingertip Broadens the Operating Range for Coin Grasping]({{ site.baseurl }}/papers/2608.07887/)
