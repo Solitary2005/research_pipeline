@@ -130,5 +130,129 @@
     "interesting": false,
     "has_summary": false,
     "has_podcast": false
+  },
+  "2608.16712": {
+    "arxiv_id": "2608.16712",
+    "title": "H-PAC Hand: Control-Oriented Modeling and Tendon-Elasticity Compensation for an Underactuated Robotic Hand",
+    "abstract": "Underactuated tendon-driven hands offer compact actuation and passive compliance, but tendon elongation under restoring-spring loading introduces configuration-dependent joint deviations. This paper presents H-PAC, a modular 6-actuator, 15-DoF robotic hand with a control-oriented modeling and implementation framework. A sparse analytical actuator-joint model is derived from the tendon-routing geometry, and a mechanics-based compensation model is developed to account for tendon-elasticity-induced joint errors.   The proposed method is implemented in a hierarchical architecture: a host computer performs workspace-constrained posture mapping and compensation, while an ESP32 generates synchronized commands for six position-controlled servos. The same control parameters and execution strategy are used across all tasks without task-specific retuning.   Monotonic servo-sweep experiments show that the compensation substantially improves joint-angle prediction. The MAE of the index DIP joint decreases from 1.15 degrees to 0.18 degrees, and all nine evaluated joints achieve an MAE below 0.23 degrees. Representative postures and grasping configurations are further executed using the same control pipeline without external joint or force sensing in the control loop. The results demonstrate a practical approach to improving posture reproducibility in compact underactuated robotic end-effectors.",
+    "published_date": "2026-08-17",
+    "authors": [
+      "Teng Yan",
+      "Jiongxu Chen",
+      "Teng Wang",
+      "Yue Yu",
+      "Qixiang Hua",
+      "Zihang Wang",
+      "Yongru Chen",
+      "Bingzhuo Zhong"
+    ],
+    "first_author": "Teng Yan",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2608.16712.pdf",
+    "abs_url": "https://arxiv.org/abs/2608.16712",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2608.16572": {
+    "arxiv_id": "2608.16572",
+    "title": "ViHaTeleop: A Low-Cost, Lightweight Visual-Haptic Teleoperation System for Dexterous Manipulation Learning",
+    "abstract": "Learning from demonstration is a promising approach for dexterous manipulation, but collecting high-quality contact-critical demonstrations remains difficult with low-cost teleoperation hardware. We present ViHaTeleop, a lightweight (0.7 kg), low-cost (\\$550) visual-haptic teleoperation system with SLAM-based wrist tracking, camera-based hand tracking, and finger-wise vibrotactile feedback through Linear Resonant Actuators (LRA). The system includes several design choices (LED illumination, fisheye hand camera, and tactile-aware retargeting constraints) and is deployed on Franka + LEAP Hand + 9DTact in both real and simulated environments. Under matched with/without-haptic conditions with nine participants across six contact-critical tasks, haptics improved success rates across all tasks (+2.2 to +15.6 percentage points), while completion-time effects were task-dependent. Subjective ratings showed significant gains in contact clarity and grasp confidence in both simulation and real-world settings (Wilcoxon signed-rank, $p<0.05$). We also integrate a lightweight depth-camera-based tactile proxy in Isaac Sim, enabling a full pipeline from multi-modal demonstration collection to visual-tactile policy training. Preliminary downstream validation by training visual-tactile policies from collected demonstrations shows tactile cues benefit contact-critical subtasks (peg-in-hole: +17 percentage points over vision-only).",
+    "published_date": "2026-08-17",
+    "authors": [
+      "Fucai Zhu",
+      "Yanhou Lai",
+      "Paul Maestre",
+      "Koichi Hashimoto"
+    ],
+    "first_author": "Fucai Zhu",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2608.16572.pdf",
+    "abs_url": "https://arxiv.org/abs/2608.16572",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2608.16351": {
+    "arxiv_id": "2608.16351",
+    "title": "Arm-Aware Guided Dexterous Grasp Generation with Arm-Agnostic Grasp Models",
+    "abstract": "Dexterous grasp generation that considers arm-related constraints is crucial in real-world scenarios involving arm environment collision avoidance, workspace boundary grasps, and consecutive grasping. Existing hand-centric grasp models, which primarily focus on the floating hand's pose, are insufficient for such cases. Conventional arm-aware methods either rely on rejection sampling to discard infeasible samples or require retraining on arm-specific data, leading to low sample efficiency under adverse conditions or limited generalization across different robots and environments. To overcome these limitations, this letter presents an arm-aware dexterous grasp generation framework that leverages pretrained arm-agnostic grasp models while integrating arm and environmental information only at inference time. Specifically, we formulate arm-aware constrained grasp generation as a joint optimization of hand pose and arm configuration, and derive closed-form gradients for arm-related constraints. Assuming the hand pose distribution is represented by a diffusion model, we prove that gradient-based optimization is equivalent to guided diffusion sampling, steering near-feasible samples toward the feasible region. Through comprehensive evaluation involving 10k objects across 6 scenarios, we demonstrate that the proposed framework generates feasible grasps in highly constrained settings with significantly higher probability, highlighting its advantages in real-world applications. Supplementary materials and appendix are available at https://arm-aware-dexgrasp.github.io/.",
+    "published_date": "2026-08-17",
+    "authors": [
+      "Yongyi Jia",
+      "Yongpeng Jiang",
+      "Kangchen Lv",
+      "Yi Ren",
+      "Mingrui Yu",
+      "Xiang Li"
+    ],
+    "first_author": "Yongyi Jia",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2608.16351.pdf",
+    "abs_url": "https://arxiv.org/abs/2608.16351",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2608.15560": {
+    "arxiv_id": "2608.15560",
+    "title": "ReForce: Learning Force-aware Retargeting for Dexterous Manipulation",
+    "abstract": "Human demonstrations offer a scalable data source for dexterous manipulation, but transferring them to robot actions remains challenging due to the embodiment gap. Today's retargeting is mostly kinematic, yet manipulation is decided by force, which governs how the hand interacts with the object and how the object moves. In this paper, we present ReForce, a Force-aware Retargeting method that turns human motion and forces into robot actions that reproduce the intended contact. ReForce predicts a residual on the kinematically retargeted action to reach the desired force, using a general force tracker trained on large-scale simulation interactions. It supports both online force-aware teleoperation and offline data translation. In simulation and on real hardware, ReForce achieves lower force-tracking error and stronger multi-finger contact engagement on contact-rich tasks such as paper-cup grasping and tongs manipulation.",
+    "published_date": "2026-08-16",
+    "authors": [
+      "Yuhang Wu",
+      "Lingqi Zeng",
+      "Changwei Jing",
+      "Jianglong Ye",
+      "Xiaolong Wang"
+    ],
+    "first_author": "Yuhang Wu",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2608.15560.pdf",
+    "abs_url": "https://arxiv.org/abs/2608.15560",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2608.09778": {
+    "arxiv_id": "2608.09778",
+    "title": "RoboSeg: Online Part-Level Semantic Reconstruction for Robotic Manipulation via a Single Eye-in-Hand Camera",
+    "abstract": "Robotic manipulation requires perception systemsthat identify actionable parts such as handles, rims, triggers,and tool tips, not merely object categories or point clouds. This paper presents RoboSeg, a part-level semantic reconstructionsystem that links vision-language model (VLM) functional-partdiscovery, asynchronous online RGB-D semantic reconstruc-tion, and task-oriented grasp generation without requiring CAD models or pre-scanned meshes. RoboSeg queries a VLM onthe initial RGB observation to obtain compact functional part prompts, then scans with two asynchronous streams: a high-frequency geometry thread for RGB-D odometry and truncated signed distance function (TSDF) fusion, and a keyframe-triggered semantic thread for SAM3 part masks. Projectedmasks are fused by voxel-level temporal voting into a persistentpart-labeled point cloud; RoboSeg uses this map to assign AnyGrasp 6-DoF candidates to semantic parts and select grasps consistent with the task-relevant part label. RoboSeg reaches 83.4% mean part intersection-over-union (mIoU) over manually labeled objects; in a 24-trial physical pilot across fourobjects and eight tasks, the selected grasp contacts the requestedpart in all trials and achieves 21/24 combined task successes.These results characterize RoboSeg as a semantic indexing layerfor task-conditioned manipulation, with AnyGrasp retained asthe proposal generator.",
+    "published_date": "2026-08-10",
+    "authors": [
+      "Zhaochen Lan",
+      "Mengxiang Lin"
+    ],
+    "first_author": "Zhaochen Lan",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2608.09778.pdf",
+    "abs_url": "https://arxiv.org/abs/2608.09778",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2608.09198": {
+    "arxiv_id": "2608.09198",
+    "title": "Ultra-Low-Impedance Robotic Gripper for High-Bandwidth and Transparent Physical Interaction",
+    "abstract": "Conventional robotic grippers often use high-ratio transmissions to generate grasping torque and external force sensors to measure physical interaction. High-ratio transmissions increase friction, reflected inertia, and mechanical impedance, while external sensors add hardware complexity. To address these trade-offs, this study proposes a novel 9-DOF, three-fingered Differential Direct-Drive (DDD) gripper that combines DD motors with a low-ratio (1:2) differential transmission. The mechanism centralizes actuator mass at the base to minimize moving-link inertia, while the differential architecture couples two motors in parallel to amplify torque during flexion. Experiments show that the prototype delivers a nominal grasping force of approximately 18 N and a fingertip force of 4.7 N, while maintaining a low motor contribution to system inertia (0.236%) and low passive mechanical impedance, with a maximum measured value of 50.1 N/m when the motors are unpowered. The proposed hardware addresses the trade-offs among torque, physical transparency, and kinematic dexterity, providing a foundation for high-bandwidth interaction and sensorless proprioceptive force estimation.",
+    "published_date": "2026-08-10",
+    "authors": [
+      "Joon Lee",
+      "Ari Choi",
+      "Seokhwan Jeong"
+    ],
+    "first_author": "Joon Lee",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2608.09198.pdf",
+    "abs_url": "https://arxiv.org/abs/2608.09198",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
   }
 }
