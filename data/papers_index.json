@@ -87,50 +87,6 @@
     "has_summary": true,
     "has_podcast": true
   },
-  "2608.10756": {
-    "arxiv_id": "2608.10756",
-    "title": "Embodied Multimodal Grounding for Open-Vocabulary Mobile Manipulation via Semantic 3D Gaussian Splatting",
-    "abstract": "Embodied mobile manipulation requires language, visual observations, three-dimensional scene structure, and action feasibility to be aligned before execution. We study open-vocabulary target grounding with few-shot manipulation in local household workspaces and present an embodied multimodal grounding framework that integrates active multi-view Semantic 3D Gaussian Splatting (Semantic-3DGS), reachability-aware base positioning, and a diffusion-based vision-language-action policy. A task-driven local Semantic-3DGS serves as a shared interface across active sensing, language-conditioned 3D localization, obstacle-aware scene reasoning, base preparation, and semantic conditioning of the action model. To preserve pretrained action priors, the 3D semantic cues are injected only into the late action-expert blocks. In expanded 50-trial real-robot evaluations against representative vision-language-action (VLA) approaches, the full system achieves 60% long-horizon success compared with 40% for PointVLA and 28% for DexVLA, and reaches 74% success in heavily cluttered manipulation compared with 52% for the single-view variant and 46% for PointVLA. It also maintains 75% success under a 75 cm height shift and eliminates photo-induced false grasps. These results indicate that explicit, refreshable 3D semantic grounding can improve robustness under clutter, occlusion, viewpoint variation, and embodiment constraints.",
-    "published_date": "2026-08-11",
-    "authors": [
-      "Huosen Ou",
-      "Dongni Song",
-      "Yuncong Wang",
-      "Tao Zhou",
-      "Yiding Ji"
-    ],
-    "first_author": "Huosen Ou",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2608.10756.pdf",
-    "abs_url": "https://arxiv.org/abs/2608.10756",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
-  "2608.10383": {
-    "arxiv_id": "2608.10383",
-    "title": "Real-World Cooperative Bimanual Dexterous Grasp of Large Objects from Single-View Observations",
-    "abstract": "Bimanual dexterous grasping of large objects is a critical challenge in robotic manipulation. However, most existing studies focus on sequential manipulation rather than cooperative grasping, and methods addressing such bimanual tasks have largely been limited to simulation. These limitations stem from the difficulty of acquiring full 3D object models and generating physically plausible grasping actions. To fill this gap, we propose a real-world bimanual grasping framework that includes: a multimodal dataset capturing joint angles, visual observations and force signals; a Denoising Diffusion Probabilistic Model (DDPM)-based module that generates joint-level grasp configurations from segmented point clouds; and an execution strategy that integrates motion planning with online grasp refinement to ensure physical stability and feasibility. Our approach enables the synthesis of executable bimanual grasps from single-view inputs, reducing dependence on complete 3D object models and ensuring stable real-world performance. Experiments on a dual-arm robot demonstrate high success rates across unseen objects with varying geometries and poses, and ablation studies confirm the contributions of key components of our system.",
-    "published_date": "2026-08-11",
-    "authors": [
-      "Ziming Li",
-      "Mingxuan Wu",
-      "Jiaqi Zhang",
-      "Hongfei Li",
-      "Yan Gan",
-      "Deqiang Ouyang",
-      "Ning Wang"
-    ],
-    "first_author": "Ziming Li",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2608.10383.pdf",
-    "abs_url": "https://arxiv.org/abs/2608.10383",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
   "2608.16712": {
     "arxiv_id": "2608.16712",
     "title": "H-PAC Hand: Control-Oriented Modeling and Tendon-Elasticity Compensation for an Underactuated Robotic Hand",
@@ -213,43 +169,6 @@
     "primary_category": "cs.RO",
     "pdf_url": "https://arxiv.org/pdf/2608.15560.pdf",
     "abs_url": "https://arxiv.org/abs/2608.15560",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
-  "2608.09778": {
-    "arxiv_id": "2608.09778",
-    "title": "RoboSeg: Online Part-Level Semantic Reconstruction for Robotic Manipulation via a Single Eye-in-Hand Camera",
-    "abstract": "Robotic manipulation requires perception systemsthat identify actionable parts such as handles, rims, triggers,and tool tips, not merely object categories or point clouds. This paper presents RoboSeg, a part-level semantic reconstructionsystem that links vision-language model (VLM) functional-partdiscovery, asynchronous online RGB-D semantic reconstruc-tion, and task-oriented grasp generation without requiring CAD models or pre-scanned meshes. RoboSeg queries a VLM onthe initial RGB observation to obtain compact functional part prompts, then scans with two asynchronous streams: a high-frequency geometry thread for RGB-D odometry and truncated signed distance function (TSDF) fusion, and a keyframe-triggered semantic thread for SAM3 part masks. Projectedmasks are fused by voxel-level temporal voting into a persistentpart-labeled point cloud; RoboSeg uses this map to assign AnyGrasp 6-DoF candidates to semantic parts and select grasps consistent with the task-relevant part label. RoboSeg reaches 83.4% mean part intersection-over-union (mIoU) over manually labeled objects; in a 24-trial physical pilot across fourobjects and eight tasks, the selected grasp contacts the requestedpart in all trials and achieves 21/24 combined task successes.These results characterize RoboSeg as a semantic indexing layerfor task-conditioned manipulation, with AnyGrasp retained asthe proposal generator.",
-    "published_date": "2026-08-10",
-    "authors": [
-      "Zhaochen Lan",
-      "Mengxiang Lin"
-    ],
-    "first_author": "Zhaochen Lan",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2608.09778.pdf",
-    "abs_url": "https://arxiv.org/abs/2608.09778",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
-  "2608.09198": {
-    "arxiv_id": "2608.09198",
-    "title": "Ultra-Low-Impedance Robotic Gripper for High-Bandwidth and Transparent Physical Interaction",
-    "abstract": "Conventional robotic grippers often use high-ratio transmissions to generate grasping torque and external force sensors to measure physical interaction. High-ratio transmissions increase friction, reflected inertia, and mechanical impedance, while external sensors add hardware complexity. To address these trade-offs, this study proposes a novel 9-DOF, three-fingered Differential Direct-Drive (DDD) gripper that combines DD motors with a low-ratio (1:2) differential transmission. The mechanism centralizes actuator mass at the base to minimize moving-link inertia, while the differential architecture couples two motors in parallel to amplify torque during flexion. Experiments show that the prototype delivers a nominal grasping force of approximately 18 N and a fingertip force of 4.7 N, while maintaining a low motor contribution to system inertia (0.236%) and low passive mechanical impedance, with a maximum measured value of 50.1 N/m when the motors are unpowered. The proposed hardware addresses the trade-offs among torque, physical transparency, and kinematic dexterity, providing a foundation for high-bandwidth interaction and sensorless proprioceptive force estimation.",
-    "published_date": "2026-08-10",
-    "authors": [
-      "Joon Lee",
-      "Ari Choi",
-      "Seokhwan Jeong"
-    ],
-    "first_author": "Joon Lee",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2608.09198.pdf",
-    "abs_url": "https://arxiv.org/abs/2608.09198",
     "topic": "dexterous_grasp",
     "interesting": false,
     "has_summary": false,
