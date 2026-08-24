@@ -212,5 +212,57 @@
     "interesting": false,
     "has_summary": false,
     "has_podcast": false
+  },
+  "2608.20817": {
+    "arxiv_id": "2608.20817",
+    "title": "GhostTac: Manipulating Tactile Sensors without Physical Contact",
+    "abstract": "Tactile sensors are integral to modern robotic systems, enabling robots to perceive and interact with the physical environment through tactile feedback. However, the physical-layer security of tactile sensors has received little attention. We present GhostTac, the first contactless attack, to the best of our knowledge, that manipulates tactile sensing through electromagnetic interference (EMI). GhostTac exploits nonlinear rectification and limited-bandwidth amplification, converting carefully crafted EMI signals into persistent DC offsets that bypass onboard filtering and induce stable measurement deviations. It enables fine-grained, controllable manipulation of sensor outputs by shaping the spatial distribution and magnitude of interference at targeted locations. Such manipulation can induce harmful robot behaviors, including excessive force that may damage objects or injure people. We evaluate GhostTac on 10 sensor modules and two dexterous hands, covering 15 tactile sensors of different types, and demonstrate consistent effectiveness across all tested devices. Three case studies involving tactile grasping, slip detection, and material classification further illustrate its practical impact on real robotic tasks. These findings reveal a new physical attack vector against tactile sensing in robotic systems.",
+    "published_date": "2026-08-21",
+    "authors": [
+      "Kun Wang",
+      "Xuancun Lu",
+      "Ruochen Zhou",
+      "Kai Wang",
+      "Tongjun Ye",
+      "Yihao Shao",
+      "Chen Yan",
+      "Xiaoyu Ji",
+      "Wenyuan Xu"
+    ],
+    "first_author": "Kun Wang",
+    "primary_category": "cs.CR",
+    "pdf_url": "https://arxiv.org/pdf/2608.20817.pdf",
+    "abs_url": "https://arxiv.org/abs/2608.20817",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2608.20546": {
+    "arxiv_id": "2608.20546",
+    "title": "Koala Gripper: Co-designing Robotic Grippers and Data-Capture Devices for Scaling Dexterous Manipulation Learning",
+    "abstract": "As the demand for larger manipulation datasets grows, handheld robotic gripper data collection and the associated gripper designs become more vital. Current data collection device designs trend towards matching the morphologies of existing robotic grippers, sacrificing ergonomics and manipulation performance. In this paper, we propose a co-design framework that guides the simultaneous development of both data collection and robotic execution devices by weaving both platform constraints into the design process. Through this workflow, we present the Koala Gripper system, a data capture device and robotic gripper platform that improves dexterity and grasp capability compared to parallel jaw grippers while preserving scalability and ease-of-use. The design introduces a novel force-optimized finger/trigger linkage mechanism with directional reflected mass characteristics, a unique monolithic dual-thumb, and user-centered ergonomic design. The design's actuated robotic fingers are backdrivable, with effective mass on the order of tens of grams. We show that these grippers are capable of secure grasps over a wide range of objects, forceful tool use, and precise singulation. We further validate the platform by deploying it with an end-to-end data collection and policy execution pipeline that highlights its capabilities through learning from demonstration. More information available at http://koalagripper.rai-inst.com",
+    "published_date": "2026-08-20",
+    "authors": [
+      "Amar Hajj-Ahmad",
+      "Zubin Kremer Guha",
+      "Tim Fofonoff",
+      "Zhi Ern Teoh",
+      "Ciarán T. O'Neill",
+      "Ben Thacher",
+      "Igor Fala",
+      "Vidullan Surendran",
+      "Murphy Wonsick",
+      "Peter Whitney",
+      "David Watkins"
+    ],
+    "first_author": "Amar Hajj-Ahmad",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2608.20546.pdf",
+    "abs_url": "https://arxiv.org/abs/2608.20546",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
   }
 }
