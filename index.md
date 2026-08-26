@@ -5,7 +5,7 @@ title: "Dexterous Grasp Daily"
 
 # Dexterous Grasp — Daily Paper Digest
 
-All 9 papers in the collection. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
+All 8 papers in the collection. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
 
 
 ## [Transformer Transformer: A Unified Model for Motion-Conditioned Robot Co-design]({{ site.baseurl }}/papers/manual-20260730-transformer-transformer-a-unified-model/)
@@ -55,16 +55,6 @@ Multifingered grasping is a crucial robotic skill, but current deep-learning gra
 As the demand for larger manipulation datasets grows, handheld robotic gripper data collection and the associated gripper designs become more vital. Current data collection device designs trend towards matching the morphologies of existing robotic grippers, sacrificing ergonomics and manipulation pe...
 
 [Read more →]({{ site.baseurl }}/papers/2608.20546/)
-
----
-
-## [Iterative Grasp Pose Refinement: A Deep Reinforcement Learning Approach for 2D Vision]({{ site.baseurl }}/papers/2608.17628/)
-
-**2026-08-18** · Amir Arsalan Nematollahi et al. 
-
-Developing robots capable of understanding and manipulating objects requires compact, interpretable, and generalizable representations. This work proposes a reinforcement learning-based framework for robotic grasp refinement, integrating keypoint-based object representations with a Deep Q-Network (D...
-
-[Read more →]({{ site.baseurl }}/papers/2608.17628/)
 
 ---
 
