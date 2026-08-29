@@ -87,31 +87,6 @@
     "has_summary": true,
     "has_podcast": true
   },
-  "2608.20817": {
-    "arxiv_id": "2608.20817",
-    "title": "GhostTac: Manipulating Tactile Sensors without Physical Contact",
-    "abstract": "Tactile sensors are integral to modern robotic systems, enabling robots to perceive and interact with the physical environment through tactile feedback. However, the physical-layer security of tactile sensors has received little attention. We present GhostTac, the first contactless attack, to the best of our knowledge, that manipulates tactile sensing through electromagnetic interference (EMI). GhostTac exploits nonlinear rectification and limited-bandwidth amplification, converting carefully crafted EMI signals into persistent DC offsets that bypass onboard filtering and induce stable measurement deviations. It enables fine-grained, controllable manipulation of sensor outputs by shaping the spatial distribution and magnitude of interference at targeted locations. Such manipulation can induce harmful robot behaviors, including excessive force that may damage objects or injure people. We evaluate GhostTac on 10 sensor modules and two dexterous hands, covering 15 tactile sensors of different types, and demonstrate consistent effectiveness across all tested devices. Three case studies involving tactile grasping, slip detection, and material classification further illustrate its practical impact on real robotic tasks. These findings reveal a new physical attack vector against tactile sensing in robotic systems.",
-    "published_date": "2026-08-21",
-    "authors": [
-      "Kun Wang",
-      "Xuancun Lu",
-      "Ruochen Zhou",
-      "Kai Wang",
-      "Tongjun Ye",
-      "Yihao Shao",
-      "Chen Yan",
-      "Xiaoyu Ji",
-      "Wenyuan Xu"
-    ],
-    "first_author": "Kun Wang",
-    "primary_category": "cs.CR",
-    "pdf_url": "https://arxiv.org/pdf/2608.20817.pdf",
-    "abs_url": "https://arxiv.org/abs/2608.20817",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
   "2608.25547": {
     "arxiv_id": "2608.25547",
     "title": "A Tendon-Driven Five-Fingered Hand with Distributed Tactile Perception for Dexterous Manipulation",
