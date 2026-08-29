@@ -5,7 +5,7 @@ title: "Dexterous Grasp Daily"
 
 # Dexterous Grasp — Daily Paper Digest
 
-All 6 papers in the collection. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
+All 5 papers in the collection. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
 
 
 ## [Transformer Transformer: A Unified Model for Motion-Conditioned Robot Co-design]({{ site.baseurl }}/papers/manual-20260730-transformer-transformer-a-unified-model/)
@@ -25,16 +25,6 @@ An often overlooked factor of robot manipulation performance is the embodiment o
 To apply the techniques of embodied artificial intelligence to human-oid robots for complex manipulations, dexterous robotic hands are indispensable, which are restricted by the dexterity and tactile perception capability. In this work, we proposed a novel design of tendon-driven five-fingered hand ...
 
 [Read more →]({{ site.baseurl }}/papers/2608.25547/)
-
----
-
-## [GhostTac: Manipulating Tactile Sensors without Physical Contact]({{ site.baseurl }}/papers/2608.20817/)
-
-**2026-08-21** · Kun Wang et al. 
-
-Tactile sensors are integral to modern robotic systems, enabling robots to perceive and interact with the physical environment through tactile feedback. However, the physical-layer security of tactile sensors has received little attention. We present GhostTac, the first contactless attack, to the be...
-
-[Read more →]({{ site.baseurl }}/papers/2608.20817/)
 
 ---
 
