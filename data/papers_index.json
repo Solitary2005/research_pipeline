@@ -87,24 +87,6 @@
     "has_summary": true,
     "has_podcast": true
   },
-  "2608.25547": {
-    "arxiv_id": "2608.25547",
-    "title": "A Tendon-Driven Five-Fingered Hand with Distributed Tactile Perception for Dexterous Manipulation",
-    "abstract": "To apply the techniques of embodied artificial intelligence to human-oid robots for complex manipulations, dexterous robotic hands are indispensable, which are restricted by the dexterity and tactile perception capability. In this work, we proposed a novel design of tendon-driven five-fingered hand with dis-tributed tactile perception. With a soft-rigid-hybrid structure employed, both compliance and operational force are endowed to the hand. Dual-modality tactile sensing elements are distributed on the distal and middle phalanges of all five fingers, enabling the simultaneous detection of static contact and dynamic force variations. Manipulation experiments, including counting gestures, finger-to-thumb pinching, object grasping, and bottle-grasp tactile recording, demonstrate the feasibility of the integrated actuation-perception system.",
-    "published_date": "2026-08-26",
-    "authors": [
-      "Huayang Chen",
-      "Longhui Qin"
-    ],
-    "first_author": "Huayang Chen",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2608.25547.pdf",
-    "abs_url": "https://arxiv.org/abs/2608.25547",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
   "2609.00555": {
     "arxiv_id": "2609.00555",
     "title": "Potential-Guided Particle Steering for Negation-Constrained Dexterous Grasping",
