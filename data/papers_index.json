@@ -124,5 +124,77 @@
     "interesting": false,
     "has_summary": false,
     "has_podcast": false
+  },
+  "2609.07747": {
+    "arxiv_id": "2609.07747",
+    "title": "Dex-X: Learning Visual-Tactile Dexterous Manipulation From Human Videos with Simulated Interaction",
+    "abstract": "Human videos are an abundant source of dexterous manipulation behaviors, but they lack tactile information that is crucial for contact-rich interaction. This raises a fundamental question: can robots learn deployable visual-tactile dexterous manipulation policies from human video demonstrations without robot-side data collection?   We present DEX-X, a framework for learning visual-tactile dexterous manipulation from human videos through simulation. Our key insight is that simulation can serve as a tactile completion engine. Given monocular human demonstrations, DEX-X reconstructs hand-object interactions in simulation, where physically grounded contact dynamics provide tactile supervision unavailable in the original videos. Leveraging this recovered tactile information, we train visual-tactile dexterous manipulation policies and distill them into deployable policies operating on point-cloud observations and tactile sensing.   We demonstrate zero-shot sim-to-real transfer on a dexterous hand-arm platform across diverse grasping and contact-rich tool-use tasks. The teacher policy achieves 65.9% average success across six task categories in simulation, while the distilled visual-tactile policy achieves 93% success on real-world cube picking and 53% on the challenging table-cleaning task. Zero-shot generalization to unseen object geometries is also observed on object-picking tasks.   Our results suggest that simulated interaction is a key bridge between human videos and deployable dexterous manipulation policies, providing the missing physical supervision needed for scalable robot skill learning from Internet-scale human video data.",
+    "published_date": "2026-09-07",
+    "authors": [
+      "Ruoqu Chen",
+      "Feixiang Ruan",
+      "Liu Cao",
+      "Zihao Wang",
+      "Botian Xu",
+      "Shiqin Tong",
+      "Jiajun Liu",
+      "Mingzhi Pei",
+      "Chenyu Zhang",
+      "Wanli Xing",
+      "Kaifeng Zhang",
+      "Mengdi Xu"
+    ],
+    "first_author": "Ruoqu Chen",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2609.07747.pdf",
+    "abs_url": "https://arxiv.org/abs/2609.07747",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2609.06279": {
+    "arxiv_id": "2609.06279",
+    "title": "IM-ENGINE: Image Editing for Embodied Data Generation",
+    "abstract": "Learning-based manipulation requires supervision that is both semantically meaningful and physically executable, but current data pipelines often provide only one of these properties. Human demonstrations capture intent but are costly to collect and constrained by the human-robot embodiment gap, while simulation can scale data generation but often under-specifies functional behavior. We present IM-ENGINE, a simulator-grounded pipeline that uses image editing as an intermediate representation for embodied data generation. Given a rendered scene with known geometry, depth, segmentation, and camera parameters, IM-ENGINE edits the image to inject task-relevant semantics, recovers explicit 3D state using simulator priors and an unchanged anchor object, refines the state in physics, and converts it into robot-executable supervision. We instantiate the pipeline for dexterous grasp synthesis and goal-state generation. For grasping, IM-ENGINE generates a human grasp in image space, recovers the hand-object interaction, retargets it to a robot hand, and refines it into physically validated robot grasps. For goal generation, it edits a rendered scene into a desired outcome, recovers the target-object pose, and refines it into physically valid, semantically meaningful goals and trajectories. This combination of generative semantic priors and simulator grounding enables scalable task-relevant supervision for robot learning.",
+    "published_date": "2026-09-05",
+    "authors": [
+      "Yian Wang",
+      "Junyi Cao",
+      "Xiaowen Qiu",
+      "Chuang Gan"
+    ],
+    "first_author": "Yian Wang",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2609.06279.pdf",
+    "abs_url": "https://arxiv.org/abs/2609.06279",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2609.06009": {
+    "arxiv_id": "2609.06009",
+    "title": "How to Learn from What a Human Would Avoid? Intervention-Aware World Models with Real-World RL for Dexterous Manipulation",
+    "abstract": "Multi-fingered dexterous manipulation remains a frontier for real-world reinforcement learning (RL) due to the high-dimensional action space and the prohibitive cost of hardware failures. While human-in-the-loop (HIL) RL allows operators to intervene before failures occur, current pipelines often treat these interventions as reactive corrections, discarding the rich safety signal inherent in the operator's decision to take control. In this paper, we ask: How can we learn from what a human would avoid? We present WHIRL, a safety-aware RL framework that transforms binary human interventions into forward-predictive signals for proactive risk avoidance. Our approach centers on an intervention-aware latent world model with four prediction heads: dynamics, reward, termination, and a novel per-state intervention-probability head that learns to predict the likelihood of a human takeover at future states. This head provides an actor-side risk-shaping term that discourages the policy from entering \"intervention-prone\" regions, modeling the operator's internal safety threshold. We evaluate our framework on a 16-DoF LEAP Hand across tasks spanning convex and irregular object grasping, prismatic manipulation, and long-horizon multi-stage tasks. Our results show that predictive risk-shaping enables the system to achieve a 96.7 percent success rate on complex grasping tasks while reducing the operator intervention burden by up to 84 percent in step-weighted terms. By closing the loop between human intuition and predictive world modeling, this work provides a practical safety-aware recipe for training complex dexterous agents in the real world while reducing operator fatigue and hardware-risk exposure.",
+    "published_date": "2026-09-05",
+    "authors": [
+      "Jiaju Yin",
+      "Zhenhui Zhang",
+      "Lixin Xu",
+      "Heng Zhang",
+      "Jun Shao",
+      "Yating Feng",
+      "Arash Ajoudani",
+      "Renjing Xu"
+    ],
+    "first_author": "Jiaju Yin",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2609.06009.pdf",
+    "abs_url": "https://arxiv.org/abs/2609.06009",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
   }
 }
