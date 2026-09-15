@@ -5,7 +5,7 @@ title: "Dexterous Grasp Daily"
 
 # Dexterous Grasp — Daily Paper Digest
 
-All 6 papers in the collection. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
+All 5 papers in the collection. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
 
 
 ## [Transformer Transformer: A Unified Model for Motion-Conditioned Robot Co-design]({{ site.baseurl }}/papers/manual-20260730-transformer-transformer-a-unified-model/)
@@ -25,16 +25,6 @@ An often overlooked factor of robot manipulation performance is the embodiment o
 Dexterous in-hand manipulation of a grasped object with an anthropomorphic hand is an unsolved frontier for robot dexterity. The contact-richness and highly dynamic nature of object-hand interactions tend to require extensive modeling or data-collection efforts for learning-based approaches. Modern ...
 
 [Read more →]({{ site.baseurl }}/papers/2609.11775/)
-
----
-
-## [Dex-X: Learning Visual-Tactile Dexterous Manipulation From Human Videos with Simulated Interaction]({{ site.baseurl }}/papers/2609.07747/)
-
-**2026-09-07** · Ruoqu Chen et al. 
-
-Human videos are an abundant source of dexterous manipulation behaviors, but they lack tactile information that is crucial for contact-rich interaction. This raises a fundamental question: can robots learn deployable visual-tactile dexterous manipulation policies from human video demonstrations with...
-
-[Read more →]({{ site.baseurl }}/papers/2609.07747/)
 
 ---
 
