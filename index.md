@@ -5,56 +5,36 @@ title: "Dexterous Grasp Daily"
 
 # Dexterous Grasp — Daily Paper Digest
 
-All 5 papers in the collection. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
+**2026-09-16** — 3 new papers from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
 
 
-## [Transformer Transformer: A Unified Model for Motion-Conditioned Robot Co-design]({{ site.baseurl }}/papers/manual-20260730-transformer-transformer-a-unified-model/)
+## [Primitive-Informed Sampling-Based MPC for Multi-Fingered Dexterous Manipulation]({{ site.baseurl }}/papers/2609.14868/)
 
-**2027-07-28** · Huy Ha et al. <span class="badge">🎧 Podcast</span> <span class="badge">📌 Archived</span>
+**2026-09-14** · Emek Barış Küçüktabak et al. 
 
-An often overlooked factor of robot manipulation performance is the embodiment of the robot itself. Motivated by this problem, we study motionconditioned robot co-design, where the goal is to generate complete robot designs that track target end-effector trajectories (from human demonstrations) whi...
+We present a primitive-informed sampling-based model predictive control (MPC) framework for multi-fingered dexterous manipulation. Sampling-based MPC avoids the need for gradients through complex contact dynamics, but direct exploration of the high-dimensional joint space is inefficient and makes pe...
 
-[Read more →]({{ site.baseurl }}/papers/manual-20260730-transformer-transformer-a-unified-model/)
-
----
-
-## [Rapid Learning of Dexterous In-Hand Pen Writing through Real-Time Jacobian Estimation]({{ site.baseurl }}/papers/2609.11775/)
-
-**2026-09-10** · Kai Stewart et al. 
-
-Dexterous in-hand manipulation of a grasped object with an anthropomorphic hand is an unsolved frontier for robot dexterity. The contact-richness and highly dynamic nature of object-hand interactions tend to require extensive modeling or data-collection efforts for learning-based approaches. Modern ...
-
-[Read more →]({{ site.baseurl }}/papers/2609.11775/)
+[Read more →]({{ site.baseurl }}/papers/2609.14868/)
 
 ---
 
-## [SynManDex: Synthesizing Human-like Dexterous Grasps from Synthetic Human Pre-Grasps]({{ site.baseurl }}/papers/2606.09798/)
+## [ConGraspXL: Controllable Constraint-Conditioned Dexterous Grasping Motion Synthesis]({{ site.baseurl }}/papers/2609.16319/)
 
-**2026-06-08** · Yanming Shao et al. <span class="badge">🎧 Podcast</span> <span class="badge">📌 Archived</span>
+**2026-09-14** · Hui Zhang et al. 
 
-Human hand-object interactions encode functional intent, but direct transfer to robotic hands often fails under morphology, contact, and reachability constraints. We present SynManDex, a synthetic pipeline that uses generated human pre-grasps as affordance-aware proposals and resolves the final cont...
+Dexterous grasping is usually conducted for specific tasks, leading to heterogeneous constraints such as specific approach directions, desired contact regions, specified wrist trajectories, and functional hand poses. Our previous work, GraspXL, achieves scalable grasping motion synthesis for diverse...
 
-[Read more →]({{ site.baseurl }}/papers/2606.09798/)
-
----
-
-## [Exo-ViHa: A Cross-Platform Exoskeleton System with Visual and Haptic Feedback for Efficient Dexterous Skill Learning]({{ site.baseurl }}/papers/manual-2026-06-11-exoviha-a-crossplatform-exoskeleton-syst/)
-
-**2025-03-03** · Xintao Chao et al. <span class="badge">🎧 Podcast</span> <span class="badge">📌 Archived</span>
-
-Imitation learning has emerged as a powerful paradigm for robot skills learning. However, traditional data collection systems for dexterous manipulation face challenges, including a lack of balance between acquisition efficiency, consistency, and accuracy. To address these issues, we introduce Exo-V...
-
-[Read more →]({{ site.baseurl }}/papers/manual-2026-06-11-exoviha-a-crossplatform-exoskeleton-syst/)
+[Read more →]({{ site.baseurl }}/papers/2609.16319/)
 
 ---
 
-## [MoDex: Planning High-Dimensional Dexterous Control via Learning Neural Internal Models]({{ site.baseurl }}/papers/manual-2026-06-11-modex-planning-highdimensional-dexterous/)
+## [Learning In-Hand Object Reaching to General 6D Poses]({{ site.baseurl }}/papers/2609.13761/)
 
-**2024-09-17** · Tong Wu et al. <span class="badge">🎧 Podcast</span> <span class="badge">📌 Archived</span>
+**2026-09-12** · Junxiao Lin et al. 
 
-Controlling hands in high-dimensional action space has been a longstanding challenge, yet humans naturally perform dexterous tasks with ease. In this paper, we draw inspiration from the concept of internal model exhibited in human behavior and reconsider dexterous hands as learnable systems. Specifi...
+In-hand manipulation allows multi-fingered dexterous hands to reconfigure grasped objects without releasing and regrasping them. This improves manipulation efficiency by reducing repeated grasp acquisition and large arm motions. However, most learning-based methods focus on reorientation, continuous...
 
-[Read more →]({{ site.baseurl }}/papers/manual-2026-06-11-modex-planning-highdimensional-dexterous/)
+[Read more →]({{ site.baseurl }}/papers/2609.13761/)
 
 ---
 
