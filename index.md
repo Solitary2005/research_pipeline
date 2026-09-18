@@ -5,26 +5,26 @@ title: "Dexterous Grasp Daily"
 
 # Dexterous Grasp — Daily Paper Digest
 
-**2026-09-17** — 2 new papers from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
+**2026-09-18** — 2 new papers from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
 
 
-## [TacBPM: A Tactile-conditioned Behavior Prior Model for Dexterous Reorientation]({{ site.baseurl }}/papers/2609.18174/)
+## [AnyViewDex: View-Invariant Dexterous Manipulation from RGB Observations]({{ site.baseurl }}/papers/2609.20107/)
 
-**2026-09-16** · Jie Yin et al. 
+**2026-09-17** · Soham Patil et al. 
 
-Dexterous in-hand manipulation requires policies that coordinate high-DoF hand joints through intermittent, contact-rich interaction. Beyond target-orientation tracking, such policies must discover finger gaits that preserve object stability while adapting to geometry, anisotropy, pose, contact, and...
+Visuomotor policies for multi-fingered dexterous manipulation are highly sensitive to camera viewpoint shifts. To achieve view invariance, recent methods increasingly rely on explicit 3D modalities like RGB-D or point clouds, which can introduce hardware dependencies, calibration requirements, and v...
 
-[Read more →]({{ site.baseurl }}/papers/2609.18174/)
+[Read more →]({{ site.baseurl }}/papers/2609.20107/)
 
 ---
 
-## [OpenDexGrasp: Open-vocabulary Task-Oriented Dexterous Grasping]({{ site.baseurl }}/papers/2609.18117/)
+## [Grasping by interconnection: robust closing motions from coarse object templates]({{ site.baseurl }}/papers/2609.19228/)
 
-**2026-09-16** · Jiyao Zhang et al. 
+**2026-09-16** · Julien Vanderheyden et al. 
 
-Dexterous grasp synthesis has advanced rapidly in generating stable and physically plausible hand poses, but real-world manipulation requires grasps that preserve the function implied by the task. We study open-vocabulary task-oriented dexterous grasp generation, where a robot must infer functional ...
+Dexterous robot hands must often grasp objects whose shape, size, and pose are known only approximately. Grasp planners typically require accurate object models or correct errors with feedback, but how much inaccuracy a closing motion can tolerate on its own remains unclear. To address this question...
 
-[Read more →]({{ site.baseurl }}/papers/2609.18117/)
+[Read more →]({{ site.baseurl }}/papers/2609.19228/)
 
 ---
 

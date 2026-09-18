@@ -194,5 +194,47 @@
     "interesting": false,
     "has_summary": false,
     "has_podcast": false
+  },
+  "2609.20107": {
+    "arxiv_id": "2609.20107",
+    "title": "AnyViewDex: View-Invariant Dexterous Manipulation from RGB Observations",
+    "abstract": "Visuomotor policies for multi-fingered dexterous manipulation are highly sensitive to camera viewpoint shifts. To achieve view invariance, recent methods increasingly rely on explicit 3D modalities like RGB-D or point clouds, which can introduce hardware dependencies, calibration requirements, and vulnerability to sensor noise during real-world deployment. In this work, we show that view-invariant control can be achieved without explicit test-time 3D sensing by encoding geometric knowledge into the visual representation during simulation. We present AnyViewDex, an asymmetric training pipeline that combines multi-view contrastive alignment with privileged 3D geometric supervision. By regressing absolute 3D object coordinates during simulated training, this auxiliary objective provides a geometric grounding signal that mitigates the spatial collapse of the globally pooled contrastive embedding. At deployment, the policy operates zero-shot using only uncalibrated monocular RGB and proprioception. We validate this approach across both reinforcement learning and student-teacher distillation. In hardware evaluation on an xArm7 with a 16-DoF LEAP Hand, AnyViewDex reaches 76.7% grasping success across eight unseen objects and six uncalibrated viewpoints (480 trials; 2,400 across all ablation conditions), indicating that geometrically grounded monocular policies transfer zero-shot without test-time depth. Project Page: https://anyviewdex.github.io/",
+    "published_date": "2026-09-17",
+    "authors": [
+      "Soham Patil",
+      "Om Sanjay Gunjal",
+      "Sourabh Bhosale",
+      "Arhan Chavare",
+      "Ramandeep Singh Hora",
+      "Spandan Roy"
+    ],
+    "first_author": "Soham Patil",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2609.20107.pdf",
+    "abs_url": "https://arxiv.org/abs/2609.20107",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2609.19228": {
+    "arxiv_id": "2609.19228",
+    "title": "Grasping by interconnection: robust closing motions from coarse object templates",
+    "abstract": "Dexterous robot hands must often grasp objects whose shape, size, and pose are known only approximately. Grasp planners typically require accurate object models or correct errors with feedback, but how much inaccuracy a closing motion can tolerate on its own remains unclear. To address this question, we designed a motion planner based on four principles: a coarse template of the object, human grasp types, an object-centric interaction, and compliant, sliding contacts instead of prescribed contact points. This paper presents the planner, implemented through virtual model control, and its evaluation on a Shadow Dexterous Hand. Without feedback, the planned closing motions tolerated size errors of about 1cm and pose errors of several centimeters and tens of degrees, a wider range than a state-of-the-art data-driven planner in 25 of 27 tested conditions. They also grasped 82.5% of 80 everyday objects and succeeded within an autonomous pipeline. Robustness can thus be designed into the closing motion itself, rather than left only to feedback. This planner opens a path toward reliable manipulation in uncertain settings, which we will pursue by combining it with adaptive feedback control on the physical hand.",
+    "published_date": "2026-09-16",
+    "authors": [
+      "Julien Vanderheyden",
+      "Guillaume Drion",
+      "Fulvio Forni",
+      "Pierre Sacré"
+    ],
+    "first_author": "Julien Vanderheyden",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2609.19228.pdf",
+    "abs_url": "https://arxiv.org/abs/2609.19228",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
   }
 }
