@@ -5,7 +5,7 @@ title: "Dexterous Grasp Daily"
 
 # Dexterous Grasp — Daily Paper Digest
 
-All 11 papers in the collection. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
+All 10 papers in the collection. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
 
 
 ## [Transformer Transformer: A Unified Model for Motion-Conditioned Robot Co-design]({{ site.baseurl }}/papers/manual-20260730-transformer-transformer-a-unified-model/)
@@ -75,16 +75,6 @@ Dexterous grasping is usually conducted for specific tasks, leading to heterogen
 We present a primitive-informed sampling-based model predictive control (MPC) framework for multi-fingered dexterous manipulation. Sampling-based MPC avoids the need for gradients through complex contact dynamics, but direct exploration of the high-dimensional joint space is inefficient and makes pe...
 
 [Read more →]({{ site.baseurl }}/papers/2609.14868/)
-
----
-
-## [Learning In-Hand Object Reaching to General 6D Poses]({{ site.baseurl }}/papers/2609.13761/)
-
-**2026-09-12** · Junxiao Lin et al. 
-
-In-hand manipulation allows multi-fingered dexterous hands to reconfigure grasped objects without releasing and regrasping them. This improves manipulation efficiency by reducing repeated grasp acquisition and large arm motions. However, most learning-based methods focus on reorientation, continuous...
-
-[Read more →]({{ site.baseurl }}/papers/2609.13761/)
 
 ---
 
