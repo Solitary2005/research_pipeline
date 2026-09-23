@@ -277,5 +277,45 @@
     "interesting": false,
     "has_summary": false,
     "has_podcast": false
+  },
+  "2609.25785": {
+    "arxiv_id": "2609.25785",
+    "title": "VisForce: Visual Grounding of Current and Desired Forces for Goal-Conditioned Dexterous Manipulation",
+    "abstract": "Vision-Language-Action (VLA) models have emerged as general-purpose robotic manipulation policies. However, in dexterous hand manipulation, contact forces are typically provided as separate states or force-specific representations, making it difficult to explicitly represent the spatial correspondence between force and their corresponding visual locations. In this work, we propose VisForce, which visually grounds the current and desired forces at their corresponding fingertip locations. VisForce renders current and desired visual force cues on the current wrist image and a task-specific goal image, and combines the two representations through goal-conditioned cross-attention to generate force-aware actions. We evaluate VisForce using a real UR10 robot equipped with an RH56F1 dexterous hand through force-conditioned grasping and three multi-stage manipulation tasks. In force-conditioned grasping experiments, VisForce exhibited a consistent grip-force response as the desired force increased, and achieved grasp-and-lift success rates of 70% and 80% for an egg and a toothpaste tube, respectively. It further achieved final success rates of 70%, 55%, and 40% on cup insertion/bottle pouring, tong-assisted bread transfer, and slip-modulated peg-in-hole, respectively. These results show that fingertip-aligned visual force representations can be effectively used for force-aware conditioning in VLA-based dexterous hand manipulation.",
+    "published_date": "2026-09-22",
+    "authors": [
+      "Jung-Woo Lee",
+      "Soo-Chul Lim"
+    ],
+    "first_author": "Jung-Woo Lee",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2609.25785.pdf",
+    "abs_url": "https://arxiv.org/abs/2609.25785",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2609.25696": {
+    "arxiv_id": "2609.25696",
+    "title": "The Cartesian Hand: In-Hand Manipulation with All-Linear Fingers",
+    "abstract": "Robotic manipulation has increasingly pursued human-like dexterous hands with many articulated degrees of freedom, offering rich manipulation capabilities at the cost of mechanical and control complexity. At the other extreme, parallel grippers are simple and robust, but provide little ability to manipulate an object after grasping it. Operating articulated objects such as threaded containers, manufacturing tools, and laboratory instruments often requires a second gripper, an external fixture, or coordinated arm motion. We introduce the Cartesian Hand, a 7-DoF end-effector that rethinks dexterous manipulation by combining independent grasping and relative manipulation within a single end-effector using only linear motion. Two independently actuated parallel grippers hold different parts of an object, while four translating fingertips generate relative motion between the grasped parts. Its configuration-independent fingertip kinematics allow manipulation to be composed from simple linear motion primitives. The Cartesian Hand is particularly suited to objects structured around common mechanisms such as threads, pivots, linear guides, plungers, and triggers. We demonstrate cap opening and closing, pipetting, pumping, two-handle manipulation, screwdriving, trigger actuation, and in-grasp reorientation across 35 objects spanning laboratory, manufacturing, and household settings. The same manipulation procedures transfer from a fixed-base robot arm to a humanoid, where we demonstrate bimanual laboratory manipulation using two Cartesian Hands. These results show that versatile in-hand manipulation capability can emerge from a mechanically simple architecture when independent grasping and relative motion are designed directly into the end-effector. We will open-source all software and hardware design. Our website is https://generalroboticslab.com/cartesian_handv1.",
+    "published_date": "2026-09-22",
+    "authors": [
+      "Boxi Xia",
+      "Bokuan Li",
+      "Ryan Shin",
+      "Zijiang Yang",
+      "Jiaxun Liu",
+      "Boyuan Chen"
+    ],
+    "first_author": "Boxi Xia",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2609.25696.pdf",
+    "abs_url": "https://arxiv.org/abs/2609.25696",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
   }
 }
