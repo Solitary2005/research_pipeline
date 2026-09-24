@@ -252,5 +252,42 @@
     "interesting": false,
     "has_summary": false,
     "has_podcast": false
+  },
+  "2609.28131": {
+    "arxiv_id": "2609.28131",
+    "title": "DEAL-Grasp: Decoupled Alignment Representation for Geometry-Aware Dexterous Grasp Generation",
+    "abstract": "Synthesizing realistic articulated hand-object interactions is a fundamental problem in virtual reality, embodied intelligence, and digital human applications. Existing methods for dexterous grasp synthesis typically regress or denoise poses in a joint space that couples global rigid motion with local articulation, which often yields unstable samples and physically implausible contacts. We introduce DEAL-Grasp, built upon the Decoupled Alignment (DEAL) representation, which reformulates grasp synthesis as alignment-space generation: the interaction state comprises task-space geometric anchors and articulation parameters, from which the rigid transform is recovered via closed-form Procrustes alignment while preserving local articulation. On this mixed state, we model grasp generation using heterogeneous-state flow matching with component-wise vector fields, incorporating time-adaptive physical regularization during training. At inference, grasps are synthesized solely by integrating the learned vector field, without test-time optimization or auxiliary physical guidance. Across MultiDex and zero-shot RealDex benchmarks, DEAL-Grasp attains high force-perturbation success rates alongside minimal penetration and high diversity of generated grasps, while substantially reducing native inference latency compared to optimization-heavy baselines. The project page is available at https://wmtlab.github.io/DEAL-Grasp/.",
+    "published_date": "2026-09-23",
+    "authors": [
+      "Fuqiang Zhao",
+      "Qian Liu"
+    ],
+    "first_author": "Fuqiang Zhao",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2609.28131.pdf",
+    "abs_url": "https://arxiv.org/abs/2609.28131",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2609.27240": {
+    "arxiv_id": "2609.27240",
+    "title": "A Quasi-Direct-Drive Underactuated Asymmetric Hand for Dexterous and Efficient Grasping and Manipulation",
+    "abstract": "In this paper, we present the Berkeley QUAD (Quasi-direct-drive, Underactuated, Asymmetric Design) Hand, a four-finger anthropomorphic robotic hand with 11 degrees of freedom and 8 degrees of actuation. The design utilizes QDD actuation at the base of each finger, enabling high force transparency for dexterous, adaptive performance. However, the low torque density of these actuators traditionally presents major issues with size, weight, and thermal limits. We overcome this by applying bio-inspired asymmetry, delegating dexterity to the radial fingers through individual QDD actuation, and strength to the ulnar finger through an underactuated, compliantly coupled transmission driven by a larger QDD motor. A novel preloaded, linkage-based transmission permits this ulnar coupling in a way that preserves human-like workspace reachability. Under light loads, the ulnar motor drives the third (middle) finger directly for dexterity while the fourth (ring) finger mirrors its motion. However, under larger loads, the middle finger complies while the motor drives the ring finger further downwards and inwards toward the center of the grasp to apply better closure forces. Hardware evaluations validate this architecture, demonstrating that the hand achieves 29 out of 33 Feix taxonomy grasps and exhibits backdrive forces as low as 50 g for delicate interactions. Additionally, the underactuated fourth finger improves grasp closure and provides the spatial efficiency necessary for larger actuation, yielding up to a 96-fold reduction in heat generation during sustained loading. Webpage: https://benudavis.github.io/berkeley-quadhand/",
+    "published_date": "2026-09-23",
+    "authors": [
+      "Benjamin Davis",
+      "Chase Kidder",
+      "Hannah S. Stuart"
+    ],
+    "first_author": "Benjamin Davis",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2609.27240.pdf",
+    "abs_url": "https://arxiv.org/abs/2609.27240",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
   }
 }
