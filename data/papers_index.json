@@ -87,51 +87,6 @@
     "has_summary": true,
     "has_podcast": true
   },
-  "2609.18174": {
-    "arxiv_id": "2609.18174",
-    "title": "TacBPM: A Tactile-conditioned Behavior Prior Model for Dexterous Reorientation",
-    "abstract": "Dexterous in-hand manipulation requires policies that coordinate high-DoF hand joints through intermittent, contact-rich interaction. Beyond target-orientation tracking, such policies must discover finger gaits that preserve object stability while adapting to geometry, anisotropy, pose, contact, and sensing changes. We propose \\method, a tactile-conditioned behavior prior model for dexterous reorientation. \\method distills multi-scale sphere specialists into a latent controller and lets downstream policies reuse the fixed tactile prior through residual latent actions, reducing renewed exploration from raw joint commands. The prior conditions on tactile-proprioceptive history so latent behavior reflects the current hand-object interaction. We evaluate arbitrary-pose transfer across anisotropic objects, commanded-axis rotation, and an arm-hand Grasp-to-AnyPose task in which the robot must grasp, lift, transport, and reach goal poses for novel tool geometries and generalized placements. Extensive experiments demonstrate that the proposed method accelerates training and enables stable policies where matched raw-action PPO remains near failure, with successful sim-to-real transfer in in-hand and arm-hand tasks.",
-    "published_date": "2026-09-16",
-    "authors": [
-      "Jie Yin",
-      "Wanli Xing",
-      "Zeyuan Zhao",
-      "Xuezhou Zhu",
-      "Zhijie Deng",
-      "Kaifeng Zhang"
-    ],
-    "first_author": "Jie Yin",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2609.18174.pdf",
-    "abs_url": "https://arxiv.org/abs/2609.18174",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
-  "2609.18117": {
-    "arxiv_id": "2609.18117",
-    "title": "OpenDexGrasp: Open-vocabulary Task-Oriented Dexterous Grasping",
-    "abstract": "Dexterous grasp synthesis has advanced rapidly in generating stable and physically plausible hand poses, but real-world manipulation requires grasps that preserve the function implied by the task. We study open-vocabulary task-oriented dexterous grasp generation, where a robot must infer functional intent from free-form language, ground it in multi-view visual observations and object geometry, and generate an executable high-degree-of-freedom grasp. We present OpenDexGrasp, a unified data and generative modeling framework for this setting. OpenDexVerse provides dual-source supervision organized by the Coverage-to-Alignment (C2A) Recipe: OpenDex-Scale offers large-scale semantic and geometric coverage through automatic grasp synthesis and vision-language annotation, while OpenDex-Align supplies high-quality embodied alignment through human teleoperation and category-level transfer. OpenDexGrasp learns a shared perception-action latent representation that couples open-vocabulary vision-language context with dexterous action generation. Affordance grounding and grasp generation provide complementary supervision over this latent space, enabling direct generation of task-consistent dexterous grasps without a separate affordance-to-pose inference stage. Extensive simulation and real-robot experiments demonstrate improved functional alignment, physical feasibility, generalization to unseen categories, and real-world execution success. Additional details and videos are available at https://opendexgrasp.github.io/.",
-    "published_date": "2026-09-16",
-    "authors": [
-      "Jiyao Zhang",
-      "Junhan Wang",
-      "Tianyu Wang",
-      "Zeyuan Chen",
-      "Anthony Bolten",
-      "Yitong Peng",
-      "Hao Dong"
-    ],
-    "first_author": "Jiyao Zhang",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2609.18117.pdf",
-    "abs_url": "https://arxiv.org/abs/2609.18117",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
   "2609.20107": {
     "arxiv_id": "2609.20107",
     "title": "AnyViewDex: View-Invariant Dexterous Manipulation from RGB Observations",
@@ -149,26 +104,6 @@
     "primary_category": "cs.RO",
     "pdf_url": "https://arxiv.org/pdf/2609.20107.pdf",
     "abs_url": "https://arxiv.org/abs/2609.20107",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
-  "2609.19228": {
-    "arxiv_id": "2609.19228",
-    "title": "Grasping by interconnection: robust closing motions from coarse object templates",
-    "abstract": "Dexterous robot hands must often grasp objects whose shape, size, and pose are known only approximately. Grasp planners typically require accurate object models or correct errors with feedback, but how much inaccuracy a closing motion can tolerate on its own remains unclear. To address this question, we designed a motion planner based on four principles: a coarse template of the object, human grasp types, an object-centric interaction, and compliant, sliding contacts instead of prescribed contact points. This paper presents the planner, implemented through virtual model control, and its evaluation on a Shadow Dexterous Hand. Without feedback, the planned closing motions tolerated size errors of about 1cm and pose errors of several centimeters and tens of degrees, a wider range than a state-of-the-art data-driven planner in 25 of 27 tested conditions. They also grasped 82.5% of 80 everyday objects and succeeded within an autonomous pipeline. Robustness can thus be designed into the closing motion itself, rather than left only to feedback. This planner opens a path toward reliable manipulation in uncertain settings, which we will pursue by combining it with adaptive feedback control on the physical hand.",
-    "published_date": "2026-09-16",
-    "authors": [
-      "Julien Vanderheyden",
-      "Guillaume Drion",
-      "Fulvio Forni",
-      "Pierre Sacré"
-    ],
-    "first_author": "Julien Vanderheyden",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2609.19228.pdf",
-    "abs_url": "https://arxiv.org/abs/2609.19228",
     "topic": "dexterous_grasp",
     "interesting": false,
     "has_summary": false,
