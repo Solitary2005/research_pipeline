@@ -87,28 +87,6 @@
     "has_summary": true,
     "has_podcast": true
   },
-  "2609.20107": {
-    "arxiv_id": "2609.20107",
-    "title": "AnyViewDex: View-Invariant Dexterous Manipulation from RGB Observations",
-    "abstract": "Visuomotor policies for multi-fingered dexterous manipulation are highly sensitive to camera viewpoint shifts. To achieve view invariance, recent methods increasingly rely on explicit 3D modalities like RGB-D or point clouds, which can introduce hardware dependencies, calibration requirements, and vulnerability to sensor noise during real-world deployment. In this work, we show that view-invariant control can be achieved without explicit test-time 3D sensing by encoding geometric knowledge into the visual representation during simulation. We present AnyViewDex, an asymmetric training pipeline that combines multi-view contrastive alignment with privileged 3D geometric supervision. By regressing absolute 3D object coordinates during simulated training, this auxiliary objective provides a geometric grounding signal that mitigates the spatial collapse of the globally pooled contrastive embedding. At deployment, the policy operates zero-shot using only uncalibrated monocular RGB and proprioception. We validate this approach across both reinforcement learning and student-teacher distillation. In hardware evaluation on an xArm7 with a 16-DoF LEAP Hand, AnyViewDex reaches 76.7% grasping success across eight unseen objects and six uncalibrated viewpoints (480 trials; 2,400 across all ablation conditions), indicating that geometrically grounded monocular policies transfer zero-shot without test-time depth. Project Page: https://anyviewdex.github.io/",
-    "published_date": "2026-09-17",
-    "authors": [
-      "Soham Patil",
-      "Om Sanjay Gunjal",
-      "Sourabh Bhosale",
-      "Arhan Chavare",
-      "Ramandeep Singh Hora",
-      "Spandan Roy"
-    ],
-    "first_author": "Soham Patil",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2609.20107.pdf",
-    "abs_url": "https://arxiv.org/abs/2609.20107",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
   "2609.21511": {
     "arxiv_id": "2609.21511",
     "title": "2nd Place Solution to the HANDS 2026 Workshop Challenge-Dexterous Grasp Motion Track: Single-Shot Trajectory Warping for Grasp Motion Generation",
