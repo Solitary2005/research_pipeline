@@ -5,26 +5,26 @@ title: "Dexterous Grasp Daily"
 
 # Dexterous Grasp — Daily Paper Digest
 
-**2026-09-24** — 2 new papers from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
+**2026-09-25** — 2 new papers from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
 
 
-## [DEAL-Grasp: Decoupled Alignment Representation for Geometry-Aware Dexterous Grasp Generation]({{ site.baseurl }}/papers/2609.28131/)
+## [A Support-Enhanced Granular-Jamming Gripper for RL-based Grasping with Continuum Manipulators]({{ site.baseurl }}/papers/2609.29093/)
 
-**2026-09-23** · Fuqiang Zhao et al. 
+**2026-09-24** · Danyu Liu et al. 
 
-Synthesizing realistic articulated hand-object interactions is a fundamental problem in virtual reality, embodied intelligence, and digital human applications. Existing methods for dexterous grasp synthesis typically regress or denoise poses in a joint space that couples global rigid motion with loc...
+Continuum manipulators provide dexterous motion in confined spaces, but structural compliance, hysteresis, and load-dependent deformation leave residual position and orientation errors that can undermine reliable contact with rigid grippers. To address this limitation, this paper presents a lightwei...
 
-[Read more →]({{ site.baseurl }}/papers/2609.28131/)
+[Read more →]({{ site.baseurl }}/papers/2609.29093/)
 
 ---
 
-## [A Quasi-Direct-Drive Underactuated Asymmetric Hand for Dexterous and Efficient Grasping and Manipulation]({{ site.baseurl }}/papers/2609.27240/)
+## [Real-Time Force Regulation for Whole-Hand Dexterous Grasping]({{ site.baseurl }}/papers/2609.30082/)
 
-**2026-09-23** · Benjamin Davis et al. 
+**2026-09-24** · Sang Min Kim et al. 
 
-In this paper, we present the Berkeley QUAD (Quasi-direct-drive, Underactuated, Asymmetric Design) Hand, a four-finger anthropomorphic robotic hand with 11 degrees of freedom and 8 degrees of actuation. The design utilizes QDD actuation at the base of each finger, enabling high force transparency fo...
+Robust dexterous grasping requires maintaining physical stability despite contacts interactively evolving across the entire hand. A precomputed force distribution can easily fail under object motion, modeling errors, or external disturbances. In this paper, we present a framework for real-time force...
 
-[Read more →]({{ site.baseurl }}/papers/2609.27240/)
+[Read more →]({{ site.baseurl }}/papers/2609.30082/)
 
 ---
 
