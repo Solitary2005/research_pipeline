@@ -150,25 +150,6 @@
     "has_summary": false,
     "has_podcast": false
   },
-  "2609.22681": {
-    "arxiv_id": "2609.22681",
-    "title": "A Direct Rigid Transmission 2-DoF Wrist Extension for Tendon-Driven Hand",
-    "abstract": "Dexterous manipulation in confined spaces requires local control of hand orientation. Without a wrist, a dexterous hand must obtain this local orientation through coordinated motion of the robot arm, often involving several joints and a more complex end-effector path. We present CRAFT-Wrist, a concentric 2-DoF wrist extension that mounts between a robot arm and the CRAFT Hand without modifying the hand. Two XC430-T240BB-T servos drive sideways and front-back rotation through short rigid transmissions. Our initial hardware prototype actuates both axes under load, achieving a demonstrated workspace of $\\pm20^{\\circ}$ in radial--ulnar deviation (left--right) and a front-back range of $+80^{\\circ}$ in flexion and $-18^{\\circ}$ in extension. We characterize the resulting finger-motor loading across several wrist postures and demonstrate how the wrist supplies local orientation in grasping, nail hammering, and blackboard wiping. Demonstrations and assembly instructions are available at https://craft-wrist.github.io/.",
-    "published_date": "2026-09-19",
-    "authors": [
-      "Yujie Pang",
-      "Sadman Sakib",
-      "Mohammad Abdullah Al Faruque"
-    ],
-    "first_author": "Yujie Pang",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2609.22681.pdf",
-    "abs_url": "https://arxiv.org/abs/2609.22681",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
   "2609.25785": {
     "arxiv_id": "2609.25785",
     "title": "VisForce: Visual Grounding of Current and Desired Forces for Goal-Conditioned Dexterous Manipulation",
