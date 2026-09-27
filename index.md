@@ -5,7 +5,7 @@ title: "Dexterous Grasp Daily"
 
 # Dexterous Grasp — Daily Paper Digest
 
-All 14 papers in the collection. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
+All 13 papers in the collection. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
 
 
 ## [Transformer Transformer: A Unified Model for Motion-Conditioned Robot Co-design]({{ site.baseurl }}/papers/manual-20260730-transformer-transformer-a-unified-model/)
@@ -105,16 +105,6 @@ Learning dexterous manipulation from demonstrations is bottlenecked by data: the
 Dexterous grasping in clutter poses a basic sensing question: when do tactile measurements and external wrench estimates improve on visual geometry? Occlusion and contact can obscure grasp quality, motivating a controlled evaluation of these interaction signals. We present a controlled real-world st...
 
 [Read more →]({{ site.baseurl }}/papers/2609.24068/)
-
----
-
-## [A Direct Rigid Transmission 2-DoF Wrist Extension for Tendon-Driven Hand]({{ site.baseurl }}/papers/2609.22681/)
-
-**2026-09-19** · Yujie Pang et al. 
-
-Dexterous manipulation in confined spaces requires local control of hand orientation. Without a wrist, a dexterous hand must obtain this local orientation through coordinated motion of the robot arm, often involving several joints and a more complex end-effector path. We present CRAFT-Wrist, a conce...
-
-[Read more →]({{ site.baseurl }}/papers/2609.22681/)
 
 ---
 
