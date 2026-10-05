@@ -106,68 +106,6 @@
     "has_summary": false,
     "has_podcast": false
   },
-  "2609.33973": {
-    "arxiv_id": "2609.33973",
-    "title": "FINGR: Learning Dexterous Hand Control for Real-World Rubik's Cube Solving",
-    "abstract": "Manipulating a Rubik's Cube with a single dexterous hand is a challenging test of sustained, contact-rich control: the hand must execute successive layer turns while keeping the cube secure. Each turn requires some fingers to support the cube while others push a moving layer, release contact, and reset for the next move. To learn this coordination, we introduce FINGR (Future-supervised Interaction Network with Geometric Representations), a policy that combines finger-relative geometry with future interaction prediction. A shared point encoder expresses the cube relative to each fingertip and aggregates its points without depending on cubie indexing. Learned future tokens share the observation encoder and receive supervision for contact-force changes, layer-turn progress, and finger joint displacement at multiple time scales. The resulting representation conditions a flow policy that directly generates finger actions. On a real dexterous hand, our policy achieves 99.0% success over 300 turn attempts, compared with 79.7% for the base flow policy. Integrated with grasping and table-assisted regrasping, the policy solves all ten scrambled $2\\times2\\times2$ cubes in a mean complete-system time of approximately 137 seconds. The project website is available at https://www.lyt0112.com/projects/FINGR",
-    "published_date": "2026-09-27",
-    "authors": [
-      "Yutong Liang",
-      "Quanquan Peng",
-      "Matthew Kim",
-      "Xiaolong Wang"
-    ],
-    "first_author": "Yutong Liang",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2609.33973.pdf",
-    "abs_url": "https://arxiv.org/abs/2609.33973",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
-  "2609.33882": {
-    "arxiv_id": "2609.33882",
-    "title": "DexTaG: Tactile-as-Guidance in Reinforcement Learning for Dexterous Manipulation",
-    "abstract": "Glove-based motion capture is emerging as a scalable approach to collecting dexterous-hand demonstration data. However, due to the kinematic gap between the human and robot hand, the recorded human motions cannot be executed directly on the robot, especially for contact-rich tool-use tasks involving in-hand reorientation. Prior work bridges this gap in simulation through reinforcement learning (RL) or trajectory optimization, but the human contact pattern is hard to preserve under such formulations, often producing unnatural manipulation and unstable functional grasps. These methods also train a separate policy or solve a separate optimization for each reference trajectory, which is inefficient. To solve these problems, we propose DexTaG, a tactile-guided RL framework for dexterous manipulation. During training, tactile signals captured by the glove guide policy search toward the measured human contact pattern, reducing reliance on precise reference geometry for contact supervision. To improve efficiency, we train a single generalizable retargeter jointly on all training trajectories of the same object. The retargeter is further distilled into a tactile-free student controller conditioned on the target object trajectory for real-world deployment. On marker-pen and hammer manipulation tasks, DexTaG learns natural, contact-rich behaviors that baselines with distance-based contact heuristics fail to learn, generalizes to held-out trajectories of the same object and task, and outperforms single-trajectory baselines on OakInk2.",
-    "published_date": "2026-09-27",
-    "authors": [
-      "Han Yang",
-      "Yian Wang",
-      "Yunlong Song",
-      "Zhenjia Xu",
-      "Chuang Gan"
-    ],
-    "first_author": "Han Yang",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2609.33882.pdf",
-    "abs_url": "https://arxiv.org/abs/2609.33882",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
-  "2609.33807": {
-    "arxiv_id": "2609.33807",
-    "title": "CodeActionBench: Evaluating Agentic Code-as-Policy for Embodied Manipulation",
-    "abstract": "How well can general-purpose multimodal models turn visual understanding and reasoning into embodied manipulation via executable code? We introduce CodeActionBench, a benchmark of 25 manipulation tasks that evaluates this capability through agentic Code-as-Policy. Without task-specific fine-tuning, demonstrations, external specialist perception or grasp modules, privileged scene state, or predefined task policies, agents should select visual evidence, form task-relevant 3D estimates, construct manipulation targets, and iteratively execute and revise their policies. A shared robot API provides RGB observations, calibrated geometric operations, robot feedback, and bounded motion, leaving task-dependent decisions to the evaluated agent. Fixed task instances, resource budgets, and a hidden physical-outcome verifier support controlled comparisons across models and harness configurations. Extensive evaluations across nine configurations and 675 attempts achieve success rates ranging from 2.7% to 73.3%. The strongest configuration, GPT-6 Astra with Codex CLI, solves 22 of 25 tasks at least once in three attempts, demonstrating the best performance while still leaving substantial room for improvement. Trajectory analyses reveal difficulties in spatial alignment, object retention, and completion judgment, including task failures despite successfully completed motions. CodeActionBench provides a controlled testbed for measuring how general-purpose models translate their capabilities into manipulation behavior and for examining typical failure scenarios in that process.",
-    "published_date": "2026-09-27",
-    "authors": [
-      "Yiheng Lyu",
-      "Xueying Jiang",
-      "Wenhao Li",
-      "Shijian Lu",
-      "Gongjie Zhang"
-    ],
-    "first_author": "Yiheng Lyu",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2609.33807.pdf",
-    "abs_url": "https://arxiv.org/abs/2609.33807",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
   "2609.37776": {
     "arxiv_id": "2609.37776",
     "title": "Geometry-Preserving Human-to-Robot Upper-Body Motion Retargeting from Monocular Video",
