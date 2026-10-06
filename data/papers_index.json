@@ -87,25 +87,6 @@
     "has_summary": true,
     "has_podcast": true
   },
-  "2609.35715": {
-    "arxiv_id": "2609.35715",
-    "title": "X-Reset: Scaling Object-Centric Reinforcement Learning via Cross-Embodiment Resets",
-    "abstract": "Reinforcement learning (RL) in simulation can train dexterous manipulation policies without robot demonstrations, but training a single generalist policy with task-agnostic rewards faces a severe exploration problem: approaching, grasping, and reorienting diverse objects with many degrees of freedom is difficult to discover from scratch. Prior works make exploration tractable with high-quality robot demonstrations, per-task reward shaping, or by restricting policies to narrow modes of behavior. We propose X-Reset, a framework that instead resolves exploration with human hand-object demonstrations. Rather than imitating or tracking retargeted human motion, X-Reset kinematically retargets hand-object states to noisy robot states, filters out states that are unstable in simulation, and samples the remainder as resets during RL training with general-purpose object-centric rewards. The resulting policy depends only on object state and goal, with demonstrations entering training through the reset distribution. We show that X-Reset trains generalist policies on 20 objects across three embodiments---a 22-DoF hand on two different arms and a parallel-jaw gripper---and resolves the exploration challenges of RL from scratch. X-Reset scales with the number of training objects, generalizes to unseen objects, can learn from imperfect hand-pose estimates, and transfers behaviors zero-shot from sim-to-real.",
-    "published_date": "2026-09-28",
-    "authors": [
-      "Prithwish Dan",
-      "Chenyang Ma",
-      "Wei Zhan"
-    ],
-    "first_author": "Prithwish Dan",
-    "primary_category": "cs.LG",
-    "pdf_url": "https://arxiv.org/pdf/2609.35715.pdf",
-    "abs_url": "https://arxiv.org/abs/2609.35715",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
   "2609.37776": {
     "arxiv_id": "2609.37776",
     "title": "Geometry-Preserving Human-to-Robot Upper-Body Motion Retargeting from Monocular Video",
@@ -121,27 +102,6 @@
     "primary_category": "cs.RO",
     "pdf_url": "https://arxiv.org/pdf/2609.37776.pdf",
     "abs_url": "https://arxiv.org/abs/2609.37776",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
-  "2609.36241": {
-    "arxiv_id": "2609.36241",
-    "title": "Design and Validation of an Antagonistic Tendon-Driven Dexterous Robotic Hand with Bidirectional Operation",
-    "abstract": "Dexterous robotic hands typically reproduce human hand morphology but inherit its one-sided grasping workspace, requiring wrist or arm reorientation to grasp from the opposite side. Existing reversible hands generally rely on non-anthropomorphic, soft, or task-specific finger arrangements, whereas conventional five-digit anthropomorphic hands remain designed primarily for palmar-side grasping. This paper presents an anthropomorphic, human-scale (200 mm length), lightweight (220 g), 3D-printed, 17-DoF robotic hand built on a bidirectional antagonistic tendon-routing mechanism, in which flexion/extension (except the coupled joint) and abduction/adduction at joints are actively driven without passive return springs. The proposed routing mechanism allows all degrees of freedom to cross their neutral configuration and form grasp closures on either the palmar or dorsal side. Experimental evaluation demonstrates an average motor-to-joint transmission error of 3.0%, an average joint transmission bandwidth of 13.2 Hz, a maximum fingertip force of 29 N, and a positioning repeatability up to 0.15 mm. The hand further achieves a Kapandji score of 8, successfully performs all 33 GRASP Taxonomy grasp types, and performs palmar- and dorsal-side grasping tasks, validating bidirectional operation in a compact, human-scale platform.",
-    "published_date": "2026-09-28",
-    "authors": [
-      "Chunghyeon Lee",
-      "Hyukjun Kwon",
-      "Sungeon Kim",
-      "Saehyun Moon",
-      "Seokhwan Jeong"
-    ],
-    "first_author": "Chunghyeon Lee",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2609.36241.pdf",
-    "abs_url": "https://arxiv.org/abs/2609.36241",
     "topic": "dexterous_grasp",
     "interesting": false,
     "has_summary": false,
