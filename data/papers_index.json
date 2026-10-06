@@ -153,5 +153,72 @@
     "interesting": false,
     "has_summary": false,
     "has_podcast": false
+  },
+  "2610.05180": {
+    "arxiv_id": "2610.05180",
+    "title": "VICON: Visual-Inertial-Contact based Hand-Object Tracking for Manipulation Datasets",
+    "abstract": "Learning dexterous manipulation benefits from human demonstration datasets that capture diverse and natural hand-object interactions. In particular, contact points and forces provide supervision on where and how strongly to interact, which cannot be fully captured by motion trajectories alone. However, methods for jointly capturing hand and object motion, contact points, and forces remain limited. Moreover, severe occlusion from hand-object interaction challenges accurate tracking of both hands and objects. To address these limitations, we present a Visual-Inertial-CONtact based hand-object tracking (VICON) framework. It holistically captures both hand and object motion along with contact information during manipulation, even under severe occlusion. First, we adopt a visual-inertial glove and an RGB-D camera for accurate hand tracking, and redesign the glove to incorporate contact sensing. Specifically, force-sensitive resistors (FSRs) are placed on the glove based on human grasp frequency to synchronously record contact states and calibrated normal forces. Second, without requiring pre-existing CAD models, we estimate object poses using RGB-D images and a mesh reconstructed from a monocular video. We propose factor-graph-based object trajectory estimation that fuses object-pose estimates weighted by visibility under hand-object occlusion, FSR measurements, and a hand-motion prior. Across 40 motion-capture sessions with five objects, VICON achieves a 2.5% failed-frame rate compared with 50.9-64.6% for the baselines, with median errors of 3.9 mm and 3.0 degrees under occlusion. Using VICON, we construct a dataset containing synchronized hand-object motion, contact points, and normal forces, and will publicly release an expanded dataset covering 10 object categories at https://github.com/VICON-dataset/dataset.",
+    "published_date": "2026-10-04",
+    "authors": [
+      "Yubin Jeon",
+      "Uiseong Shin",
+      "Hwanchul La",
+      "Jaeseong Kang",
+      "Hyelim Choi",
+      "Yongseok Lee"
+    ],
+    "first_author": "Yubin Jeon",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2610.05180.pdf",
+    "abs_url": "https://arxiv.org/abs/2610.05180",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2610.05081": {
+    "arxiv_id": "2610.05081",
+    "title": "Now You Feel It, Now You See Me: Digital-Twin-based Teleoperation Interface for Dexterous Manipulation",
+    "abstract": "Teleoperation is becoming increasingly important for collecting high-quality demonstrations to teach robots dexterous manipulation skills. For dexterous manipulation, bare-hand tracking provides a practical way to control robotic hands and demonstrate coordinated finger movements without gloves or exoskeletons. However, this type of teleoperation faces two key feedback limitations: a lack of force feedback and visual feedback of occluded region. The absence of force feedback hinders precise and safe manipulation, as operators must infer contact force visually rather than feel them directly. Occlusion by objects or other robot parts impairs the assessment of hand positions, approach distances, and pre-grasp configurations suited to the object's shape. To address these limitations, we propose a digital-twin-based augmented reality (AR) teleoperation interface that integrates bare-hand tracking, bimanual robotic hands, and virtual representations of the robot and task objects. The interface renders tactile measurements on robot hand meshes as visuo-force feedback. Furthermore, it offers a user-controlled virtual view panel or occlusion-aware transparency rendering to provide occlusion-mitigating visual feedback. We evaluated the interface through user studies involving Task 1 and Task 2, examining how force visualization and visual assistance support demonstration collection in tasks requiring careful force regulation and manipulation under occlusion.",
+    "published_date": "2026-10-04",
+    "authors": [
+      "Youngchan Shim",
+      "Kyutae Lee",
+      "JooYun Kim",
+      "Jaeseong Hwang",
+      "Harim Ji",
+      "Yongseok Lee"
+    ],
+    "first_author": "Youngchan Shim",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2610.05081.pdf",
+    "abs_url": "https://arxiv.org/abs/2610.05081",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2610.03861": {
+    "arxiv_id": "2610.03861",
+    "title": "GOTT: Object-centric Dexterous Manipulation with a Reusable Cross-Embodiment Primitive",
+    "abstract": "Foundation models and large-scale human data provide rich sources of manipulation intent, but translating this intent into multi-fingered robot behavior remains difficult. Dexterous hands still lack a reusable low-level primitive that reliably establishes contact across tasks and embodiments. We propose GOTT, a reach-acquire-move framework built around a single cross-embodiment contact-acquisition primitive. Given a robot-agnostic object trajectory and a reach specification, GOTT first brings the hand near a task-relevant contact region. The shared closed-loop primitive then establishes stable contact from this approximate initialization, and a pose-conditioned controller tracks the desired object motion. Reach specifications may come from future-aware planning, external models, or human demonstrations, while the primitive and tracking backend remain unchanged. Simulation and real-world experiments show that GOTT is able to establish robust contact across diverse objects, arm-hand platforms, and seen and unseen hand morphologies. It also consistently improves end-to-end task success over open-loop grasp execution.",
+    "published_date": "2026-10-02",
+    "authors": [
+      "Yulin Liu",
+      "Lai Wei",
+      "Yen-Jen Wang",
+      "Akash Sharma",
+      "Pieter Abbeel",
+      "Henrik I. Christensen",
+      "Haozhi Qi"
+    ],
+    "first_author": "Yulin Liu",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2610.03861.pdf",
+    "abs_url": "https://arxiv.org/abs/2610.03861",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
   }
 }
