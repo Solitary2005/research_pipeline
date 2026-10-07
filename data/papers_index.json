@@ -87,26 +87,6 @@
     "has_summary": true,
     "has_podcast": true
   },
-  "2609.37776": {
-    "arxiv_id": "2609.37776",
-    "title": "Geometry-Preserving Human-to-Robot Upper-Body Motion Retargeting from Monocular Video",
-    "abstract": "Monocular RGB video provides an accessible source of human demonstrations for upper-body robot motion, yet video-driven human-to-robot transfer remains challenging because body and hand motion are recovered at different spatial scales, human and robot kinematics differ substantially, and fine distal motion is difficult to preserve across embodiments. We present a geometry-preserving motion-retargeting framework that integrates unified body--hand reconstruction with morphology-independent geometric transfer. Frame-wise body estimates, video-level observations, and detailed hand evidence jointly constrain a single differentiable Momentum Human Rig (MHR) state, while transient hand artifacts are repaired in parameter space. The reconstructed motion is represented by arm-segment directions, elbow configuration, relative palm orientation, and bilateral wrist relations, and is realized on the target robot through multi-stage inverse kinematics and robot-specific hand adaptation. Within the broader system, Across-VAM provides video generation, whereas Across-WAM performs human-to-robot motion mapping. The method is evaluated on 16 monocular videos comprising 1,769 source frames, including 10 signing and six reach-to-grasp sequences. Unified reconstruction reduces mean hand reprojection error from 22.36 to 7.21 pixels relative to SAM 3D Body. All 16 retargeted trajectories completed kinematic simulation playback, and representative signing and reach-to-grasp motions were further demonstrated on a physical robot. The results demonstrate a unified pipeline from monocular human video to coordinated upper-body motion on a dual-arm dexterous robot.",
-    "published_date": "2026-09-29",
-    "authors": [
-      "Xiaoyu Yang",
-      "Sen Han",
-      "Da Li",
-      "Nan Wu"
-    ],
-    "first_author": "Xiaoyu Yang",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2609.37776.pdf",
-    "abs_url": "https://arxiv.org/abs/2609.37776",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
   "2609.39006": {
     "arxiv_id": "2609.39006",
     "title": "Function beyond Form: Functional Correspondence for Cross-Embodiment Dexterous Grasp Generation",
