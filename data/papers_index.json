@@ -176,5 +176,65 @@
     "interesting": false,
     "has_summary": false,
     "has_podcast": false
+  },
+  "2610.10283": {
+    "arxiv_id": "2610.10283",
+    "title": "Temporal Visuo-Tactile Learning for Dexterous Grasp Stability",
+    "abstract": "Humans can grasp everyday objects with almost perfect success rates using fingertip tactile feedback, yet much of the robotic grasping literature emphasizes vision-based grasp selection with parallel grippers. In this work, we systematically investigate how high-resolution, dynamic tactile sensing contributes to grasp stability prediction and model-guided grasping in dexterous robotic hands. To this end, we collected a dataset of 10,000 grasp trials across 200 objects using a multi-fingered robotic hand equipped with four Digit 360 tactile sensors, recording external vision, proprioception, and tactile streams throughout each grasp. With this dataset, we trained end-to-end temporal multimodal models to predict post-lift stability from pre-lift grasp observations and compared sensing modalities and encoding backbones. Experimental results and controlled input ablations show that incorporating touch, and particularly high-resolution, dynamic touch, improves grasp stability prediction. Finally, we deployed the learned predictor as an online stability gate on the real robot, where visuo-tactile model-guided regrasping improved the success rate among executed lifts by 10.5 percentage points over a non-tactile gate. These results show how rich fingertip sensing and expressive temporal models that capture the dynamics of touch can support learned grasping with multi-fingered hands without explicit contact or force modeling, providing a scalable data-driven path from tactile experience toward stable dexterous manipulation. The dataset is publicly available at https://lasr-lab.github.io/dexterous-grasp-stability/.",
+    "published_date": "2026-10-07",
+    "authors": [
+      "Ken Nakahara",
+      "Aleksei Buvailik",
+      "Prokhor Kotov",
+      "Roberto Calandra"
+    ],
+    "first_author": "Ken Nakahara",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2610.10283.pdf",
+    "abs_url": "https://arxiv.org/abs/2610.10283",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2610.09291": {
+    "arxiv_id": "2610.09291",
+    "title": "Co${}^{2}$Skill: Whole-Body Control via Skill Composition for Long-Horizon Human-Environment Interaction",
+    "abstract": "Achieving human-level dexterity in complex, unstructured environments requires the seamless integration of whole-body scene interaction and dexterous object manipulation skills. While existing physics-based controllers generate physically plausible behaviors in each domain, they largely address these two capabilities independently. In this paper, we present Co${}^{2}$Skill that integrates scene interaction and dexterous manipulation through a unified policy formulation. Built on a pretrained motion prior, the policy uses task and phase dependent observation masks to select information relevant to the current interaction goals. We introduce a goal-conditioned loco-manipulation curriculum that combines partial reference guidance for precision with exploration from varied initial states while allowing goal-directed execution beyond the demonstrated trajectories. We further introduce a cross-task curriculum that jointly trains individual skills and selected task sequences, preserving physical states across task boundaries and maintaining grasps during subsequent scene interactions. Together, these support sequential task execution and simultaneous scene interaction with object manipulation. We evaluate sitting, standing, climbing, stair traversal, and goal-directed manipulation, together with sequential execution and with random different conditions. Additionally, we demonstrate skill compositions in indoor environments, illustrating their integration within the same control formulation.",
+    "published_date": "2026-10-07",
+    "authors": [
+      "Jeonghwan Kim",
+      "Hyeonwoo Kim",
+      "Hanbyul Joo"
+    ],
+    "first_author": "Jeonghwan Kim",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2610.09291.pdf",
+    "abs_url": "https://arxiv.org/abs/2610.09291",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2610.08870": {
+    "arxiv_id": "2610.08870",
+    "title": "From Wearable Interfaces to Dexterous Policies: Contact Shifts and Tactile Representations",
+    "abstract": "Unlike conventional teleoperation, wearable interfaces allow operators to collect dexterous demonstrations through their own hand motions while directly interacting with task objects. This direct interaction reduces dependence on the target robot during collection, but it also makes the collection hardware part of the physical process that generates each demonstration. Interface geometry can influence both how a task is performed and what tactile observations are recorded for learning. We study two versions of a DexUMI-family exoskeleton that share the same robot command definition, mapping procedure, and tactile module type but differ in hand-side geometry. The revised interface reduces reported physical demand, improves selected device ratings, enables tactile access in a precision grasp that is mechanically blocked by the baseline, and produces task-dependent changes in recorded contact. Lid twisting primarily exhibits a change in contact location, whereas egg carton opening primarily exhibits a change in contact occurrence. We then train matched policies using either a binary aggregate input or a spatial-plus-force input. On lid twisting and egg carton opening, policies trained on revised-interface demonstrations achieve higher success than those trained on baseline demonstrations, with a significant pooled interface effect. Across these and two additional tasks, USB insertion and soldering tool pick and place, the spatial-plus-force input likewise outperforms binary aggregation. These results show that wearable collection hardware is part of the data-generation process for robot learning. Such interfaces should therefore be evaluated not only through operator experience, but also through the tactile interactions they make recordable and the policy performance their demonstrations support.",
+    "published_date": "2026-10-06",
+    "authors": [
+      "Ruitong Tian",
+      "Fang Xu",
+      "Noah B. Wilson",
+      "Xianyao Li",
+      "Eric Jing Du"
+    ],
+    "first_author": "Ruitong Tian",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2610.08870.pdf",
+    "abs_url": "https://arxiv.org/abs/2610.08870",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
   }
 }
