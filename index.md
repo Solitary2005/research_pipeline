@@ -5,7 +5,7 @@ title: "Dexterous Grasp Daily"
 
 # Dexterous Grasp — Daily Paper Digest
 
-All 9 papers in the collection. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
+All 8 papers in the collection. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
 
 
 ## [Transformer Transformer: A Unified Model for Motion-Conditioned Robot Co-design]({{ site.baseurl }}/papers/manual-20260730-transformer-transformer-a-unified-model/)
@@ -55,16 +55,6 @@ Generative policies such as diffusion models provide expressive data-driven prio
 Garment manipulation requires inferring both garment identity and complete configuration from partial, self-occluded observations. This creates a chicken-and-egg problem: completing a partial observation requires a garment-specific deformation prior, while identifying the garment requires a configur...
 
 [Read more →]({{ site.baseurl }}/papers/2610.16293/)
-
----
-
-## [Learning Dynamic Grasping]({{ site.baseurl }}/papers/2610.14848/)
-
-**2026-10-10** · Nga Kiu Kelly Ho et al. 
-
-Synthesizing believable 4D hand-object grasping sequences is important for character animation, extended reality, and embodied agents. Grasping requires a hand to approach, contact, and lift or manipulate an object coherently. Existing synthesis methods often model only the final static grasp or rel...
-
-[Read more →]({{ site.baseurl }}/papers/2610.14848/)
 
 ---
 
