@@ -178,5 +178,26 @@
     "interesting": false,
     "has_summary": false,
     "has_podcast": false
+  },
+  "2610.23551": {
+    "arxiv_id": "2610.23551",
+    "title": "Embodiment-Aware Planning for Heterogeneous Bimanual Manipulation",
+    "abstract": "Many manipulation tasks that are effortless for dexterous human hands remain challenging for robotic systems equipped with simple, task-specialized grippers. Industrial platforms commonly rely on end-effectors such as suction cups or parallel-jaw grippers, yet no single mode can reliably satisfy the diverse constraints encountered across different phases of complex manipulation tasks, including pickup, reorientation, insertion, and constrained placement. In this work, we investigate whether complementary simple grippers within a heterogeneous bimanual setup can collectively realize tasks that exceed the capability of any individual gripper alone. Given a single human demonstration specifying the desired object motion, we formulate embodiment-aware execution as a finite-horizon optimization over arm-trajectory assignments. At each segment, the planner determines whether single-arm manipulation or a coordinated dual arm handover is required, jointly reasoning over heterogeneous grasp feasibility, motion constraints, manipulability, and cross-gripper compatibility. Exploiting this formulation, we compute globally consistent assignments with explicit switching regularization. Experiments on a dual Franka FR3 platform equipped with suction and parallel-jaw grippers demonstrate improved feasibility and reliability in tasks that are infeasible under single-gripper execution.",
+    "published_date": "2026-10-16",
+    "authors": [
+      "Sukhvansh Jain",
+      "Anurag Maurya",
+      "Shivam Vats",
+      "Narendra Kumar Dhar",
+      "Ravi Prakash"
+    ],
+    "first_author": "Sukhvansh Jain",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2610.23551.pdf",
+    "abs_url": "https://arxiv.org/abs/2610.23551",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
   }
 }
