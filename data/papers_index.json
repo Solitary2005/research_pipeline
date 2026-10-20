@@ -153,5 +153,68 @@
     "interesting": false,
     "has_summary": false,
     "has_podcast": false
+  },
+  "2610.26174": {
+    "arxiv_id": "2610.26174",
+    "title": "PhantomTac: Hijacking Robotic Tactile Systems with Deploy-and-forget Tags",
+    "abstract": "Tactile perception is crucial for precise robotic manipulation, providing an important foundation for dexterous, closed-loop force control. Among various tactile sensing techniques, magnetic tactile sensors stand out thanks to their fine-grained, three-dimensional force perception capability and strong robustness against visual occlusion. In this study, we discover a physical loophole called PhantomTac in magnetic tactile sensors. The attacker can alter the magnetic field, thus spoofing the force interpreted by magnetic tactile sensors. The attacker can stealthily deploy such an attack by simply attaching a thin (the thickness is around 0.5 mm), battery-free magnetic tag to the surface of an object. Hence, the attack tag can be easily concealed by a barcode sticker. Such an attack scheme is \"deploy-and-forget\" -- the attacker can deploy the tag and leave. When a robotic hand is picking up an object, it may severely damage the object. Specifically, spoofing the normal force can crush the object, whereas spoofing the shear force can lead to a loose grip, thus dropping the object. Compared with directly sabotaging the robotic hand, PhantomTac is much more concealed as the attacker does not need access to the device. We performed extensive reverse-engineering efforts to characterize the sensing mechanism of commercial-off-the-shelf tactile sensors and proposed a practical tag design. End-to-end evaluations conducted on real robots and robotic arms demonstrate that our attack can bypass existing anti-interference mechanisms and effectively hijack their closed-loop control processes, achieving an attack success rate exceeding 95% when the grasping-position offset is bounded within 8 mm. Finally, based on the limitations of existing anti-magnetic interference mechanisms, we propose a multimodal-consistency defense mechanism to mitigate such physical-layer security threats.",
+    "published_date": "2026-10-19",
+    "authors": [
+      "Binbin Zhang",
+      "Yifeng Zhang",
+      "Xiaomeng Chen",
+      "Dongyao Chen"
+    ],
+    "first_author": "Binbin Zhang",
+    "primary_category": "cs.CR",
+    "pdf_url": "https://arxiv.org/pdf/2610.26174.pdf",
+    "abs_url": "https://arxiv.org/abs/2610.26174",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2610.25410": {
+    "arxiv_id": "2610.25410",
+    "title": "T(R,O) Grasp++: Cross-Embodiment Dexterous Grasping in Cluttered Environments at Scale",
+    "abstract": "Dexterous grasping in cluttered scenes remains a central challenge in robotic manipulation, as it requires high-dimensional hand coordination under complex object-environment constraints. To address this problem, we introduce one of the largest simulation benchmarks to date, comprising around 0.5B grasp annotations across eight dexterous hands and approximately 50K objects. Furthermore, we propose T(R,O) Grasp++, a scalable diffusion-based framework for cross-embodiment dexterous grasp synthesis in cluttered environments. Extensive experiments demonstrate that our model significantly outperforms existing baselines, achieving an average success rate of 88% across eight dexterous embodiments. Meanwhile, our pipeline achieves only 0.3s inference latency while improving inference sample efficiency by over 10 times.",
+    "published_date": "2026-10-18",
+    "authors": [
+      "Xin Fei",
+      "Zhixuan Xu",
+      "Huaicong Fang",
+      "Fangjun Chen",
+      "Zhaoyu Mu",
+      "Rui Yang",
+      "Zhexi Luo",
+      "Lin Shao"
+    ],
+    "first_author": "Xin Fei",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2610.25410.pdf",
+    "abs_url": "https://arxiv.org/abs/2610.25410",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2610.24267": {
+    "arxiv_id": "2610.24267",
+    "title": "How exposed is work to robotics? Occupational, industry, and geographic measures",
+    "abstract": "Exposure indices that map technical capabilities onto occupational abilities have become a standard tool for anticipating how AI may reshape work, but existing measures either cover software AI or proxy robotics through patents and installation data that reflect the industrial robots of past decades. We construct the first abilities-based exposure measures for robotics and physical AI, and the first to span occupations, industries, and geographies. Following the framework of Felten et al. (2018, 2021), we build a robotics capability taxonomy of 16 capabilities in eight domains from 78 academic, industry, and standards sources, use a large language model to score the relatedness of each capability to the 52 ONET work abilities, and aggregate to Robotics Occupational Exposure (ROE) for 774 occupations, Robotics Industry Exposure (RIE) for 250 NAICS industries, and county-level Robotics Geographic Exposure (RGE). We find that robotics exposure concentrates in physically intensive work such as construction, farming, transportation, and production, and in industries such as logging, mining, trucking, and warehousing. Unlike generative-AI exposure, ROE is higher in occupations with lower wages, lower education requirements, and less creative-ability content. Physical collaboration and assistance, terrain-based locomotion, grasping and handling, and task and functional reasoning move the exposure ranking most, yet no single capability carries the index. Because the measures capture technical relatedness rather than readiness, cost, or adoption, they should be read as an upper bound on where physical automation could affect work.",
+    "published_date": "2026-10-16",
+    "authors": [
+      "Sebastian Sartor",
+      "Robert Seamans",
+      "Neil Thompson"
+    ],
+    "first_author": "Sebastian Sartor",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2610.24267.pdf",
+    "abs_url": "https://arxiv.org/abs/2610.24267",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
   }
 }
