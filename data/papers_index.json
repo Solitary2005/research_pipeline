@@ -109,52 +109,6 @@
     "has_summary": false,
     "has_podcast": false
   },
-  "2610.17001": {
-    "arxiv_id": "2610.17001",
-    "title": "MOSAIC: Mode- and Support-Aware Inference-Time Control of Robot Diffusion Models",
-    "abstract": "Generative policies such as diffusion models provide expressive data-driven priors for robot behavior, yet the situations a robot faces at execution time rarely match its training data and impose constraints and objectives the policy never learned. Existing inference-time guidance methods either rely on gradients that can push samples away from the learned prior, or on sampling procedures that can be inefficient, collapse modes, or average them into out-of-distribution predictions.   We introduce MOSAIC, a mode- and support-aware framework for gradient-free inference-time control of robotic diffusion models. MOSAIC treats the initial noise and all stochastic reverse-step perturbations as a joint input to the pretrained denoising process and adapts a distribution over this input using importance weights computed from fully denoised outputs. Physical feasibility and consistency with the learned support are balanced using adaptive penalties, while mode-wise importance-weighted updates preserve modes and avoid destructive averaging.   The same formulation can jointly steer multiple independently trained diffusion models through shared coupling costs, enabling coordinated behavior without requiring a joint model. We evaluate MOSAIC on navigation, dexterous grasping, motion planning with unseen geometry, and collaborative box manipulation with independently trained robot priors. Across these settings, MOSAIC adapts and composes frozen diffusion priors under new deployment constraints without retraining.",
-    "published_date": "2026-10-12",
-    "authors": [
-      "Sabrina Bodmer",
-      "Rahel Rickenbach",
-      "René Zurbrügg",
-      "Melanie N. Zeilinger",
-      "Colin Jones"
-    ],
-    "first_author": "Sabrina Bodmer",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2610.17001.pdf",
-    "abs_url": "https://arxiv.org/abs/2610.17001",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
-  "2610.16293": {
-    "arxiv_id": "2610.16293",
-    "title": "ClothAtlas: Joint Garment Identification and State Estimation under Self-Occlusion",
-    "abstract": "Garment manipulation requires inferring both garment identity and complete configuration from partial, self-occluded observations. This creates a chicken-and-egg problem: completing a partial observation requires a garment-specific deformation prior, while identifying the garment requires a configuration that explains the observation. We introduce ClothAtlas, which jointly identifies garments and estimates their complete configurations from partial point clouds and a library of canonical meshes. A shared graph-conditioned flow-matching model samples configurations for each candidate mesh and ranks candidates by observation fit. The model accommodates different mesh shapes, vertex counts, and connectivities, allowing new garments to be added from canonical meshes alone without retraining. On held-out DexGarmentLab garments, ClothAtlas ranks the correct mesh first among 221 candidates for all 22 test garments from a single flat observation. From a single self-occluded observation, it identifies 15/22 garments, compared with 8/22 for a deterministic graph estimator. Persistent vertex identities support grasp-target localization on real garments, reducing mean error from 15.4 to 6.4 cm overall and from 17.0 to 8.3 cm on occluded targets compared with dense descriptor matching. Project page: https://clothatlas.github.io/",
-    "published_date": "2026-10-12",
-    "authors": [
-      "Jens Lundell",
-      "Alberta Longhini",
-      "Lei Shu",
-      "Hemal Arora",
-      "Evan Robert",
-      "Carlota Parés-Morlans",
-      "Marcel Büsching",
-      "Mårten Björkman",
-      "Jeannette Bohg"
-    ],
-    "first_author": "Jens Lundell",
-    "primary_category": "cs.CV",
-    "pdf_url": "https://arxiv.org/pdf/2610.16293.pdf",
-    "abs_url": "https://arxiv.org/abs/2610.16293",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
   "2610.22184": {
     "arxiv_id": "2610.22184",
     "title": "Whole-Body Dexterity",
