@@ -194,5 +194,72 @@
     "interesting": false,
     "has_summary": false,
     "has_podcast": false
+  },
+  "2610.28628": {
+    "arxiv_id": "2610.28628",
+    "title": "Learning Adaptable Dexterous Skills via Hybrid Dexterous Mimicking",
+    "abstract": "Dexterous multi-finger hands hold promise to unlock diverse skills like functional grasps, in-hand reorientation, and dynamic handover that the human-designed world assumes, yet existing learning recipes force a trade-off. Goal-reaching reinforcement learning generalizes to arbitrary object poses but, lacking any human prior, converges to unnatural and unreliable finger strategies; motion tracking reproduces human-like behavior from a single clip but cannot deviate from it. We present AdaDex, a goal-conditioned RL framework that turns a single hand-object trajectory of a few seconds---from mocap data or HOI reconstruction from in-the-wild RGB(D) video---into an adaptable dexterous skill. At the core of AdaDex is Hybrid Dexterous Mimicking: a shared policy is trained on two populations of massively parallel environments: motion tracking environments trained with dense motion tracking objective, which instill the human prior from human motion; and generalization environments with noised initial states and goals and a sparse object-success reward, which force the skill to work far off the reference. From seconds of human motion per skill, the resulting policies can learn diverse adaptable dexterous skills, such as functional grasping, object reposing, in-hand reorientation with finger gaiting, and dynamic behaviors like throw-and-catch. Our method outperforms baselines in terms of generalization and functionality, and we demonstrate transfer across simulators and to the real world. Project page: https://yuxuank.com/AdaDex/.",
+    "published_date": "2026-10-20",
+    "authors": [
+      "Yuxuan Kuang",
+      "Jiashun Wang",
+      "Yixuan Sun",
+      "Yufei Ye",
+      "Sungjae Park",
+      "Umar Iqbal",
+      "Katerina Fragkiadaki",
+      "Shubham Tulsiani"
+    ],
+    "first_author": "Yuxuan Kuang",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2610.28628.pdf",
+    "abs_url": "https://arxiv.org/abs/2610.28628",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2610.27995": {
+    "arxiv_id": "2610.27995",
+    "title": "Learning Tactile-Aware Hand Representations from Human Hand-Object Interaction Data",
+    "abstract": "Tactile representation learning for dexterous manipulation often requires substantial robot-side data collection, limiting its scalability across different hands and sensors. We explore whether large-scale human hand-object interaction (HOI) data can provide a useful prior for robotic tactile learning. To this end, we propose HuTact, a framework that pretrains tactile-aware hand representations from human HOI data without requiring real tactile signals during pretraining. HuTact transfers the interaction structure learned from human hand motions to robotic tactile observations and can be further adapted with a small amount of unlabeled robot interaction data. We evaluate HuTact on tactile perception and manipulation tasks, including grasp prediction, slip detection, object classification, and tactile-conditioned policy learning. Across these tasks, human HOI pretraining improves data efficiency and provides a strong initialization for downstream learning. Notably, with HOI pretraining followed by midtraining on unlabeled robot play data, HuTact achieves 88.26% Macro-F1 on grasp prediction using only 25\\% of the labeled downstream data, comparable to training from scratch on the full labeled dataset (88.23%). These results suggest that human interaction data can serve as a scalable complementary source for robotic tactile representation learning.",
+    "published_date": "2026-10-20",
+    "authors": [
+      "Yeonguk Yu",
+      "Jaehong Kim",
+      "Byungok Han"
+    ],
+    "first_author": "Yeonguk Yu",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2610.27995.pdf",
+    "abs_url": "https://arxiv.org/abs/2610.27995",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2610.26962": {
+    "arxiv_id": "2610.26962",
+    "title": "DexGraspFlow: Topology-Aware SE(3) Flow Matching for Cross-Embodiment Dexterous Grasp Generation",
+    "abstract": "Differences in hand geometry, joint parameterization, and kinematic topology pose challenges for cross-embodiment dexterous grasp generation. However, spatial relations among links alone are insufficient to fully capture the hand's kinematic topology. We propose DexGraspFlow, a conditional link-level $\\mathrm{SE}(3)$ flow-matching framework integrating geometric relations and kinematic topology. The framework encodes local object geometry, link geometry, and current poses. A dual-stream DiT models link--link coordination and link--object interaction, while attention biases derived from kinematic-tree distances provide explicit structural information for modeling evolving geometric interactions. The model jointly learns translational and rotational velocity fields, integrates them to generate link poses, and recovers joint configurations through inverse kinematics. Additionally, inference-time palm-orientation guidance enables controllable grasp generation without retraining. Across three robotic hands and 30 object--hand pairs, DexGraspFlow achieves a 95.33\\% average simulation success rate, with an average generation latency, including inverse kinematics, approximately 49\\% lower than that of a state-of-the-art baseline. Further experiments demonstrate zero-shot adaptability to seven finger-removal variants and palm-orientation control. A model trained on demonstrations for the deployed hand achieves a 91\\% success rate over 100 real-robot grasping trials, supporting the framework's applicability to physical grasp execution.",
+    "published_date": "2026-10-18",
+    "authors": [
+      "Bin Zhou",
+      "Boyu Ma",
+      "Xinyu Zhou",
+      "Jiahua Dong",
+      "Chuhao Zhou",
+      "Yizhou Liu",
+      "Hao Wan",
+      "Jianfei Yang"
+    ],
+    "first_author": "Bin Zhou",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2610.26962.pdf",
+    "abs_url": "https://arxiv.org/abs/2610.26962",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
   }
 }

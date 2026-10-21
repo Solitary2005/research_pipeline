@@ -5,36 +5,36 @@ title: "Dexterous Grasp Daily"
 
 # Dexterous Grasp — Daily Paper Digest
 
-**2026-10-20** — 3 new papers from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
+**2026-10-21** — 3 new papers from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
 
 
-## [PhantomTac: Hijacking Robotic Tactile Systems with Deploy-and-forget Tags]({{ site.baseurl }}/papers/2610.26174/)
+## [Learning Tactile-Aware Hand Representations from Human Hand-Object Interaction Data]({{ site.baseurl }}/papers/2610.27995/)
 
-**2026-10-19** · Binbin Zhang et al. 
+**2026-10-20** · Yeonguk Yu et al. 
 
-Tactile perception is crucial for precise robotic manipulation, providing an important foundation for dexterous, closed-loop force control. Among various tactile sensing techniques, magnetic tactile sensors stand out thanks to their fine-grained, three-dimensional force perception capability and str...
+Tactile representation learning for dexterous manipulation often requires substantial robot-side data collection, limiting its scalability across different hands and sensors. We explore whether large-scale human hand-object interaction (HOI) data can provide a useful prior for robotic tactile learni...
 
-[Read more →]({{ site.baseurl }}/papers/2610.26174/)
-
----
-
-## [T(R,O) Grasp++: Cross-Embodiment Dexterous Grasping in Cluttered Environments at Scale]({{ site.baseurl }}/papers/2610.25410/)
-
-**2026-10-18** · Xin Fei et al. 
-
-Dexterous grasping in cluttered scenes remains a central challenge in robotic manipulation, as it requires high-dimensional hand coordination under complex object-environment constraints. To address this problem, we introduce one of the largest simulation benchmarks to date, comprising around 0.5B g...
-
-[Read more →]({{ site.baseurl }}/papers/2610.25410/)
+[Read more →]({{ site.baseurl }}/papers/2610.27995/)
 
 ---
 
-## [How exposed is work to robotics? Occupational, industry, and geographic measures]({{ site.baseurl }}/papers/2610.24267/)
+## [Learning Adaptable Dexterous Skills via Hybrid Dexterous Mimicking]({{ site.baseurl }}/papers/2610.28628/)
 
-**2026-10-16** · Sebastian Sartor et al. 
+**2026-10-20** · Yuxuan Kuang et al. 
 
-Exposure indices that map technical capabilities onto occupational abilities have become a standard tool for anticipating how AI may reshape work, but existing measures either cover software AI or proxy robotics through patents and installation data that reflect the industrial robots of past decades...
+Dexterous multi-finger hands hold promise to unlock diverse skills like functional grasps, in-hand reorientation, and dynamic handover that the human-designed world assumes, yet existing learning recipes force a trade-off. Goal-reaching reinforcement learning generalizes to arbitrary object poses bu...
 
-[Read more →]({{ site.baseurl }}/papers/2610.24267/)
+[Read more →]({{ site.baseurl }}/papers/2610.28628/)
+
+---
+
+## [DexGraspFlow: Topology-Aware SE(3) Flow Matching for Cross-Embodiment Dexterous Grasp Generation]({{ site.baseurl }}/papers/2610.26962/)
+
+**2026-10-18** · Bin Zhou et al. 
+
+Differences in hand geometry, joint parameterization, and kinematic topology pose challenges for cross-embodiment dexterous grasp generation. However, spatial relations among links alone are insufficient to fully capture the hand's kinematic topology. We propose DexGraspFlow, a conditional link-leve...
+
+[Read more →]({{ site.baseurl }}/papers/2610.26962/)
 
 ---
 
