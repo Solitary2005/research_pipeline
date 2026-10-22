@@ -5,36 +5,26 @@ title: "Dexterous Grasp Daily"
 
 # Dexterous Grasp — Daily Paper Digest
 
-**2026-10-21** — 3 new papers from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
+**2026-10-22** — 2 new papers from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
 
 
-## [Learning Tactile-Aware Hand Representations from Human Hand-Object Interaction Data]({{ site.baseurl }}/papers/2610.27995/)
+## [PHD-Hand: A Printable Humanoid Dexterous Hand with Linkage-Driven 3-DOA Digits]({{ site.baseurl }}/papers/2610.29030/)
 
-**2026-10-20** · Yeonguk Yu et al. 
+**2026-10-21** · Neel Adwani et al. 
 
-Tactile representation learning for dexterous manipulation often requires substantial robot-side data collection, limiting its scalability across different hands and sensors. We explore whether large-scale human hand-object interaction (HOI) data can provide a useful prior for robotic tactile learni...
+Currently, dexterous humanoid robot hands are widely considered the final hardware bottleneck that hampers generalist robots from physically assisting people at home and work. As conventional tendon-driven designs suffer from high cost, demanding maintenance, poor reliability, and short durability, ...
 
-[Read more →]({{ site.baseurl }}/papers/2610.27995/)
-
----
-
-## [Learning Adaptable Dexterous Skills via Hybrid Dexterous Mimicking]({{ site.baseurl }}/papers/2610.28628/)
-
-**2026-10-20** · Yuxuan Kuang et al. 
-
-Dexterous multi-finger hands hold promise to unlock diverse skills like functional grasps, in-hand reorientation, and dynamic handover that the human-designed world assumes, yet existing learning recipes force a trade-off. Goal-reaching reinforcement learning generalizes to arbitrary object poses bu...
-
-[Read more →]({{ site.baseurl }}/papers/2610.28628/)
+[Read more →]({{ site.baseurl }}/papers/2610.29030/)
 
 ---
 
-## [DexGraspFlow: Topology-Aware SE(3) Flow Matching for Cross-Embodiment Dexterous Grasp Generation]({{ site.baseurl }}/papers/2610.26962/)
+## [COWBOY: A Scalable Sim-to-Real Framework for Learning Contextual Whole-Body Manipulation]({{ site.baseurl }}/papers/2610.28948/)
 
-**2026-10-18** · Bin Zhou et al. 
+**2026-10-20** · Jiahui Yang et al. 
 
-Differences in hand geometry, joint parameterization, and kinematic topology pose challenges for cross-embodiment dexterous grasp generation. However, spatial relations among links alone are insufficient to fully capture the hand's kinematic topology. We propose DexGraspFlow, a conditional link-leve...
+Mobile manipulators must adapt not only to objects, but also to the spatial context in which they appear: where to position the base, how to manipulate, and where to look while navigating surrounding scene geometry. To address this, we present COWBOY, a scalable sim-to-real framework for learning su...
 
-[Read more →]({{ site.baseurl }}/papers/2610.26962/)
+[Read more →]({{ site.baseurl }}/papers/2610.28948/)
 
 ---
 
