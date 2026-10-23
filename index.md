@@ -5,26 +5,26 @@ title: "Dexterous Grasp Daily"
 
 # Dexterous Grasp — Daily Paper Digest
 
-**2026-10-22** — 2 new papers from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
+**2026-10-23** — 2 new papers from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
 
 
-## [PHD-Hand: A Printable Humanoid Dexterous Hand with Linkage-Driven 3-DOA Digits]({{ site.baseurl }}/papers/2610.29030/)
+## [PiHand: Latent Hand-Object Interaction Priors for Physics-Based Policy Learning]({{ site.baseurl }}/papers/2610.31299/)
 
-**2026-10-21** · Neel Adwani et al. 
+**2026-10-22** · Niklas Berndt et al. 
 
-Currently, dexterous humanoid robot hands are widely considered the final hardware bottleneck that hampers generalist robots from physically assisting people at home and work. As conventional tendon-driven designs suffer from high cost, demanding maintenance, poor reliability, and short durability, ...
+Synthesizing physically grounded dexterous hand-object interactions is important for VR/AR, gaming, and robotics, yet remains challenging because subtle contact dynamics, diverse object geometries, and target trajectories must be jointly respected while maintaining natural grasps. Existing methods e...
 
-[Read more →]({{ site.baseurl }}/papers/2610.29030/)
+[Read more →]({{ site.baseurl }}/papers/2610.31299/)
 
 ---
 
-## [COWBOY: A Scalable Sim-to-Real Framework for Learning Contextual Whole-Body Manipulation]({{ site.baseurl }}/papers/2610.28948/)
+## [IORA: Irregular Object Immobilization under Restricted Actuation]({{ site.baseurl }}/papers/2610.30969/)
 
-**2026-10-20** · Jiahui Yang et al. 
+**2026-10-22** · Sang-Hun Han et al. 
 
-Mobile manipulators must adapt not only to objects, but also to the spatial context in which they appear: where to position the base, how to manipulate, and where to look while navigating surrounding scene geometry. To address this, we present COWBOY, a scalable sim-to-real framework for learning su...
+Stable grasping under task-specific disturbances is important for robotic manipulation. However, most dexterous grasp synthesis methods are developed for highly actuated hands in free space, and low-DoF hands may not be able to realize the contact topologies required by these grasps. Meanwhile, supp...
 
-[Read more →]({{ site.baseurl }}/papers/2610.28948/)
+[Read more →]({{ site.baseurl }}/papers/2610.30969/)
 
 ---
 
