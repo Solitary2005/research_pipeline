@@ -87,27 +87,6 @@
     "has_summary": true,
     "has_podcast": true
   },
-  "2610.23551": {
-    "arxiv_id": "2610.23551",
-    "title": "Embodiment-Aware Planning for Heterogeneous Bimanual Manipulation",
-    "abstract": "Many manipulation tasks that are effortless for dexterous human hands remain challenging for robotic systems equipped with simple, task-specialized grippers. Industrial platforms commonly rely on end-effectors such as suction cups or parallel-jaw grippers, yet no single mode can reliably satisfy the diverse constraints encountered across different phases of complex manipulation tasks, including pickup, reorientation, insertion, and constrained placement. In this work, we investigate whether complementary simple grippers within a heterogeneous bimanual setup can collectively realize tasks that exceed the capability of any individual gripper alone. Given a single human demonstration specifying the desired object motion, we formulate embodiment-aware execution as a finite-horizon optimization over arm-trajectory assignments. At each segment, the planner determines whether single-arm manipulation or a coordinated dual arm handover is required, jointly reasoning over heterogeneous grasp feasibility, motion constraints, manipulability, and cross-gripper compatibility. Exploiting this formulation, we compute globally consistent assignments with explicit switching regularization. Experiments on a dual Franka FR3 platform equipped with suction and parallel-jaw grippers demonstrate improved feasibility and reliability in tasks that are infeasible under single-gripper execution.",
-    "published_date": "2026-10-16",
-    "authors": [
-      "Sukhvansh Jain",
-      "Anurag Maurya",
-      "Shivam Vats",
-      "Narendra Kumar Dhar",
-      "Ravi Prakash"
-    ],
-    "first_author": "Sukhvansh Jain",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2610.23551.pdf",
-    "abs_url": "https://arxiv.org/abs/2610.23551",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
   "2610.26174": {
     "arxiv_id": "2610.26174",
     "title": "PhantomTac: Hijacking Robotic Tactile Systems with Deploy-and-forget Tags",
@@ -147,25 +126,6 @@
     "primary_category": "cs.RO",
     "pdf_url": "https://arxiv.org/pdf/2610.25410.pdf",
     "abs_url": "https://arxiv.org/abs/2610.25410",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
-  "2610.24267": {
-    "arxiv_id": "2610.24267",
-    "title": "How exposed is work to robotics? Occupational, industry, and geographic measures",
-    "abstract": "Exposure indices that map technical capabilities onto occupational abilities have become a standard tool for anticipating how AI may reshape work, but existing measures either cover software AI or proxy robotics through patents and installation data that reflect the industrial robots of past decades. We construct the first abilities-based exposure measures for robotics and physical AI, and the first to span occupations, industries, and geographies. Following the framework of Felten et al. (2018, 2021), we build a robotics capability taxonomy of 16 capabilities in eight domains from 78 academic, industry, and standards sources, use a large language model to score the relatedness of each capability to the 52 ONET work abilities, and aggregate to Robotics Occupational Exposure (ROE) for 774 occupations, Robotics Industry Exposure (RIE) for 250 NAICS industries, and county-level Robotics Geographic Exposure (RGE). We find that robotics exposure concentrates in physically intensive work such as construction, farming, transportation, and production, and in industries such as logging, mining, trucking, and warehousing. Unlike generative-AI exposure, ROE is higher in occupations with lower wages, lower education requirements, and less creative-ability content. Physical collaboration and assistance, terrain-based locomotion, grasping and handling, and task and functional reasoning move the exposure ranking most, yet no single capability carries the index. Because the measures capture technical relatedness rather than readiness, cost, or adoption, they should be read as an upper bound on where physical automation could affect work.",
-    "published_date": "2026-10-16",
-    "authors": [
-      "Sebastian Sartor",
-      "Robert Seamans",
-      "Neil Thompson"
-    ],
-    "first_author": "Sebastian Sartor",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2610.24267.pdf",
-    "abs_url": "https://arxiv.org/abs/2610.24267",
     "topic": "dexterous_grasp",
     "interesting": false,
     "has_summary": false,
