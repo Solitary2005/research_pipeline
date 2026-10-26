@@ -107,30 +107,6 @@
     "has_summary": false,
     "has_podcast": false
   },
-  "2610.25410": {
-    "arxiv_id": "2610.25410",
-    "title": "T(R,O) Grasp++: Cross-Embodiment Dexterous Grasping in Cluttered Environments at Scale",
-    "abstract": "Dexterous grasping in cluttered scenes remains a central challenge in robotic manipulation, as it requires high-dimensional hand coordination under complex object-environment constraints. To address this problem, we introduce one of the largest simulation benchmarks to date, comprising around 0.5B grasp annotations across eight dexterous hands and approximately 50K objects. Furthermore, we propose T(R,O) Grasp++, a scalable diffusion-based framework for cross-embodiment dexterous grasp synthesis in cluttered environments. Extensive experiments demonstrate that our model significantly outperforms existing baselines, achieving an average success rate of 88% across eight dexterous embodiments. Meanwhile, our pipeline achieves only 0.3s inference latency while improving inference sample efficiency by over 10 times.",
-    "published_date": "2026-10-18",
-    "authors": [
-      "Xin Fei",
-      "Zhixuan Xu",
-      "Huaicong Fang",
-      "Fangjun Chen",
-      "Zhaoyu Mu",
-      "Rui Yang",
-      "Zhexi Luo",
-      "Lin Shao"
-    ],
-    "first_author": "Xin Fei",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2610.25410.pdf",
-    "abs_url": "https://arxiv.org/abs/2610.25410",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
   "2610.28628": {
     "arxiv_id": "2610.28628",
     "title": "Learning Adaptable Dexterous Skills via Hybrid Dexterous Mimicking",
@@ -169,30 +145,6 @@
     "primary_category": "cs.RO",
     "pdf_url": "https://arxiv.org/pdf/2610.27995.pdf",
     "abs_url": "https://arxiv.org/abs/2610.27995",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
-  "2610.26962": {
-    "arxiv_id": "2610.26962",
-    "title": "DexGraspFlow: Topology-Aware SE(3) Flow Matching for Cross-Embodiment Dexterous Grasp Generation",
-    "abstract": "Differences in hand geometry, joint parameterization, and kinematic topology pose challenges for cross-embodiment dexterous grasp generation. However, spatial relations among links alone are insufficient to fully capture the hand's kinematic topology. We propose DexGraspFlow, a conditional link-level $\\mathrm{SE}(3)$ flow-matching framework integrating geometric relations and kinematic topology. The framework encodes local object geometry, link geometry, and current poses. A dual-stream DiT models link--link coordination and link--object interaction, while attention biases derived from kinematic-tree distances provide explicit structural information for modeling evolving geometric interactions. The model jointly learns translational and rotational velocity fields, integrates them to generate link poses, and recovers joint configurations through inverse kinematics. Additionally, inference-time palm-orientation guidance enables controllable grasp generation without retraining. Across three robotic hands and 30 object--hand pairs, DexGraspFlow achieves a 95.33\\% average simulation success rate, with an average generation latency, including inverse kinematics, approximately 49\\% lower than that of a state-of-the-art baseline. Further experiments demonstrate zero-shot adaptability to seven finger-removal variants and palm-orientation control. A model trained on demonstrations for the deployed hand achieves a 91\\% success rate over 100 real-robot grasping trials, supporting the framework's applicability to physical grasp execution.",
-    "published_date": "2026-10-18",
-    "authors": [
-      "Bin Zhou",
-      "Boyu Ma",
-      "Xinyu Zhou",
-      "Jiahua Dong",
-      "Chuhao Zhou",
-      "Yizhou Liu",
-      "Hao Wan",
-      "Jianfei Yang"
-    ],
-    "first_author": "Bin Zhou",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2610.26962.pdf",
-    "abs_url": "https://arxiv.org/abs/2610.26962",
     "topic": "dexterous_grasp",
     "interesting": false,
     "has_summary": false,
