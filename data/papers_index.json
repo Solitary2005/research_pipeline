@@ -237,5 +237,105 @@
     "interesting": false,
     "has_summary": false,
     "has_podcast": false
+  },
+  "2610.35103": {
+    "arxiv_id": "2610.35103",
+    "title": "The Language of Deformation: Semantic Failure Analysis as a Prerequisite for Dexterous Manipulation of Deformable Objects",
+    "abstract": "Dexterous manipulation of rigid objects has reached a level of maturity where grasp stability, control, and planning strategies are successfully applied in industry and logistics. In contrast, manipulating deformable objects (cables, plastic pieces, cloth) remains far more challenging, as rigid-object methods do not account for their additional complexity. This paper identifies semantic failure analysis as a key step toward mature deformable-object manipulation and supports this claim with proof-of-concept experiments. Unlike rigid-object manipulation, where goals are well-defined in terms of criteria such as force balance and slippage, deformable-object manipulation involves a broader variety of failure modes arising from differences in materials, geometry, and behaviour. Typical failures include buckling, plastic deformation, pressure variations, and tearing. These diverse and often hard-to-detect events require distinct corrective strategies, making semantic failure analysis necessary. We define its key components and challenges and present experimental results supporting its potential as a research direction.",
+    "published_date": "2026-10-26",
+    "authors": [
+      "Ignacio Cuiral-Zueco",
+      "David Hardman",
+      "Michele Pierallini",
+      "Erfan Shahriari"
+    ],
+    "first_author": "Ignacio Cuiral-Zueco",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2610.35103.pdf",
+    "abs_url": "https://arxiv.org/abs/2610.35103",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2610.33685": {
+    "arxiv_id": "2610.33685",
+    "title": "EXE: Egocentric Cross-Embodiment Pretraining via Factorized Latent Actions for VLA Models",
+    "abstract": "Vision-Language-Action (VLA) models are bottlenecked by the scarcity of robot data. Egocentric human manipulation videos offer an abundant, diverse, and semantically-rich alternative that inherently captures manipulation intent. However, the embodiment gap makes it difficult to extract action-relevant representations from these videos. From the perspective of action execution, human hands and robots share analogous manipulation primitives---reaching, grasping, placing---yet exhibit distinct kinematics tied to their embodiments. This might motivate our key approach: egocentric video pretraining can yield shared action representations capturing transferable manipulation skills, while human-specific motion patterns should be disentangled to avoid interfering with robot policy learning. To this end, we propose EXE, an Egocentric Cross(X)-Embodiment pretraining framework that learns a factorized latent action representation from egocentric human videos, separating shared manipulation priors from embodiment-specific signals. By leveraging the shared action space, the robot policy acquires generalizable manipulation semantics from diverse human demonstrations without being biased by human-specific kinematics. This shared knowledge transfers across embodiments with different kinematic structures, enabling the same pretraining to benefit both parallel grippers and dexterous hands. EXE yields consistent gains over baseline without pretraining on RoboTwin 2.0, RoboCasa GR1, and real-world manipulation tasks.",
+    "published_date": "2026-10-24",
+    "authors": [
+      "Qingyuan Cai",
+      "Bo Zhang",
+      "Yongzhen Huang",
+      "Jianyu Chen"
+    ],
+    "first_author": "Qingyuan Cai",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2610.33685.pdf",
+    "abs_url": "https://arxiv.org/abs/2610.33685",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2610.33486": {
+    "arxiv_id": "2610.33486",
+    "title": "Learning Dexterous Manipulation: Hands, Simulators, Training, and Evaluation",
+    "abstract": "A dexterous hand can change an object's pose without setting it down. This survey covers 113 learning-based methods that attempt it, the hands they run on, the simulators they train in, and how they report results. The field has largely converged on one recipe: reinforcement learning on privileged state in a GPU simulator, distilled into a vision-only student for transfer to hardware. Almost half the corpus trains that way, nearly all of it in one simulator, whose own successors are barely used. A second and faster-growing branch learns from teleoperated demonstration instead, through vision-language-action models, diffusion policies, and systems whose contribution is the collection rig itself. Published work has tripled since 2022. Grasping remains the largest task family and bimanual coordination the fastest-rising, and almost every experiment runs on one of four hands. What the survey adds comes from reading released code and vendor specifications beside the papers. Eight hands that can be bought or built from published designs appear in no method paper here. Where the depth a hand sinks into the object it holds is reported at all, it is not measured in the physics that produced the motion. Section VII proposes a protocol for the unreported quantities; the body gives the counts behind every claim above.",
+    "published_date": "2026-10-24",
+    "authors": [
+      "Luai Abuelsamen"
+    ],
+    "first_author": "Luai Abuelsamen",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2610.33486.pdf",
+    "abs_url": "https://arxiv.org/abs/2610.33486",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2610.33480": {
+    "arxiv_id": "2610.33480",
+    "title": "MDPO: Multi-constraint Dexterous Policy Optimization with Reinforcement Learning",
+    "abstract": "Dexterous manipulation requires high-dimensional control policies to accomplish complex contact-rich tasks while simultaneously satisfying multiple safety requirements, such as joint limits, unsafe finger configurations, arm collisions, and unstable object interactions. Constrained reinforcement learning (RL) provides a principled framework for incorporating these requirements into dexterous manipulation policy learning. However, existing constrained RL methods for dexterous manipulation primarily focus on cumulative cost constraints and struggle to simultaneously handle multiple heterogeneous constraints during dexterous policy learning. In this work, we propose Multi-constraint Dexterous Policy Optimization (MDPO) for safe dexterous manipulation. We first formulate dexterous manipulation as a multi-constraint policy optimization problem involving both cumulative cost constraints and state-wise cost constraints. Based on this formulation, we integrate multi-constraint projection into the dexterous manipulation policy optimization process. Specifically, we employ constraint-specific policy projections to map the intermediate policy that maximizes task performance onto the feasible regions defined by the cumulative cost constraint and the state-wise cost constraint. Extensive experiments on ReDMan, including safe joint control, finger safety, and grasping tasks, demonstrate that MDPO achieves superior constraint satisfaction while maintaining competitive task performance compared with the baselines. Our code is available at this link.",
+    "published_date": "2026-10-24",
+    "authors": [
+      "Ao Zhou",
+      "Zongyou Yu",
+      "Ke Wu",
+      "Tao Xu",
+      "Junqiao Zhao",
+      "Wenchao Ding",
+      "Alois Knoll",
+      "Guang Chen"
+    ],
+    "first_author": "Ao Zhou",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2610.33480.pdf",
+    "abs_url": "https://arxiv.org/abs/2610.33480",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2610.33241": {
+    "arxiv_id": "2610.33241",
+    "title": "ORBIT: A Modular Multi-finger Robotic Hand Platform with Rotational Finger Reconfiguration",
+    "abstract": "Despite the popularity of multi-fingered robotic hands for dexterous manipulation, there is no systematic platform to compare different hand morphologies against one another. We present ORBIT (Orbital Reconfigurable Base-actuated Integrated Theta-motion Hand), a modular platform designed to enable principled exploration of multi-fingered hand morphology. The core contribution of ORBIT is a rotating knuckle mechanism, where independent fingers travel around a cylindrical palm via a belt drive. This enables ORBIT to perform quick recon- figuration (< 1 s) of finger layout without hand disassembly. ORBITs a robust system, with finger average angular velocity of 1.57 rad / s1 and a root finger force resistance of 50 N. Using a three fingers instantiation of ORBIT, we demonstrate an initial pilot grasping study, comparing anthropomorphic, isometric, and Barrett-style finger layouts across eleven objects of varied size, shape, and texture. We further demonstrate how ORBITs nonanthropomorphic orbital DOF enables the achievement of tasks that would be difficult to perform with fixed-knuckle designs, such as cube face reorientation, lid threading, and precision pinching of sub-centimeter objects. These results establish ORBIT as a viable platform for direct apples to apples comparison of multi-fingered hand morphologies for specific manipulation tasks",
+    "published_date": "2026-10-23",
+    "authors": [
+      "Benito Ribadeneira",
+      "Siqi Shang",
+      "Lillian Chin"
+    ],
+    "first_author": "Benito Ribadeneira",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2610.33241.pdf",
+    "abs_url": "https://arxiv.org/abs/2610.33241",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
   }
 }
