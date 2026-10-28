@@ -87,49 +87,6 @@
     "has_summary": true,
     "has_podcast": true
   },
-  "2610.28628": {
-    "arxiv_id": "2610.28628",
-    "title": "Learning Adaptable Dexterous Skills via Hybrid Dexterous Mimicking",
-    "abstract": "Dexterous multi-finger hands hold promise to unlock diverse skills like functional grasps, in-hand reorientation, and dynamic handover that the human-designed world assumes, yet existing learning recipes force a trade-off. Goal-reaching reinforcement learning generalizes to arbitrary object poses but, lacking any human prior, converges to unnatural and unreliable finger strategies; motion tracking reproduces human-like behavior from a single clip but cannot deviate from it. We present AdaDex, a goal-conditioned RL framework that turns a single hand-object trajectory of a few seconds---from mocap data or HOI reconstruction from in-the-wild RGB(D) video---into an adaptable dexterous skill. At the core of AdaDex is Hybrid Dexterous Mimicking: a shared policy is trained on two populations of massively parallel environments: motion tracking environments trained with dense motion tracking objective, which instill the human prior from human motion; and generalization environments with noised initial states and goals and a sparse object-success reward, which force the skill to work far off the reference. From seconds of human motion per skill, the resulting policies can learn diverse adaptable dexterous skills, such as functional grasping, object reposing, in-hand reorientation with finger gaiting, and dynamic behaviors like throw-and-catch. Our method outperforms baselines in terms of generalization and functionality, and we demonstrate transfer across simulators and to the real world. Project page: https://yuxuank.com/AdaDex/.",
-    "published_date": "2026-10-20",
-    "authors": [
-      "Yuxuan Kuang",
-      "Jiashun Wang",
-      "Yixuan Sun",
-      "Yufei Ye",
-      "Sungjae Park",
-      "Umar Iqbal",
-      "Katerina Fragkiadaki",
-      "Shubham Tulsiani"
-    ],
-    "first_author": "Yuxuan Kuang",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2610.28628.pdf",
-    "abs_url": "https://arxiv.org/abs/2610.28628",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
-  "2610.27995": {
-    "arxiv_id": "2610.27995",
-    "title": "Learning Tactile-Aware Hand Representations from Human Hand-Object Interaction Data",
-    "abstract": "Tactile representation learning for dexterous manipulation often requires substantial robot-side data collection, limiting its scalability across different hands and sensors. We explore whether large-scale human hand-object interaction (HOI) data can provide a useful prior for robotic tactile learning. To this end, we propose HuTact, a framework that pretrains tactile-aware hand representations from human HOI data without requiring real tactile signals during pretraining. HuTact transfers the interaction structure learned from human hand motions to robotic tactile observations and can be further adapted with a small amount of unlabeled robot interaction data. We evaluate HuTact on tactile perception and manipulation tasks, including grasp prediction, slip detection, object classification, and tactile-conditioned policy learning. Across these tasks, human HOI pretraining improves data efficiency and provides a strong initialization for downstream learning. Notably, with HOI pretraining followed by midtraining on unlabeled robot play data, HuTact achieves 88.26% Macro-F1 on grasp prediction using only 25\\% of the labeled downstream data, comparable to training from scratch on the full labeled dataset (88.23%). These results suggest that human interaction data can serve as a scalable complementary source for robotic tactile representation learning.",
-    "published_date": "2026-10-20",
-    "authors": [
-      "Yeonguk Yu",
-      "Jaehong Kim",
-      "Byungok Han"
-    ],
-    "first_author": "Yeonguk Yu",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2610.27995.pdf",
-    "abs_url": "https://arxiv.org/abs/2610.27995",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
   "2610.29030": {
     "arxiv_id": "2610.29030",
     "title": "PHD-Hand: A Printable Humanoid Dexterous Hand with Linkage-Driven 3-DOA Digits",
@@ -146,29 +103,6 @@
     "primary_category": "cs.RO",
     "pdf_url": "https://arxiv.org/pdf/2610.29030.pdf",
     "abs_url": "https://arxiv.org/abs/2610.29030",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
-  "2610.28948": {
-    "arxiv_id": "2610.28948",
-    "title": "COWBOY: A Scalable Sim-to-Real Framework for Learning Contextual Whole-Body Manipulation",
-    "abstract": "Mobile manipulators must adapt not only to objects, but also to the spatial context in which they appear: where to position the base, how to manipulate, and where to look while navigating surrounding scene geometry. To address this, we present COWBOY, a scalable sim-to-real framework for learning such contextual whole-body manipulation. On whole-body dexterous grasping, COWBOY transfers zero-shot to hundreds of objects and diverse in-the-wild scenes, spanning cluttered tabletops, shelves, drawers, and other unstructured settings. Rather than learning scene adaptation directly with RL in simulation, a vectorized environment-aware whole-body controller (WBC) handles reaching in thousands of scenes by coordinating base-arm motion, collision avoidance, and active vision. Then, local RL experts are trained in local scenes for object interaction and can be reused across thousands of full-scene layouts. We distill these composed WBC-RL teachers into a single vision policy that controls the mobile base, arm, dexterous hand, and actuated camera from point-cloud observations. The resulting policy exhibits contextual whole-body behavior, automatically adapting base placement, camera viewpoint, arm trajectory, and grasp strategy to observed scene and object geometry. Videos are available at https://cowboy-manip.com",
-    "published_date": "2026-10-20",
-    "authors": [
-      "Jiahui Yang",
-      "Jason Jingzhou Liu",
-      "Ray Muxin Liu",
-      "Andrew E. Wang",
-      "Kenneth Shaw",
-      "Deepak Pathak",
-      "Ruslan Salakhutdinov"
-    ],
-    "first_author": "Jiahui Yang",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2610.28948.pdf",
-    "abs_url": "https://arxiv.org/abs/2610.28948",
     "topic": "dexterous_grasp",
     "interesting": false,
     "has_summary": false,
