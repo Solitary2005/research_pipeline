@@ -87,27 +87,6 @@
     "has_summary": true,
     "has_podcast": true
   },
-  "2610.29030": {
-    "arxiv_id": "2610.29030",
-    "title": "PHD-Hand: A Printable Humanoid Dexterous Hand with Linkage-Driven 3-DOA Digits",
-    "abstract": "Currently, dexterous humanoid robot hands are widely considered the final hardware bottleneck that hampers generalist robots from physically assisting people at home and work. As conventional tendon-driven designs suffer from high cost, demanding maintenance, poor reliability, and short durability, alternative linkage-driven designs have increasingly gained attention. Despite their potential to avoid the weaknesses of tendon-driven hands, integrating multiple degrees of actuation (DOA) in a single digit with linkage drivetrains is a challenge for design and fabrication. Only a few studies have managed to present functional humanoid hands that are completely linkage-driven and have at least three DOAs per digit without compromising actuator placement and other design preferences. Our work introduces a new linkage-driven hand featuring a unique flexure hinge. Together with elastic drive rods made of spring steel, the linkage drivetrains are significantly simplified. Unlike other linkage-driven designs of similar dexterity, our design does not require many miniature moving parts. As a result, the hand can be fabricated easily with a budget 3D printer. This not only significantly lowers the barrier to entry for using and developing dexterous humanoid robot hand functions, but also allows the hands to be sized much closer to regular human hands. The design offers desirable kinematic advantages as well. A prototype is evaluated for grasping and object manipulation. In addition, this paper presents our latest findings on kinematics and control of the hand.",
-    "published_date": "2026-10-21",
-    "authors": [
-      "Neel Adwani",
-      "Muhaiminul Islam Akash",
-      "Saffia Ouali",
-      "Ethan Liu",
-      "Cong Wang"
-    ],
-    "first_author": "Neel Adwani",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2610.29030.pdf",
-    "abs_url": "https://arxiv.org/abs/2610.29030",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
   "2610.31299": {
     "arxiv_id": "2610.31299",
     "title": "PiHand: Latent Hand-Object Interaction Priors for Physics-Based Policy Learning",
