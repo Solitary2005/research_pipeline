@@ -87,48 +87,6 @@
     "has_summary": true,
     "has_podcast": true
   },
-  "2610.31299": {
-    "arxiv_id": "2610.31299",
-    "title": "PiHand: Latent Hand-Object Interaction Priors for Physics-Based Policy Learning",
-    "abstract": "Synthesizing physically grounded dexterous hand-object interactions is important for VR/AR, gaming, and robotics, yet remains challenging because subtle contact dynamics, diverse object geometries, and target trajectories must be jointly respected while maintaining natural grasps. Existing methods either track mocap trajectories with limited transfer to novel objects, or rely on hand-only generative priors that fail to capture coupled hand-object motion, sacrificing contact fidelity and sample efficiency. To tackle these challenges, we introduce PiHand, a Physically grounded Interaction-aware Hand motion synthesis framework. PiHand first trains expert policies that track mocap demonstrations in simulation, distills them into a unified hand-object interaction prior using a goal-conditioned VAE, and finally solve diverse dexterous manipulation tasks through bounded residual exploration in its latent space. With only a single reward and no complex curriculum training, this yields general tabletop manipulation policies that generalize to unseen objects and trajectories on GRAB and DexYCB. The same prior transfers to object catching and bimanual handover, two tasks that are rarely seen in its training data. Across all tasks, PiHand consistently outperforms baselines in all metrics. We will release the processed data and model checkpoints.",
-    "published_date": "2026-10-22",
-    "authors": [
-      "Niklas Berndt",
-      "Xianghui Xie",
-      "Enes Duran",
-      "Yixiao Wang",
-      "Gerard Pons-Moll"
-    ],
-    "first_author": "Niklas Berndt",
-    "primary_category": "cs.CV",
-    "pdf_url": "https://arxiv.org/pdf/2610.31299.pdf",
-    "abs_url": "https://arxiv.org/abs/2610.31299",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
-  "2610.30969": {
-    "arxiv_id": "2610.30969",
-    "title": "IORA: Irregular Object Immobilization under Restricted Actuation",
-    "abstract": "Stable grasping under task-specific disturbances is important for robotic manipulation. However, most dexterous grasp synthesis methods are developed for highly actuated hands in free space, and low-DoF hands may not be able to realize the contact topologies required by these grasps. Meanwhile, support surfaces can provide useful contact forces, but are often treated only as geometric constraints. We present a support-aware grasp synthesis framework for object immobilization with low-DoF coupled hands. Given irregular object geometry, our method represents both hand and object local surface regions as graphs and searches for kinematically feasible matchings between them. We then refine the wrist pose and motor state for geometric contact feasibility and validates the refined grasps through physical rollouts. Starting from the validated grasp pose, an optional task-guided local search explores nearby grasp configurations by varying the wrist pose and motor state, and selects one according to the specified task condition. Experiments on diverse objects show that our method generates various grasp configurations that achieve high grasp success and strong disturbance resistance. Real-world experiments further demonstrate physically executable grasps which enable object immobilization in cooking scenario.",
-    "published_date": "2026-10-22",
-    "authors": [
-      "Sang-Hun Han",
-      "Changyeon Won",
-      "JunGyu Lee",
-      "Min-Gyu Park",
-      "Hae-Gon Jeon"
-    ],
-    "first_author": "Sang-Hun Han",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2610.30969.pdf",
-    "abs_url": "https://arxiv.org/abs/2610.30969",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
   "2610.32969": {
     "arxiv_id": "2610.32969",
     "title": "DexPort: A Hand-Held Skill Interface for Dexterous Hand Data Collection",
