@@ -251,5 +251,71 @@
     "interesting": false,
     "has_summary": false,
     "has_podcast": false
+  },
+  "2610.39998": {
+    "arxiv_id": "2610.39998",
+    "title": "Gaze-Assisted Supervisory Control for Lunar Robotic Arm Teleoperation Under Concurrent Monitoring",
+    "abstract": "Rover-mounted robotic arms can extend human reach during lunar sample handling, but continuous joystick teleoperation requires repeated visual-motor alignment while operators may also need to monitor system states. This paper presents a gaze-assisted supervisory control framework in which gaze nominates a rock or placement target, explicit confirmation authorizes the action, and the robot performs bounded autonomous grasp-and-place execution. The framework was evaluated against manual joystick teleoperation in a mission-analog virtual reality study with 16 participants. The study used a 2 x 2 x 3 within-subject design varying control mode, placement difficulty, and concurrent monitoring load. Mean recorded task completion time decreased from 47.65 to 18.43 s per rock, with 72.5% of this difference arising during grasping. Under the tested auditory monitoring conditions, gaze-assisted supervisory control showed less average proportional slowing, with no detected control-mode difference in monitoring-response accuracy or speed. The rate of gaze shifts between core areas of interest decreased from 49.98 to 27.73 shifts/min, while the raw NASA Task Load Index score decreased from 32.54 to 18.26. However, the benefit was task dependent. In precision placement, manual control yielded lower mean placement error and a higher placement success rate. These findings support a mixed-initiative allocation in which gaze enables rapid task-level intention specification and autonomous execution, while precision-critical stages retain manual refinement.",
+    "published_date": "2026-10-29",
+    "authors": [
+      "Jiayu He",
+      "Yifan Li",
+      "Oliver R. Runswick",
+      "Ernest N. Kamavuako",
+      "Yunjie Jia",
+      "Peter D. Hodkinson",
+      "Yang Gao"
+    ],
+    "first_author": "Jiayu He",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2610.39998.pdf",
+    "abs_url": "https://arxiv.org/abs/2610.39998",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2610.39119": {
+    "arxiv_id": "2610.39119",
+    "title": "CAPTURER: A Dexterous Aerial Manipulator for Dynamic and Precise Grasping across Diverse Environments",
+    "abstract": "As a representative form of embodied robotic interaction, aerial grasping requires close coordination between the aerial platform and manipulator. Most existing systems perform aerial grasping with static or slowly moving targets under fixed scenarios. Dynamic and precise grasping across different conditions introduces additional challenges, including target motion, localization drift, dynamic coupling, and external disturbances. In this work, we present CAPTURER, a dexterous aerial manipulator for centimeter-level grasping across diverse environments. To achieve the challenging goal, we first develop an onboard perception system for state estimation and target detection. Drift correction and global pose transformation are introduced to improve target localization during flight. A cooperative motion planner is proposed to coordinate the mobility of the aerial platform with the dexterity of the manipulator according to the relative target state. To maintain grasping accuracy under disturbances, we design a disturbance-rejection controller to compensate for dynamic coupling, model uncertainty, and external disturbances. The capability of CAPTURER is validated through indoor and outdoor experiments with both static and moving targets. The results demonstrate that CAPTURER achieves centimeter-level grasping accuracy for a marker pen measuring only 1.5 cm in diameter at flight speeds exceeding 1.5 m/s.",
+    "published_date": "2026-10-29",
+    "authors": [
+      "Meng Wang",
+      "Jindou Jia",
+      "Sicheng Zhou",
+      "Zeshuai Chen",
+      "Kexin Guo",
+      "Xiang Yu",
+      "Lei Guo"
+    ],
+    "first_author": "Meng Wang",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2610.39119.pdf",
+    "abs_url": "https://arxiv.org/abs/2610.39119",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2610.38443": {
+    "arxiv_id": "2610.38443",
+    "title": "Skeleton-Guided Geometry-Aware Auto-Labeling for Robotic Grasping: From 4-DoF Learning to 6-DoF Execution",
+    "abstract": "Robotic grasping relies on large manually annotated datasets, which are costly to create. We introduce a straight-skeleton-based algorithm for generating two-finger grasp keypoints and identifying regions suitable for stable, feasible grasps. Our automated pipeline produces consistent grasp annotations without human intervention. We also propose the Skeleton-based Generative Grasp Convolutional Neural Network (SkelGG-CNN), a 4-DoF architecture that learns geometric grasp features from skeleton-based guidance. To extend auto-labeling to 6-DoF grasping, we develop a generalized quasi-3D skeletonization algorithm that operates directly on point clouds. Using automatically generated 4-DoF labels, SkelGG-CNN achieves accuracies of 95.42%, 96.55%, and 97.1% on Jacquard V1, Jacquard V2, and Cornell, respectively. On the GraspNet novel split, 6-DoF auto-labeling achieves an average precision of 18.33, comparable to state-of-the-art model-based approaches. In simulation, the 6-DoF method achieves success rates of 98.4% on Dex-Net and 89.1% on EGAD!. Real-world experiments with a Delta parallel robot show success rates of 97.4% on single household objects and 95.0% in cluttered scenes, outperforming state-of-the-art methods without domain adaptation. The 4-DoF pipeline adapts across environments and produces annotations approaching human-level precision, enabling efficient training of lightweight models on small datasets. The generalized 6-DoF method provides scalable, geometry-aware annotations for cluttered 3D scenes.",
+    "published_date": "2026-10-28",
+    "authors": [
+      "Ali Sabzejou",
+      "Farbod Azimmohseni",
+      "Mehdi Tale Masouleh",
+      "Ahmad Kalhor"
+    ],
+    "first_author": "Ali Sabzejou",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2610.38443.pdf",
+    "abs_url": "https://arxiv.org/abs/2610.38443",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
   }
 }
