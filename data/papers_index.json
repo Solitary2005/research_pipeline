@@ -87,28 +87,6 @@
     "has_summary": true,
     "has_podcast": true
   },
-  "2610.32969": {
-    "arxiv_id": "2610.32969",
-    "title": "DexPort: A Hand-Held Skill Interface for Dexterous Hand Data Collection",
-    "abstract": "Collecting high-quality demonstrations remains a central bottleneck for learning dexterous manipulation. Teleoperation records executable robot actions, but it requires a complete robot setup and places the burden of coordinating many finger joints on the operator. Human demonstrations are easier to collect, but their motions must be estimated and retargeted to the robot, and they do not directly provide robot actions. In this paper, we introduce DexPort, a portable data-collection interface for high-DoF robot hands. It uses the same hand hardware for collection and deployment, avoiding a hand embodiment gap, and records both commanded joint targets and measured joint states. Our key observation is that a small set of skills can support a wide range of dexterous tasks. During collection, the operator moves the hand-held interface to specify the robot wrist motion and selects or adjusts skills that coordinate the finger motion. This removes the need to control each joint independently while retaining behaviors such as precise grasping and in-hand manipulation. We collect demonstrations across several real-world tasks and in unstructured environments without a robot arm. We then use behavior cloning to train visuomotor policies directly on the recorded wrist motions and hand commands, without skill labels. We evaluate across 4 tasks: pick-and-place with diverse objects, screwing with in-hand tool use, drawer stowage which requires simultaneous grasp and pulling, and a bimanual scanning task. We collect over 2,500 demonstrations with our portable device, in both laboratory and in-the-wild settings. Across our tasks, we see an improvement from 11% to 64% when using recorded robot commands instead of states, and an improvement from 36% to 78% for task success when using in-the-wild data.",
-    "published_date": "2026-10-23",
-    "authors": [
-      "Amber Xie",
-      "Jiawei Fu",
-      "Xiaofeng Guo",
-      "Carmelo Sferrazza",
-      "Guanya Shi",
-      "Haozhi Qi"
-    ],
-    "first_author": "Amber Xie",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2610.32969.pdf",
-    "abs_url": "https://arxiv.org/abs/2610.32969",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
   "2610.35103": {
     "arxiv_id": "2610.35103",
     "title": "The Language of Deformation: Semantic Failure Analysis as a Prerequisite for Dexterous Manipulation of Deformable Objects",
@@ -185,25 +163,6 @@
     "primary_category": "cs.RO",
     "pdf_url": "https://arxiv.org/pdf/2610.33480.pdf",
     "abs_url": "https://arxiv.org/abs/2610.33480",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
-  "2610.33241": {
-    "arxiv_id": "2610.33241",
-    "title": "ORBIT: A Modular Multi-finger Robotic Hand Platform with Rotational Finger Reconfiguration",
-    "abstract": "Despite the popularity of multi-fingered robotic hands for dexterous manipulation, there is no systematic platform to compare different hand morphologies against one another. We present ORBIT (Orbital Reconfigurable Base-actuated Integrated Theta-motion Hand), a modular platform designed to enable principled exploration of multi-fingered hand morphology. The core contribution of ORBIT is a rotating knuckle mechanism, where independent fingers travel around a cylindrical palm via a belt drive. This enables ORBIT to perform quick recon- figuration (< 1 s) of finger layout without hand disassembly. ORBITs a robust system, with finger average angular velocity of 1.57 rad / s1 and a root finger force resistance of 50 N. Using a three fingers instantiation of ORBIT, we demonstrate an initial pilot grasping study, comparing anthropomorphic, isometric, and Barrett-style finger layouts across eleven objects of varied size, shape, and texture. We further demonstrate how ORBITs nonanthropomorphic orbital DOF enables the achievement of tasks that would be difficult to perform with fixed-knuckle designs, such as cube face reorientation, lid threading, and precision pinching of sub-centimeter objects. These results establish ORBIT as a viable platform for direct apples to apples comparison of multi-fingered hand morphologies for specific manipulation tasks",
-    "published_date": "2026-10-23",
-    "authors": [
-      "Benito Ribadeneira",
-      "Siqi Shang",
-      "Lillian Chin"
-    ],
-    "first_author": "Benito Ribadeneira",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2610.33241.pdf",
-    "abs_url": "https://arxiv.org/abs/2610.33241",
     "topic": "dexterous_grasp",
     "interesting": false,
     "has_summary": false,
