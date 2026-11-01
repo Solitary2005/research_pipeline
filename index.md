@@ -5,7 +5,7 @@ title: "Dexterous Grasp Daily"
 
 # Dexterous Grasp — Daily Paper Digest
 
-All 13 papers in the collection. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
+All 10 papers in the collection. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
 
 
 ## [Transformer Transformer: A Unified Model for Motion-Conditioned Robot Co-design]({{ site.baseurl }}/papers/manual-20260730-transformer-transformer-a-unified-model/)
@@ -75,36 +75,6 @@ Humanoid dexterous hands are a core component of embodied intelligence, enabling
 Dexterous manipulation of rigid objects has reached a level of maturity where grasp stability, control, and planning strategies are successfully applied in industry and logistics. In contrast, manipulating deformable objects (cables, plastic pieces, cloth) remains far more challenging, as rigid-obje...
 
 [Read more →]({{ site.baseurl }}/papers/2610.35103/)
-
----
-
-## [EXE: Egocentric Cross-Embodiment Pretraining via Factorized Latent Actions for VLA Models]({{ site.baseurl }}/papers/2610.33685/)
-
-**2026-10-24** · Qingyuan Cai et al. 
-
-Vision-Language-Action (VLA) models are bottlenecked by the scarcity of robot data. Egocentric human manipulation videos offer an abundant, diverse, and semantically-rich alternative that inherently captures manipulation intent. However, the embodiment gap makes it difficult to extract action-releva...
-
-[Read more →]({{ site.baseurl }}/papers/2610.33685/)
-
----
-
-## [Learning Dexterous Manipulation: Hands, Simulators, Training, and Evaluation]({{ site.baseurl }}/papers/2610.33486/)
-
-**2026-10-24** · Luai Abuelsamen et al. 
-
-A dexterous hand can change an object's pose without setting it down. This survey covers 113 learning-based methods that attempt it, the hands they run on, the simulators they train in, and how they report results. The field has largely converged on one recipe: reinforcement learning on privileged s...
-
-[Read more →]({{ site.baseurl }}/papers/2610.33486/)
-
----
-
-## [MDPO: Multi-constraint Dexterous Policy Optimization with Reinforcement Learning]({{ site.baseurl }}/papers/2610.33480/)
-
-**2026-10-24** · Ao Zhou et al. 
-
-Dexterous manipulation requires high-dimensional control policies to accomplish complex contact-rich tasks while simultaneously satisfying multiple safety requirements, such as joint limits, unsafe finger configurations, arm collisions, and unstable object interactions. Constrained reinforcement lea...
-
-[Read more →]({{ site.baseurl }}/papers/2610.33480/)
 
 ---
 
