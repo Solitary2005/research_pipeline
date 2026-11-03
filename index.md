@@ -5,7 +5,7 @@ title: "Dexterous Grasp Daily"
 
 # Dexterous Grasp — Daily Paper Digest
 
-All 10 papers in the collection. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
+All 9 papers in the collection. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
 
 
 ## [Transformer Transformer: A Unified Model for Motion-Conditioned Robot Co-design]({{ site.baseurl }}/papers/manual-20260730-transformer-transformer-a-unified-model/)
@@ -65,16 +65,6 @@ Dexterous manipulation with multi-fingered hands is the next frontier of robotic
 Humanoid dexterous hands are a core component of embodied intelligence, enabling robots to translate high-level intent into rich and adaptive physical interaction. However, existing designs remain constrained by a persistent trade-off among anthropomorphic kinematic complexity, mechanical robustness...
 
 [Read more →]({{ site.baseurl }}/papers/2610.36789/)
-
----
-
-## [The Language of Deformation: Semantic Failure Analysis as a Prerequisite for Dexterous Manipulation of Deformable Objects]({{ site.baseurl }}/papers/2610.35103/)
-
-**2026-10-26** · Ignacio Cuiral-Zueco et al. 
-
-Dexterous manipulation of rigid objects has reached a level of maturity where grasp stability, control, and planning strategies are successfully applied in industry and logistics. In contrast, manipulating deformable objects (cables, plastic pieces, cloth) remains far more challenging, as rigid-obje...
-
-[Read more →]({{ site.baseurl }}/papers/2610.35103/)
 
 ---
 
