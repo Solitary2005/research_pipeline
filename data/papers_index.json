@@ -87,26 +87,6 @@
     "has_summary": true,
     "has_podcast": true
   },
-  "2610.35103": {
-    "arxiv_id": "2610.35103",
-    "title": "The Language of Deformation: Semantic Failure Analysis as a Prerequisite for Dexterous Manipulation of Deformable Objects",
-    "abstract": "Dexterous manipulation of rigid objects has reached a level of maturity where grasp stability, control, and planning strategies are successfully applied in industry and logistics. In contrast, manipulating deformable objects (cables, plastic pieces, cloth) remains far more challenging, as rigid-object methods do not account for their additional complexity. This paper identifies semantic failure analysis as a key step toward mature deformable-object manipulation and supports this claim with proof-of-concept experiments. Unlike rigid-object manipulation, where goals are well-defined in terms of criteria such as force balance and slippage, deformable-object manipulation involves a broader variety of failure modes arising from differences in materials, geometry, and behaviour. Typical failures include buckling, plastic deformation, pressure variations, and tearing. These diverse and often hard-to-detect events require distinct corrective strategies, making semantic failure analysis necessary. We define its key components and challenges and present experimental results supporting its potential as a research direction.",
-    "published_date": "2026-10-26",
-    "authors": [
-      "Ignacio Cuiral-Zueco",
-      "David Hardman",
-      "Michele Pierallini",
-      "Erfan Shahriari"
-    ],
-    "first_author": "Ignacio Cuiral-Zueco",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2610.35103.pdf",
-    "abs_url": "https://arxiv.org/abs/2610.35103",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
   "2610.37652": {
     "arxiv_id": "2610.37652",
     "title": "Pushing Dexterity and Safety for In-Hand Object Pose Reaching That Works Remarkably Well",
