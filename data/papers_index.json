@@ -132,5 +132,46 @@
     "interesting": false,
     "has_summary": false,
     "has_podcast": false
+  },
+  "2611.06359": {
+    "arxiv_id": "2611.06359",
+    "title": "Vortex-Induced Torque in Grasping Soft Objects: Influence of Geometry and Pneumatic Parameters",
+    "abstract": "Vortex grippers are commonly integrated into automated systems for handling objects with complex geometries in packaging, sorting, and assembling. However, their interaction with compliant objects remains difficult to predict, particularly with respect to the vortex-induced torque transmitted during grasping. This study investigates vortex-induced torque during the grasping of compliant objects and quantifies the coupled effects of supply pressure, tangential nozzle diameter, surface geometry, and curvature. The results show that increasing the tangential nozzle diameter primarily enhances the sensitivity of the generated torque to supply pressure rather than producing a uniformly higher torque. Surface geometry also strongly influences the rotational interaction, with dome-concave surfaces generally producing substantially greater torque than corresponding dome-convex surfaces, whereas the difference between cylindrical concave and convex surfaces is comparatively small. The strongest and most repeatable response was observed for a dome-concave surface exhibiting favorable object-gripper geometric matching. Among the evaluated machine-learning regression methods, Gaussian Process Regression provided the best overall predictive performance under repeated cross-validation, demonstrating that vortex-induced torque can be estimated from combined pneumatic and geometric parameters. These findings provide a basis for predicting and utilizing vortex-induced torque in the dexterous manipulation of soft objects.",
+    "published_date": "2026-11-04",
+    "authors": [
+      "Roman Mykhailyshyn",
+      "Tomohiro Motoda",
+      "Ivan Virgala",
+      "Ann Majewicz Fey",
+      "Yukiyasu Domae"
+    ],
+    "first_author": "Roman Mykhailyshyn",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2611.06359.pdf",
+    "abs_url": "https://arxiv.org/abs/2611.06359",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2611.05754": {
+    "arxiv_id": "2611.05754",
+    "title": "GRASP: Gradient-Guided Sampling for Contact-Rich Physics-Based Motion Retargeting",
+    "abstract": "We study physics-based retargeting of human demonstrations for robot learning: finding robot controls that reproduce reference motions under contact dynamics. We propose GRASP (Gradient Recovery from Archived Samples for Proposals), which combines sampling-based exploration with gradient-guided refinement without requiring a differentiable simulator. GRASP-TO extends tempered sequential Monte Carlo by fitting local quadratic cost models to archived rollouts and using their gradients to guide Markov chain Monte Carlo rejuvenation. Metropolis-Hastings correction preserves the target distribution for each fixed proposal kernel, and a population analysis connects the recovered gradients to Gaussian smoothing. GRASP-MPC scales this optimizer to long demonstrations through warm-started receding-horizon planning. Experiments on dexterous hands and humanoids show accurate retargeting with a shared tracking objective and no task-specific contact rewards, including 92.8% success on 1352 bimanual OakInk2 demonstrations. The refined references improve PPO tracking in pen spinning and humanoid-object interaction. We also demonstrate dexterous manipulation and whole-body humanoid motion on real hardware.",
+    "published_date": "2026-11-03",
+    "authors": [
+      "Yang Liu",
+      "Tong Wang",
+      "Yiming Bao",
+      "Heng Yang"
+    ],
+    "first_author": "Yang Liu",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2611.05754.pdf",
+    "abs_url": "https://arxiv.org/abs/2611.05754",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
   }
 }
