@@ -127,5 +127,87 @@
     "interesting": false,
     "has_summary": false,
     "has_podcast": false
+  },
+  "2611.12017": {
+    "arxiv_id": "2611.12017",
+    "title": "Grasp-Taxonomy Conditioning as a Mode Switch for Dexterous Grasping of Climbing Holds",
+    "abstract": "Dexterous grasping in robotics relies on distinct hand configurations depending on object geometry. We introduce BetaGrasp, a 3D diffusion policy that conditions a DP3-style point-cloud policy on a four-class grasp label (crimp, sloper, pinch, and jug), running on a Franka arm with a 16-DoF LEAP hand. We also introduce a climbing-hold benchmark: a spring testbed whose ratchet gives a slip-force reading in newtons. In our analysis the policy's point-cloud encoder did not separate the four holds, so the scan alone gave it little to choose a grasp from. Without the label (a DP3-style baseline), simulated rollouts from the robot's reset pose all end in a jug grasp, whatever the hold (25% correct grasp type, versus 94% for BetaGrasp). The label works as a switch for which grasp the policy performs. On 80 paired hardware trials, BetaGrasp raises average slip force from 9.6 N to 14.3 N, and grasps slipping fully off the hold drop from 44% of trials to 10%.",
+    "published_date": "2026-11-09",
+    "authors": [
+      "Rumi Loghmani",
+      "Abraham George",
+      "Amir Barati Farimani"
+    ],
+    "first_author": "Rumi Loghmani",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2611.12017.pdf",
+    "abs_url": "https://arxiv.org/abs/2611.12017",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2611.10647": {
+    "arxiv_id": "2611.10647",
+    "title": "Which Taxels, Not How Many: Tactile Sensor Placement for Dexterous Policies",
+    "abstract": "Policies for dexterous manipulation depend on design choices made before training: which sensors enter the observation, where they are placed, and how their readings are arranged for the encoder. These choices are rarely examined. For tactile sensing, simulation studies place taxels uniformly over the hand, and this placement has become a default without being tested. We test this default under a single controlled protocol. The protocol holds the teacher, the training procedure, and the candidate taxels fixed and varies only the sensor configuration and the representation. We evaluate it on in-palm rotation and grasping with three robot hands. A small set of taxels selected from contact statistics matches a far larger uniform set. Taxels at rarely contacted sites are equivalent to no tactile input. With all candidate taxels, their layout in the input tensor does not affect performance, even for a convolutional encoder. Uniform placement therefore overestimates the number of taxels a task requires. We distill these results into lessons for designing tactile policies and into a minimal set of design choices that a tactile policy study should report.",
+    "published_date": "2026-11-07",
+    "authors": [
+      "Taeyun Kim",
+      "Jinsoo Shin",
+      "Taehwa Kim",
+      "Taeyoon Kim",
+      "Jinyoung Choi"
+    ],
+    "first_author": "Taeyun Kim",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2611.10647.pdf",
+    "abs_url": "https://arxiv.org/abs/2611.10647",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2611.10451": {
+    "arxiv_id": "2611.10451",
+    "title": "Grip, Trace, Write: Force-Aware Imitation and Reinforcement Learning for High-DoF Robotic Handwriting",
+    "abstract": "Most robotic handwriting rigidly mounts the pen and reduces writing to trajectory tracking. A freely held pen instead couples grasp stability, tip motion, and contact force. We present Grip, Trace, Write, a force-aware simulation environment and learning framework for high-DoF handwriting. A two-branch actor separates pen retention from arm-wrist writing while preserving their closed-loop coupling. Training learns a grasp controller, initializes writing from inverse-kinematics demonstrations by behavior cloning, and improves writing through reinforcement learning with rewards on ink, force, time, and retention. Across diverse tasks, the policy improves completion, precision, force regulation, and efficiency over behavior cloning and inverse kinematics, and generalizes without fine-tuning to unseen English and Chinese content. These results establish force-aware handwriting as a testbed for dexterous tool use.",
+    "published_date": "2026-11-07",
+    "authors": [
+      "Rongqian Chen",
+      "Yiding Chen",
+      "Jijie Zhou",
+      "Tom Z. Jiahao"
+    ],
+    "first_author": "Rongqian Chen",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2611.10451.pdf",
+    "abs_url": "https://arxiv.org/abs/2611.10451",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2611.10410": {
+    "arxiv_id": "2611.10410",
+    "title": "SimDuoReal: Object-Centric Bimanual Policy for Emergent Dexterity",
+    "abstract": "Bimanual dexterous manipulation requires coordinated arm and hand control, yet specifying such coordination manually is challenging and often task-specific. In this work, we explore whether complex bimanual dexterity can emerge from a simple object-centric learning objective. We train reinforcement learning policies under a shared object-centric reward, varying their training environments rather than tuning separate rewards for each behavior. We find that the policies discover pre-grasp manipulation, grasping and regrasping, in-hand adjustment and handover to reach object-pose goals without hand-designed motion sequences. We then refine the experts on transition states and use DAgger and reinforcement learning to distill them into a single policy that composes these behaviors for diverse bimanual tasks. On real hardware, the same policy succeeds in 61 of 80 trials (76.3\\%) across four tasks with unseen objects and no task-specific fine-tuning. In simulated barcode scanning, our policy achieves 85.0\\% success, compared with 60.4\\% for two single-arm policies without handover. These results suggest that this objective provides a simple and scalable interface for learning general bimanual dexterity, shifting the burden from manually designing robot coordination to specifying what should happen to the object.",
+    "published_date": "2026-11-07",
+    "authors": [
+      "Qiyang Yan",
+      "Yulin Liu",
+      "Akash Sharma",
+      "Haozhi Qi",
+      "Guanya Shi",
+      "C. Karen Liu"
+    ],
+    "first_author": "Qiyang Yan",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2611.10410.pdf",
+    "abs_url": "https://arxiv.org/abs/2611.10410",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
   }
 }

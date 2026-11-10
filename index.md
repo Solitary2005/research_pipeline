@@ -5,66 +5,46 @@ title: "Dexterous Grasp Daily"
 
 # Dexterous Grasp — Daily Paper Digest
 
-All 6 papers in the collection. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
+**2026-11-10** — 4 new papers from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
 
 
-## [Transformer Transformer: A Unified Model for Motion-Conditioned Robot Co-design]({{ site.baseurl }}/papers/manual-20260730-transformer-transformer-a-unified-model/)
+## [Grasp-Taxonomy Conditioning as a Mode Switch for Dexterous Grasping of Climbing Holds]({{ site.baseurl }}/papers/2611.12017/)
 
-**2027-07-28** · Huy Ha et al. <span class="badge">🎧 Podcast</span> <span class="badge">📌 Archived</span>
+**2026-11-09** · Rumi Loghmani et al. 
 
-An often overlooked factor of robot manipulation performance is the embodiment of the robot itself. Motivated by this problem, we study motionconditioned robot co-design, where the goal is to generate complete robot designs that track target end-effector trajectories (from human demonstrations) whi...
+Dexterous grasping in robotics relies on distinct hand configurations depending on object geometry. We introduce BetaGrasp, a 3D diffusion policy that conditions a DP3-style point-cloud policy on a four-class grasp label (crimp, sloper, pinch, and jug), running on a Franka arm with a 16-DoF LEAP han...
 
-[Read more →]({{ site.baseurl }}/papers/manual-20260730-transformer-transformer-a-unified-model/)
-
----
-
-## [Vortex-Induced Torque in Grasping Soft Objects: Influence of Geometry and Pneumatic Parameters]({{ site.baseurl }}/papers/2611.06359/)
-
-**2026-11-04** · Roman Mykhailyshyn et al. 
-
-Vortex grippers are commonly integrated into automated systems for handling objects with complex geometries in packaging, sorting, and assembling. However, their interaction with compliant objects remains difficult to predict, particularly with respect to the vortex-induced torque transmitted during...
-
-[Read more →]({{ site.baseurl }}/papers/2611.06359/)
+[Read more →]({{ site.baseurl }}/papers/2611.12017/)
 
 ---
 
-## [GRASP: Gradient-Guided Sampling for Contact-Rich Physics-Based Motion Retargeting]({{ site.baseurl }}/papers/2611.05754/)
+## [SimDuoReal: Object-Centric Bimanual Policy for Emergent Dexterity]({{ site.baseurl }}/papers/2611.10410/)
 
-**2026-11-03** · Yang Liu et al. 
+**2026-11-07** · Qiyang Yan et al. 
 
-We study physics-based retargeting of human demonstrations for robot learning: finding robot controls that reproduce reference motions under contact dynamics. We propose GRASP (Gradient Recovery from Archived Samples for Proposals), which combines sampling-based exploration with gradient-guided refi...
+Bimanual dexterous manipulation requires coordinated arm and hand control, yet specifying such coordination manually is challenging and often task-specific. In this work, we explore whether complex bimanual dexterity can emerge from a simple object-centric learning objective. We train reinforcement ...
 
-[Read more →]({{ site.baseurl }}/papers/2611.05754/)
-
----
-
-## [SynManDex: Synthesizing Human-like Dexterous Grasps from Synthetic Human Pre-Grasps]({{ site.baseurl }}/papers/2606.09798/)
-
-**2026-06-08** · Yanming Shao et al. <span class="badge">🎧 Podcast</span> <span class="badge">📌 Archived</span>
-
-Human hand-object interactions encode functional intent, but direct transfer to robotic hands often fails under morphology, contact, and reachability constraints. We present SynManDex, a synthetic pipeline that uses generated human pre-grasps as affordance-aware proposals and resolves the final cont...
-
-[Read more →]({{ site.baseurl }}/papers/2606.09798/)
+[Read more →]({{ site.baseurl }}/papers/2611.10410/)
 
 ---
 
-## [Exo-ViHa: A Cross-Platform Exoskeleton System with Visual and Haptic Feedback for Efficient Dexterous Skill Learning]({{ site.baseurl }}/papers/manual-2026-06-11-exoviha-a-crossplatform-exoskeleton-syst/)
+## [Which Taxels, Not How Many: Tactile Sensor Placement for Dexterous Policies]({{ site.baseurl }}/papers/2611.10647/)
 
-**2025-03-03** · Xintao Chao et al. <span class="badge">🎧 Podcast</span> <span class="badge">📌 Archived</span>
+**2026-11-07** · Taeyun Kim et al. 
 
-Imitation learning has emerged as a powerful paradigm for robot skills learning. However, traditional data collection systems for dexterous manipulation face challenges, including a lack of balance between acquisition efficiency, consistency, and accuracy. To address these issues, we introduce Exo-V...
+Policies for dexterous manipulation depend on design choices made before training: which sensors enter the observation, where they are placed, and how their readings are arranged for the encoder. These choices are rarely examined. For tactile sensing, simulation studies place taxels uniformly over t...
 
-[Read more →]({{ site.baseurl }}/papers/manual-2026-06-11-exoviha-a-crossplatform-exoskeleton-syst/)
+[Read more →]({{ site.baseurl }}/papers/2611.10647/)
 
 ---
 
-## [MoDex: Planning High-Dimensional Dexterous Control via Learning Neural Internal Models]({{ site.baseurl }}/papers/manual-2026-06-11-modex-planning-highdimensional-dexterous/)
+## [Grip, Trace, Write: Force-Aware Imitation and Reinforcement Learning for High-DoF Robotic Handwriting]({{ site.baseurl }}/papers/2611.10451/)
 
-**2024-09-17** · Tong Wu et al. <span class="badge">🎧 Podcast</span> <span class="badge">📌 Archived</span>
+**2026-11-07** · Rongqian Chen et al. 
 
-Controlling hands in high-dimensional action space has been a longstanding challenge, yet humans naturally perform dexterous tasks with ease. In this paper, we draw inspiration from the concept of internal model exhibited in human behavior and reconsider dexterous hands as learnable systems. Specifi...
+Most robotic handwriting rigidly mounts the pen and reduces writing to trajectory tracking. A freely held pen instead couples grasp stability, tip motion, and contact force. We present Grip, Trace, Write, a force-aware simulation environment and learning framework for high-DoF handwriting. A two-bra...
 
-[Read more →]({{ site.baseurl }}/papers/manual-2026-06-11-modex-planning-highdimensional-dexterous/)
+[Read more →]({{ site.baseurl }}/papers/2611.10451/)
 
 ---
 
