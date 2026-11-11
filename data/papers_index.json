@@ -189,5 +189,32 @@
     "interesting": false,
     "has_summary": false,
     "has_podcast": false
+  },
+  "2611.14092": {
+    "arxiv_id": "2611.14092",
+    "title": "DexSeed: Expanding Human Hand-Object Interactions into Robot Demonstrations for Dexterous Policy Learning",
+    "abstract": "We study how to generate diverse, physically executable robot demonstrations for dexterous vision-language-action (VLA) learning. Existing demonstration-generation methods typically rely on costly teleoperated examples. Meanwhile, human hand--object datasets provide a reusable source, but existing transfer methods mainly reproduce given interactions. Turning these interactions into VLA training data further requires coverage of different objects and manipulation locations, together with executable arm and finger actions, and visual observations. To achieve this, we present DexSeed, a framework for low-cost generation of dexterous robot data from human hand--object interactions. Our key idea is to expand human sequences while preserving their grasps and realizing the resulting motions under arm-tracking dynamics in physics simulation. Specifically, we organize source sequences by grasp mode with shared language descriptions. InteractionMesh-based retargeting and arm trajectory augmentation adapt these sequences to the robot hand, different object geometries, and pick-and-place locations while preserving local hand--object relationships. An RL finger-control policy produces executable rollouts, while the arm tracks precomputed trajectories. Rendered observations and recorded actions from successful rollouts are paired with grasp descriptions to fine-tune a VLA. Experiments show improved contact fidelity in retargeting and more reliable whole-arm execution than the evaluated baselines. Simulation evaluation and real-world deployment further demonstrate that a VLA fine-tuned solely on the generated demonstrations can execute language-specified grasps. Project page: https://robbyant-research.github.io/DexSeed/.",
+    "published_date": "2026-11-10",
+    "authors": [
+      "Huaijin Pi",
+      "Zehong Shen",
+      "Yong Wang",
+      "Kechun Xu",
+      "Changpeng Wang",
+      "Dingkun Wei",
+      "Xueyang Wang",
+      "Wenjia Wang",
+      "Xing Zhu",
+      "Yujun Shen",
+      "Taku Komura"
+    ],
+    "first_author": "Huaijin Pi",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2611.14092.pdf",
+    "abs_url": "https://arxiv.org/abs/2611.14092",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
   }
 }
