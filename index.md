@@ -5,7 +5,7 @@ title: "Dexterous Grasp Daily"
 
 # Dexterous Grasp — Daily Paper Digest
 
-**2026-11-15** — 2 new papers from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
+**2026-11-16** — 2 new papers from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
 
 
 ## [Which Taxels, Not How Many: Tactile Sensor Placement for Dexterous Policies]({{ site.baseurl }}/papers/2611.10647/)
