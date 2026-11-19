@@ -5,16 +5,16 @@ title: "Dexterous Grasp Daily"
 
 # Dexterous Grasp — Daily Paper Digest
 
-**2026-11-18** — 1 new paper from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
+**2026-11-19** — 1 new paper from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
 
 
-## [From Human Videos to Bimanual Dexterous Manipulation Data: Confidence-Guided RL Refinement of Video Priors]({{ site.baseurl }}/papers/2611.21908/)
+## [Ego2X: Contact-aware Transfer from Egocentric Human Data to Any Robot]({{ site.baseurl }}/papers/2611.24138/)
 
-**2026-11-16** · Yanghong Liu et al. 
+**2026-11-18** · Xinke Lyu et al. 
 
-Collecting demonstrations for bimanual dexterous manipulation is costly, motivating the use of human videos as a source of robot training data. However, uncertainty in video-derived motion estimates and differences between human and robot embodiments make direct motion transfer challenging. In this ...
+Embodied models depend on real interaction data, yet collecting it on physical robots is slow and labor-intensive. Recent ego-to-robot pipelines retarget first-person view human videos to robot data via transferring hand and arm motion. They judge fidelity mainly by visual appearance. However, traje...
 
-[Read more →]({{ site.baseurl }}/papers/2611.21908/)
+[Read more →]({{ site.baseurl }}/papers/2611.24138/)
 
 ---
 
