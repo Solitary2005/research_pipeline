@@ -5,16 +5,16 @@ title: "Dexterous Grasp Daily"
 
 # Dexterous Grasp — Daily Paper Digest
 
-**2026-11-19** — 1 new paper from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
+**2026-11-20** — 1 new paper from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
 
 
-## [Ego2X: Contact-aware Transfer from Egocentric Human Data to Any Robot]({{ site.baseurl }}/papers/2611.24138/)
+## [PhyDEX: A Benchmark for Physical Reasoning in Vision-Language-Action Models via Dynamic Extrinsic Dexterity]({{ site.baseurl }}/papers/2611.26565/)
 
-**2026-11-18** · Xinke Lyu et al. 
+**2026-11-19** · Hao Vo et al. 
 
-Embodied models depend on real interaction data, yet collecting it on physical robots is slow and labor-intensive. Recent ego-to-robot pipelines retarget first-person view human videos to robot data via transferring hand and arm motion. They judge fidelity mainly by visual appearance. However, traje...
+Vision-Language-Action (VLA) models have advanced rapidly in language-conditioned robotic manipulation, yet existing benchmarks mainly evaluate gripper--object contact and largely ignore how objects interact with the environment through gravity, friction, inertia, and mass distribution. As a result,...
 
-[Read more →]({{ site.baseurl }}/papers/2611.24138/)
+[Read more →]({{ site.baseurl }}/papers/2611.26565/)
 
 ---
 
