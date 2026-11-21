@@ -113,30 +113,6 @@
     "has_summary": false,
     "has_podcast": false
   },
-  "2611.18976": {
-    "arxiv_id": "2611.18976",
-    "title": "TMA: Sim-to-Real Forceful Humanoid Manipulation via Tactile-Driven Motor Adaptation",
-    "abstract": "Recent humanoid loco-manipulation in articulated environments has largely focused on geometry-dominant interactions, where success is primarily determined by geometric alignment and motion execution. In contrast, forceful multi-finger manipulation requires the robot to adapt to real-world uncertainties in contact and interaction dynamics. We present Tactile-Driven Motor Adaptation (TMA) and an integrated whole-body system for zero-shot sim-to-real forceful humanoid manipulation, and study round-doorknob opening as a challenging benchmark requiring stable multi-finger frictional grasping, sufficient torque generation without slip, force-regulated pushing, and whole-body stability. TMA structures policy learning around interactions observable through tactile feedback, uses cone geometry as an inductive bias for multi-finger contact representation, and adapts motor behavior online from tactile history. An upper-body manipulation policy is trained alongside a pretrained general locomotion controller to coordinate dexterous interaction and whole-body stabilization. Trained entirely in simulation, TMA transfers zero-shot to a Unitree G1 humanoid with BrainCo Revo2 multi-fingered hands and substantially outperforms standard Rapid Motor Adaptation (RMA) and reactive tactile policy baselines across four commercial round doorknobs in the real world.",
-    "published_date": "2026-11-13",
-    "authors": [
-      "Yiting Chen",
-      "Kelin Yu",
-      "Sarthak Kaingade",
-      "Bryan Trinh",
-      "Kaiyu Hang",
-      "Roberto Martin-martin",
-      "Nima Fazeli",
-      "X. Alice Wu"
-    ],
-    "first_author": "Yiting Chen",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2611.18976.pdf",
-    "abs_url": "https://arxiv.org/abs/2611.18976",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
   "2611.21908": {
     "arxiv_id": "2611.21908",
     "title": "From Human Videos to Bimanual Dexterous Manipulation Data: Confidence-Guided RL Refinement of Video Priors",
