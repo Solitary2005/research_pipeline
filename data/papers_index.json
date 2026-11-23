@@ -87,32 +87,6 @@
     "has_summary": true,
     "has_podcast": true
   },
-  "2611.20273": {
-    "arxiv_id": "2611.20273",
-    "title": "DexFormer 2.0: Towards a Cross-Embodiment Foundation Policy for Dexterous Grasping",
-    "abstract": "Dexterous grasping policies are usually trained for one arm paired with one hand. Every new pairing then needs its own policy, and the number of policies grows with every arm and hand added. We ask whether a single policy can control many arm-hand combinations and transfer to pairings and hands it has never seen. This is hard because robots differ in the number, layout, and dynamics of their joints, so their observations and actions share no common interface. We present DexFormer 2.0, a single reinforcement learning policy for cross-embodiment dexterous grasping. It maps every robot to a canonical joint interface with validity masks, encodes each joint's morphology with attention biased by the kinematic tree, and uses a Transformer-XL memory to infer embodiment-dependent dynamics from recent interaction. Trained on 18 combinations of four arms and six hands, it reaches 89% stable success on seen combinations and 51% on six held-out arm-hand pairs, outperforming GRU and DexFormer 1.0 baselines. Without fine-tuning, it also grasps with four new hand types and, through retargeting, with parallel grippers. Ablations show that memory, the kinematic-tree bias, and broader pairing coverage each matter for transfer. On a physical Flexiv arm, distilled students transfer zero-shot from simulation with two hands, including a held-out pair. Project website: https://davidlxu.github.io/dexformer2-web/.",
-    "published_date": "2026-11-15",
-    "authors": [
-      "Lixin Xu",
-      "Ke Zhang",
-      "Xinyu Liu",
-      "Jie Tan",
-      "Senming Tan",
-      "Jiaju Yin",
-      "Yating Feng",
-      "Xiaoyi Lin",
-      "Xiyue Dong",
-      "Renjing Xu"
-    ],
-    "first_author": "Lixin Xu",
-    "primary_category": "cs.RO",
-    "pdf_url": "https://arxiv.org/pdf/2611.20273.pdf",
-    "abs_url": "https://arxiv.org/abs/2611.20273",
-    "topic": "dexterous_grasp",
-    "interesting": false,
-    "has_summary": false,
-    "has_podcast": false
-  },
   "2611.21908": {
     "arxiv_id": "2611.21908",
     "title": "From Human Videos to Bimanual Dexterous Manipulation Data: Confidence-Guided RL Refinement of Video Priors",
