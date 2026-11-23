@@ -5,86 +5,16 @@ title: "Dexterous Grasp Daily"
 
 # Dexterous Grasp — Daily Paper Digest
 
-All 8 papers in the collection. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
+**2026-11-23** — 1 new paper from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
 
 
-## [Transformer Transformer: A Unified Model for Motion-Conditioned Robot Co-design]({{ site.baseurl }}/papers/manual-20260730-transformer-transformer-a-unified-model/)
+## [Task2Hand: A Contact-Grounded Skill for Parametric Dexterous-Hand Morphology Design]({{ site.baseurl }}/papers/2611.27967/)
 
-**2027-07-28** · Huy Ha et al. <span class="badge">🎧 Podcast</span> <span class="badge">📌 Archived</span>
+**2026-11-20** · Haoyang Wang et al. 
 
-An often overlooked factor of robot manipulation performance is the embodiment of the robot itself. Motivated by this problem, we study motionconditioned robot co-design, where the goal is to generate complete robot designs that track target end-effector trajectories (from human demonstrations) whi...
+Dexterous hand design demands repeated expert work across geometry, robot-description code, collision debugging, grasp initialization, and policy training. We present Task2Hand, a Skill: a specification package that turns a functional manipulation brief into a parameterized hand model and routes eve...
 
-[Read more →]({{ site.baseurl }}/papers/manual-20260730-transformer-transformer-a-unified-model/)
-
----
-
-## [PhyDEX: A Benchmark for Physical Reasoning in Vision-Language-Action Models via Dynamic Extrinsic Dexterity]({{ site.baseurl }}/papers/2611.26565/)
-
-**2026-11-19** · Hao Vo et al. 
-
-Vision-Language-Action (VLA) models have advanced rapidly in language-conditioned robotic manipulation, yet existing benchmarks mainly evaluate gripper--object contact and largely ignore how objects interact with the environment through gravity, friction, inertia, and mass distribution. As a result,...
-
-[Read more →]({{ site.baseurl }}/papers/2611.26565/)
-
----
-
-## [Ego2X: Contact-aware Transfer from Egocentric Human Data to Any Robot]({{ site.baseurl }}/papers/2611.24138/)
-
-**2026-11-18** · Xinke Lyu et al. 
-
-Embodied models depend on real interaction data, yet collecting it on physical robots is slow and labor-intensive. Recent ego-to-robot pipelines retarget first-person view human videos to robot data via transferring hand and arm motion. They judge fidelity mainly by visual appearance. However, traje...
-
-[Read more →]({{ site.baseurl }}/papers/2611.24138/)
-
----
-
-## [From Human Videos to Bimanual Dexterous Manipulation Data: Confidence-Guided RL Refinement of Video Priors]({{ site.baseurl }}/papers/2611.21908/)
-
-**2026-11-16** · Yanghong Liu et al. 
-
-Collecting demonstrations for bimanual dexterous manipulation is costly, motivating the use of human videos as a source of robot training data. However, uncertainty in video-derived motion estimates and differences between human and robot embodiments make direct motion transfer challenging. In this ...
-
-[Read more →]({{ site.baseurl }}/papers/2611.21908/)
-
----
-
-## [DexFormer 2.0: Towards a Cross-Embodiment Foundation Policy for Dexterous Grasping]({{ site.baseurl }}/papers/2611.20273/)
-
-**2026-11-15** · Lixin Xu et al. 
-
-Dexterous grasping policies are usually trained for one arm paired with one hand. Every new pairing then needs its own policy, and the number of policies grows with every arm and hand added. We ask whether a single policy can control many arm-hand combinations and transfer to pairings and hands it h...
-
-[Read more →]({{ site.baseurl }}/papers/2611.20273/)
-
----
-
-## [SynManDex: Synthesizing Human-like Dexterous Grasps from Synthetic Human Pre-Grasps]({{ site.baseurl }}/papers/2606.09798/)
-
-**2026-06-08** · Yanming Shao et al. <span class="badge">🎧 Podcast</span> <span class="badge">📌 Archived</span>
-
-Human hand-object interactions encode functional intent, but direct transfer to robotic hands often fails under morphology, contact, and reachability constraints. We present SynManDex, a synthetic pipeline that uses generated human pre-grasps as affordance-aware proposals and resolves the final cont...
-
-[Read more →]({{ site.baseurl }}/papers/2606.09798/)
-
----
-
-## [Exo-ViHa: A Cross-Platform Exoskeleton System with Visual and Haptic Feedback for Efficient Dexterous Skill Learning]({{ site.baseurl }}/papers/manual-2026-06-11-exoviha-a-crossplatform-exoskeleton-syst/)
-
-**2025-03-03** · Xintao Chao et al. <span class="badge">🎧 Podcast</span> <span class="badge">📌 Archived</span>
-
-Imitation learning has emerged as a powerful paradigm for robot skills learning. However, traditional data collection systems for dexterous manipulation face challenges, including a lack of balance between acquisition efficiency, consistency, and accuracy. To address these issues, we introduce Exo-V...
-
-[Read more →]({{ site.baseurl }}/papers/manual-2026-06-11-exoviha-a-crossplatform-exoskeleton-syst/)
-
----
-
-## [MoDex: Planning High-Dimensional Dexterous Control via Learning Neural Internal Models]({{ site.baseurl }}/papers/manual-2026-06-11-modex-planning-highdimensional-dexterous/)
-
-**2024-09-17** · Tong Wu et al. <span class="badge">🎧 Podcast</span> <span class="badge">📌 Archived</span>
-
-Controlling hands in high-dimensional action space has been a longstanding challenge, yet humans naturally perform dexterous tasks with ease. In this paper, we draw inspiration from the concept of internal model exhibited in human behavior and reconsider dexterous hands as learnable systems. Specifi...
-
-[Read more →]({{ site.baseurl }}/papers/manual-2026-06-11-modex-planning-highdimensional-dexterous/)
+[Read more →]({{ site.baseurl }}/papers/2611.27967/)
 
 ---
 
