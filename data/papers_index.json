@@ -152,5 +152,69 @@
     "interesting": false,
     "has_summary": false,
     "has_podcast": false
+  },
+  "2611.30907": {
+    "arxiv_id": "2611.30907",
+    "title": "DexLatentWorld: 3D Cross-Embodiment Latent Action World Models for Zero-Shot Robotic Manipulation",
+    "abstract": "World models facilitate planning and control in robotic manipulation by enabling agents to anticipate the consequences of their actions. However, they typically rely on action-labelled interaction data that is costly to acquire and difficult to scale. These models are also often tied to the specific embodiment they were trained on, limiting transferability to previously unseen robot morphologies. We introduce a 3D latent-action world model that learns continuous action representations directly from point-cloud observations of retargeted human manipulation demonstrations. A contrastive objective is used to encourage consistent representations of motion across embodiments. The resulting unified latent action space serves directly as the search space for model-predictive control, where sampled latent actions condition particle-based future predictions. Executable robot commands are then recovered from the predicted geometric motion without requiring an embodiment-specific action decoder. Through extensive evaluations, we demonstrate that the learned latent actions exhibit controllable and compositional motion, transfer to unseen robot embodiments, and support zero-shot manipulation with unseen gripper geometries. Following task-agnostic adaptation, our model achieves 90%, 92%, and 60% success on reaching, grasping, and placing, respectively, compared with DexWM's reported 72%, 58%, and 28%. Finally, we demonstrate zero-shot real-world manipulation with an unseen dexterous hand, achieving an 86% success rate across 50 trials on five diverse tasks involving pushing, grasping, and lifting everyday objects. These results highlight the potential of geometry-grounded latent actions as a unified, transferable interface for world-model-based robotic manipulation. Project materials, including demonstration videos and source code, are available at https://vinaymohan0409.github.io/DexLatentWorld/.",
+    "published_date": "2026-11-23",
+    "authors": [
+      "Vinay Udit Mohan",
+      "Xuchuan Huang",
+      "Rolandos Alexandros Potamias"
+    ],
+    "first_author": "Vinay Udit Mohan",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2611.30907.pdf",
+    "abs_url": "https://arxiv.org/abs/2611.30907",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2611.29610": {
+    "arxiv_id": "2611.29610",
+    "title": "Dr. Grasp-RL: Diverse and Robust Dexterous Grasping via Reinforcement Learning",
+    "abstract": "Human interaction with physical objects relies on a combination of dexterity and robustness. In robotic manipulation, dexterity requires not only flexible end effectors but also a diverse repertoire of manipulation strategies, while robustness requires closed-loop adaptation to disturbances and unexpected situations. Two prominent research directions in dexterous grasping have largely addressed these capabilities separately. Generative approaches model multimodal distributions to produce diverse grasp poses, but their reliance on open-loop execution can limit robustness. Reinforcement learning approaches learn closed-loop grasping policies, but can converge to a narrow range of successful grasping strategies, limiting behavioral diversity. We introduce a time-reversed curriculum with a coordinated reset mechanism that enables a simple MLP policy trained with PPO to capture multiple modes of the grasp-pose distribution while maintaining closed-loop control. Experiments demonstrate both diverse grasping behaviors and robust closed-loop execution. Trained on only approximately 400 objects, our policy further demonstrates strong generalization when evaluated on more than 20,000 unseen objects.",
+    "published_date": "2026-11-22",
+    "authors": [
+      "Kunqi Xu",
+      "Xiaokang Sun",
+      "Xueyan Zou"
+    ],
+    "first_author": "Kunqi Xu",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2611.29610.pdf",
+    "abs_url": "https://arxiv.org/abs/2611.29610",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
+  },
+  "2611.29195": {
+    "arxiv_id": "2611.29195",
+    "title": "FunGrasp-Zero: Field-Conditioned Graph Attention Policy for Zero-Shot Cross-Embodiment Dexterous Functional Grasping",
+    "abstract": "Dexterous functional grasping is critical for robotic tool use, yet current dexterous hands exhibit substantial morphological diversity. This hardware heterogeneity makes cross-embodiment functional grasping a fundamental but largely unexplored problem. Existing functional grasping methods use retargeted hand poses as guidance, tying task representation to a specific embodiment and failing to explicitly capture object-centric functional contact intent, limiting generalization across hands. To address this, we propose FunGrasp-Zero, a reinforcement learning framework for zero-shot cross-embodiment functional grasping. Instead of relying on embodiment-specific joint configuration, FunGrasp-Zero captures functional intent via an object-centric, cross-embodiment-consistent contact map, adapted to heterogeneous hands through morphological mapping. We construct a hand-object potential field from mapped contact regions, yielding attractive and repulsive guidance vectors. A Field-Conditioned Graph Attention Network (FC-GAT) leverages these vectors to coordinate multi-finger motion across hands, while a potential field reward guides fingers toward target regions and penalizes non-target collisions to enforce functional alignment and stability. We further establish X-FunBench for cross-embodiment functional grasping, evaluating both physical grasp success and functional intent preservation across hands. Evaluated on X-FunBench, our unified policy, co-trained on four embodiments, achieves 86% average grasp success rate across five unseen hands on novel objects. Deployed on four unseen physical hands (Leap, Inspire, Sharpa, Wuji) for novel object grasping, the policy achieves 80% average success rate without fine-tuning. To our knowledge, FunGrasp-Zero is the first RL-based framework to achieve zero-shot cross-embodiment functional grasping across unseen hands in both simulation and the real world.",
+    "published_date": "2026-11-22",
+    "authors": [
+      "Yanhan Lin",
+      "Yuliang Wu",
+      "Yihao Guo",
+      "Wei-Jin Huang",
+      "Jianwen Li",
+      "Jiawei Tang",
+      "Xiaolong Huang",
+      "Yuquan Wang",
+      "Ancong Wu",
+      "Wei-Shi Zheng"
+    ],
+    "first_author": "Yanhan Lin",
+    "primary_category": "cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2611.29195.pdf",
+    "abs_url": "https://arxiv.org/abs/2611.29195",
+    "topic": "dexterous_grasp",
+    "interesting": false,
+    "has_summary": false,
+    "has_podcast": false
   }
 }
