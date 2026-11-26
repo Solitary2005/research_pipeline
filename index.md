@@ -5,16 +5,16 @@ title: "Dexterous Grasp Daily"
 
 # Dexterous Grasp — Daily Paper Digest
 
-**2026-11-25** — 1 new paper from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
+**2026-11-26** — 1 new paper from arXiv. [📌 View favorites]({{ site.baseurl }}/favorites/) for archived papers.
 
 
-## [Design, Control, and Teleoperation of a Dexterous Robotic Hand with Soft-Rigid Hybrid Fingers]({{ site.baseurl }}/papers/2611.32582/)
+## [DexLink: Synthesizing Dexterous Behaviors from Chained Hand-object Poses]({{ site.baseurl }}/papers/2611.34936/)
 
-**2026-11-24** · Chao Liu et al. 
+**2026-11-25** · Meenal Parakh et al. 
 
-Adding compliance to robot hands results in higher grasp quality and robust contact with the environment. Soft hands are inherently compliant, but are typically more complex to control and model than rigid equivalents.   We extend prior work on soft-rigid hybrid robot fingers into a five-fingered de...
+Synthesizing diverse dexterous manipulation policies is challenging: existing simulation-based approaches rely on human demonstrations which are difficult to scale, or use generic reward functions, which provide limited control over the hand-object interactions. We propose DexLink, which addresses t...
 
-[Read more →]({{ site.baseurl }}/papers/2611.32582/)
+[Read more →]({{ site.baseurl }}/papers/2611.34936/)
 
 ---
 
